@@ -1,0 +1,57 @@
+[
+{
+"key": "hero0",
+"f": "hero0.jpg",
+"prompt": "Wide lifestyle photo of winter puffer jackets and wool coats on a clothing rack in a bright minimal store, no text, no logos, no people"
+},
+{
+"key": "hero1",
+"f": "hero1.jpg",
+"prompt": "Lifestyle photo of stacked cozy knit sweaters in warm tones on a wooden table, soft light, no text, no logos, no people"
+},
+{
+"key": "hero2",
+"f": "hero2.jpg",
+"prompt": "Overhead photo of premium raw marbled beef and fresh mandarins and apples on a dark slate table, no text, no people"
+},
+{
+"key": "hero3",
+"f": "hero3.jpg",
+"prompt": "Moody product photo of wireless headphones and a mechanical keyboard on a dark desk with soft rim light, no text, no logos, no people"
+},
+{
+"key": "cat_fashion",
+"f": "cat_fashion.jpg",
+"prompt": "Square photo of a folded stack of colorful t-shirts and sweaters, plain light background, no text, no logos"
+},
+{
+"key": "cat_shoes",
+"f": "cat_shoes.jpg",
+"prompt": "Square photo of a single white sneaker, plain light background, no text, no logos"
+},
+{
+"key": "cat_bag",
+"f": "cat_bag.jpg",
+"prompt": "Square photo of a tan leather tote bag, plain light background, no text, no logos"
+},
+{
+"key": "cat_digital",
+"f": "cat_digital.jpg",
+"prompt": "Square photo of black wireless headphones, plain light background, no text, no logos"
+},
+{
+"key": "cat_living",
+"f": "cat_living.jpg",
+"prompt": "Square photo of a ceramic mug and a small candle, plain light background, no text"
+},
+{
+"key": "cat_beauty",
+"f": "cat_beauty.jpg",
+"prompt": "Square photo of skincare bottles with blank labels, plain light background, no text"
+},
+{
+"key": "cat_food",
+"f": "cat_food.jpg",
+"prompt": "Square photo of fresh fruit in a basket, plain light background, no text"
+}
+]

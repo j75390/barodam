@@ -322,14 +322,6 @@ const SH={
  pouch:`<path d="M62 50h76l8 116H54z"/><rect x="62" y="50" width="76" height="12" fill="rgba(0,0,0,.25)"/><circle cx="100" cy="112" r="22" fill="rgba(255,255,255,.65)"/>`
 };
 function art(type,h){
-  let ph=PH[type];
-  if(!(ph&&ph.length)&&PHOTO_ALT[type]) ph=PHOTO_ALT[type].flatMap(t=>(PH[t]||[]));
-  if(ph&&ph.length){
-    // colorway feel: tint + mirror for non-food items so repeated photos read as different products
-    const tint=TINT.has(type)?`hue-rotate(${((h*7)%7-3)*28}deg) saturate(${1+(h%3)*.12})`:'none';
-    const flip=h%2?'scaleX(-1)':'none';
-    return `<img src="img/${ph[Math.floor(h/7)%ph.length]}" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;filter:${tint};transform:${flip}">`;
-  }
   if(!SH[type]) type=ART_OF[type]||'box';
   const bg=`hsl(${h} 38% 90%)`, fg=`hsl(${h} 46% 46%)`;
   return `<svg viewBox="0 0 200 200" role="img" aria-hidden="true"><rect width="200" height="200" fill="${bg}"/><ellipse cx="100" cy="172" rx="64" ry="8" fill="rgba(0,0,0,.08)"/><g fill="${fg}" color="${fg}">${SH[type]}</g></svg>`;
@@ -339,11 +331,10 @@ function art(type,h){
 const CATS=[
  {id:'all',name:'전체'},{id:'fashion',name:'패션의류'},{id:'shoes',name:'신발'},{id:'bag',name:'가방·잡화'},
  {id:'digital',name:'디지털'},{id:'living',name:'리빙·주방'},{id:'beauty',name:'뷰티'},{id:'food',name:'식품'}];
-// photo per type (CC0 photos from Openverse, loaded from img/); types without photos fall back to the drawn art
-const PH=window.__PHOTOS||{};
-const PHOTO_ALT={bag:['wallet','backpack'],bottle:['perfume','tube'],tube:['perfume'],towel:['pillow'],pants:['coat','hoodie']};
-// only photos without people/food get color-shifted (skin and meat must keep natural color)
-const TINT=new Set(['shirt','cap','socks','wallet','bag','mug','tumbler','pillow','towel','candle']);
+// one CC0 photo per product (never shared between products); banner/category photos are reserved separately
+const PHOTOS=(window.__PHOTOS&&window.__PHOTOS.items)||[];
+const RESERVED=(window.__PHOTOS&&window.__PHOTOS.reserved)||{};
+function pimg(p){return p.photo?`<img src="img/${p.photo}" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">`:art(p.type,p.hue)}
 const ART_OF={shirt:'tee',knit:'hoodie',cap:'bag',socks:'pants',wallet:'bag',speaker:'phones',mouse:'keyboard',pan:'mug',towel:'pillow',candle:'tumbler',perfume:'bottle',nuts:'pouch',meat:'box'};
 const T=[
  ['fashion','tee',['오버핏 헤비코튼 반팔 티셔츠','스탠다드 로고 롱슬리브','와플 조직 헨리넥 티셔츠','릴렉스핏 피그먼트 반팔','쿨탠다드 기능성 티셔츠','레이어드 슬리브리스','빈티지 그래픽 티셔츠'],[12900,39000],['노스폴드','베이직무드','모노픽','로우라인','하이드아웃']],
@@ -392,24 +383,31 @@ const REVIEW_POOL={
 const NICK=['하루***','달빛**','초록고래','민트***','겨울밤**','코코***','바다**','스니커러버','홈카페**','새벽러너'];
 
 const P=[]; let id=1;
-T.forEach(([cat,type,names,[lo,hi],brands])=>{
-  names.forEach(n=>{
-    const brand=pick(brands);
-    const base=Math.round(between(lo,hi)/100)*100;
-    const off=rnd()<.15?0:Math.round(between(5,62));
-    const price=Math.round(base*(1-off/100)/10)*10;
-    const r=rnd();
-    P.push({id:id++,cat,type,brand,name:`${brand} ${n}`,hue:Math.floor(rnd()*360),base,off,price,
-      rating:+between(4.1,4.95).toFixed(1),reviews:Math.floor(Math.pow(rnd(),2)*9800)+12,sold:Math.floor(rnd()*5000)+30,
-      rocket:r<.55,dawn:r<.25,free:rnd()<.7||price>=19800,stock:Math.floor(between(3,140)),
-      sizes:cat==='fashion'?['S','M','L','XL']:(cat==='shoes'&&type!=='socks')?['240','250','260','270','280']:null,
-      soldOut:[],trend:Math.floor(between(-4,9))});
-  });
+const TT=Object.fromEntries(T.map(t=>[t[1],t]));
+const SUFFIX={fashion:['','에센셜','프리미엄','릴렉스핏','시즌2','클래식','데일리','라이트','헤비','투톤'],shoes:['','2.0','라이트','프로','클래식','에어','플러스','오리지널'],bag:['','미니','라지','에센셜','클래식','플러스','데일리'],digital:['','2세대','프로','라이트','플러스','맥스','미니','SE','에어'],living:['','에센셜','프리미엄','미니','라지','클래식','2입 세트'],beauty:['','리뉴얼','기획세트','대용량','미니','리필','민감용'],food:['','특품','가정용','선물세트','대용량','소포장','실속형']};
+const COLORS=['블랙','아이보리','네이비','차콜','세이지','라벤더','베이지','그레이','버건디','카키','스카이블루','크림'];
+const usedNames=new Set(), typeCount={};
+PHOTOS.forEach(ph=>{
+  const t=TT[ph.type]||TT[{fruit:'box',coffee:'pouch'}[ph.type]]; if(!t) return;
+  const [cat,,names,[lo,hi],brands]=t; const type=ph.type;
+  const k=typeCount[type]=(typeCount[type]||0)+1;
+  let name='',tries=0;
+  do{ const brand=brands[(k+tries)%brands.length], n=names[(k-1+tries)%names.length], suf=SUFFIX[cat][Math.floor((k-1+tries*3)/names.length)%SUFFIX[cat].length];
+      name=`${brand} ${n}${suf?' '+suf:''}`; tries++; }while(usedNames.has(name)&&tries<200);
+  if(ph.name) name=ph.name;
+  usedNames.add(name);
+  const brand=ph.brand||name.split(' ')[0];
+  const base=Math.round(between(lo,hi)/100)*100;
+  const off=rnd()<.15?0:Math.round(between(5,62));
+  const price=Math.round(base*(1-off/100)/10)*10;
+  const r=rnd();
+  const colors=['fashion','shoes','bag'].includes(cat)||['mug','tumbler','pillow','towel','keyboard','mouse','phones','speaker','watch'].includes(type)?[...new Set([ph.color,...COLORS.slice().sort(()=>rnd()-.5)].filter(Boolean))].slice(0,2+Math.floor(rnd()*3)):null;
+  P.push({id:id++,cat,type,brand,name,photo:ph.f,hue:Math.floor(rnd()*360),base,off,price,colors,
+    rating:+between(4.1,4.95).toFixed(1),reviews:Math.floor(Math.pow(rnd(),2)*9800)+12,sold:Math.floor(rnd()*5000)+30,
+    rocket:r<.55,dawn:r<.25,free:rnd()<.7||price>=19800,stock:Math.floor(between(3,140)),
+    sizes:cat==='fashion'?['S','M','L','XL']:(cat==='shoes'&&type!=='socks')?['240','250','260','270','280']:null,
+    soldOut:[],trend:Math.floor(between(-4,9))});
 });
-// extra colorways so the grid feels full (~280 items)
-const BASE=P.slice();
-const VARS=['(블랙)','(아이보리)','(네이비)','(차콜)','(세이지)','(라벤더)','(베이지)','(그레이)','(버건디)','(카키)','(스카이블루)','(크림)'];
-[.95,.9,.8,.7].forEach((chance,pass)=>BASE.forEach(p=>{ if(rnd()<chance&&P.length<500){const pc=p.cat==='food'?['(대용량)','(소용량)','(선물세트)','(2개 묶음)'][pass]:p.cat==='beauty'?['(리필)','(기획세트)','(미니)','(2개입)'][pass]:VARS[(p.id*3+pass*5)%VARS.length];const c={...p,id:id++,hue:(p.hue+90*(pass+1)+Math.floor(rnd()*60))%360,name:p.name+' '+pc,price:Math.round(p.price*between(.85,1.25)/100)*100,sold:Math.floor(p.sold*between(.3,1.1)),reviews:Math.floor(p.reviews*between(.2,.8))+3,trend:Math.floor(between(-4,9)),rating:+Math.min(5,Math.max(3.9,p.rating+between(-.3,.2))).toFixed(1),stock:Math.floor(between(2,140))};c.off=rnd()<.15?0:Math.round(between(5,62));c.base=Math.round(c.price/(1-c.off/100)/100)*100;c.free=c.free||c.price>=19800;P.push(c)}}));
 P.forEach(p=>{ if(p.sizes) p.soldOut=p.sizes.filter(()=>rnd()<.18); });
 
 // ---------- state ----------
@@ -445,7 +443,7 @@ function counts(){
 const deals=P.filter(p=>p.off>=35).sort((a,b)=>b.off-a.off).slice(0,3);
 function renderDeal(){
   $('#dealList').innerHTML=deals.map(p=>{const left=Math.min(92,Math.round(60+p.off/2));return `<button class="deal-item" data-id="${p.id}">
-    <div class="thumb pic">${art(p.type,p.hue)}</div>
+    <div class="thumb pic">${pimg(p)}</div>
     <div class="meta"><div class="nm">${esc(p.name)}</div>
     <div class="price"><span class="off num">${p.off}%</span><span class="now num">${won(p.price)}</span></div>
     <div class="stock"><i style="width:${left}%"></i></div><div class="stock-t num">${left}% 판매 · 남은 수량 ${p.stock}개</div></div></button>`}).join('');
@@ -458,7 +456,7 @@ function renderRank(){
   $('#rankTabs').innerHTML=CATS.map(c=>`<button data-r="${c.id}" aria-pressed="${S.rankCat===c.id}">${c.name}</button>`).join('');
   const list=P.filter(p=>S.rankCat==='all'||p.cat===S.rankCat).sort((a,b)=>b.sold-a.sold).slice(0,10);
   $('#rank').innerHTML=list.map((p,i)=>`<button class="rank-item card" data-id="${p.id}">
-    <div class="pic">${art(p.type,p.hue)}<span class="no">${i+1}</span></div>
+    <div class="pic">${pimg(p)}<span class="no">${i+1}</span></div>
     <div class="move num ${p.trend>0?'up':'dn'}">${p.trend>0?'▲ '+p.trend:p.trend<0?'▼ '+(-p.trend):'–'}</div>
     <div class="brand">${esc(p.brand)}</div><div class="name">${esc(p.name)}</div>
     <div class="price">${p.off?`<span class="off num">${p.off}%</span>`:''}<span class="now num">${won(p.price)}</span></div></button>`).join('');
@@ -478,7 +476,7 @@ $('#sort').addEventListener('click',e=>{const b=e.target.closest('button');if(!b
 
 function card(p){
   return `<div class="card" role="button" tabindex="0" data-id="${p.id}" aria-label="${esc(p.name)} 자세히 보기">
-    <div class="pic">${art(p.type,p.hue)}</div>
+    <div class="pic">${pimg(p)}</div>
     <button class="heart" data-wish="${p.id}" aria-pressed="${wish.has(p.id)}" aria-label="찜하기"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></button>
     <div class="brand">${esc(p.brand)}</div>
     <div class="name">${esc(p.name)}</div>
@@ -536,11 +534,11 @@ function compare(p){
 }
 let cur=null;
 function openDetail(pid){
-  const p=byId(pid);if(!p)return;cur={p,size:null,qty:1};
+  const p=byId(pid);if(!p)return;cur={p,size:null,color:null,qty:1};
   const R=makeReviews(p),C=compare(p);
   $('#overlay').innerHTML=`<div class="scrim" id="scrim"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="dTitle">
    <button class="close" id="dClose" aria-label="닫기">✕</button>
-   <div><div class="pic">${art(p.type,p.hue)}</div>
+   <div><div class="pic">${pimg(p)}</div>
      <div class="subh">판매처별 가격 비교</div>
      <table class="compare num">${C.map(x=>`<tr class="${x.low?'low':''}"><td>${x.s}${x.low?' · 최저가':''}</td><td>${x.ship}</td><td>${won(x.price)}</td></tr>`).join('')}</table>
    </div>
@@ -550,6 +548,7 @@ function openDetail(pid){
      <div class="rate num"><b>★ ${p.rating}</b> · 리뷰 ${p.reviews.toLocaleString()}개 · 최근 한 달 ${p.sold.toLocaleString()}개 구매</div>
      <div class="bigprice">${p.off?`<span class="off num">${p.off}%</span>`:''}<span class="now num">${won(p.price)}</span>${p.off?`<span class="was num">${won(p.base)}</span>`:''}</div>
      <div class="ship-box">${p.rocket?arrive(p):arrive(p)} · ${p.free?'무료배송':'19,800원 이상 무료배송'}</div>
+     ${p.colors?`<div class="opt"><label>색상</label><div class="row" id="colors">${p.colors.map(c=>`<button data-color="${c}" aria-pressed="false">${c}</button>`).join('')}</div></div>`:''}
      ${p.sizes?`<div class="opt"><label>사이즈</label><div class="row" id="sizes">${p.sizes.map(s=>`<button data-size="${s}" aria-pressed="false" ${p.soldOut.includes(s)?'disabled':''}>${s}</button>`).join('')}</div></div>`:''}
      <div class="opt"><label>수량</label><div class="qty"><button id="qm" aria-label="수량 줄이기">−</button><span id="qv" class="num">1</span><button id="qp" aria-label="수량 늘리기">+</button></div></div>
      <div class="ctas"><button class="btn" id="addCart">장바구니 담기</button><button class="btn primary" id="buyNow">바로 구매</button></div>
@@ -561,6 +560,7 @@ function openDetail(pid){
   $('#dClose').focus();
   $('#scrim').addEventListener('click',e=>{if(e.target.id==='scrim')closeOverlay()});
   $('#dClose').onclick=closeOverlay;
+  const co=$('#colors');if(co)co.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;cur.color=b.dataset.color;co.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b))});
   const sz=$('#sizes');if(sz)sz.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;cur.size=b.dataset.size;sz.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b))});
   $('#qm').onclick=()=>{cur.qty=Math.max(1,cur.qty-1);$('#qv').textContent=cur.qty};
   $('#qp').onclick=()=>{cur.qty=Math.min(p.stock,cur.qty+1);$('#qv').textContent=cur.qty};
@@ -568,10 +568,11 @@ function openDetail(pid){
   $('#buyNow').onclick=()=>{if(add())openCart()};
 }
 function add(){
-  const {p,size,qty}=cur;
+  const {p,size,color,qty}=cur;
+  if(p.colors&&!color){toast('색상을 먼저 골라 주세요');return false}
   if(p.sizes&&!size){toast('사이즈를 먼저 골라 주세요');return false}
-  const key=p.id+'|'+(size||'');const ex=cart.find(c=>c.key===key);
-  ex?ex.qty+=qty:cart.push({key,id:p.id,size,qty});save();counts();return true;
+  const key=p.id+'|'+(color||'')+'|'+(size||'');const ex=cart.find(c=>c.key===key);
+  ex?ex.qty+=qty:cart.push({key,id:p.id,size,color,qty});save();counts();return true;
 }
 function closeOverlay(){$('#overlay').innerHTML='';document.body.style.overflow=''}
 
@@ -588,7 +589,7 @@ function openCart(){
     <header><h2 id="cTitle">장바구니</h2><button class="close" style="position:static" id="cClose" aria-label="닫기">✕</button></header>
     <div class="body" id="cBody">
       ${lines.length?`<div class="freebar">${sub>=FREE?'무료배송 조건을 채웠어요':`<b class="num">${won(FREE-sub)}</b> 더 담으면 무료배송`}<div class="track"><i style="width:${Math.min(100,sub/FREE*100)}%"></i></div></div>`+
-      lines.map(c=>`<div class="line"><div class="pic">${art(c.p.type,c.p.hue)}</div><div><div class="ln">${esc(c.p.name)}</div><div class="op">${c.size?'사이즈 '+c.size+' · ':''}${arrive(c.p)}</div>
+      lines.map(c=>`<div class="line"><div class="pic">${pimg(c.p)}</div><div><div class="ln">${esc(c.p.name)}</div><div class="op">${c.color?c.color+' · ':''}${c.size?'사이즈 '+c.size+' · ':''}${arrive(c.p)}</div>
         <div style="display:flex;gap:10px;align-items:center;margin-top:6px"><div class="qty"><button data-dq="${c.key}" data-d="-1" aria-label="줄이기">−</button><span class="num">${c.qty}</span><button data-dq="${c.key}" data-d="1" aria-label="늘리기">+</button></div><button class="rm" data-rm="${c.key}">삭제</button></div></div>
         <div class="now num" style="font-size:14px">${won(c.p.price*c.qty)}</div></div>`).join('')
       :`<div class="done"><div style="font-size:15px;font-weight:700">장바구니가 비어 있어요</div><div class="rate">마음에 드는 상품을 담아 보세요</div></div>`}
@@ -620,12 +621,12 @@ function openCart(){
 }
 
 // ---------- hero carousel ----------
-const ph=(t,i=0)=>PH[t]&&PH[t].length?`img/${PH[t][i%PH[t].length]}`:'';
+const ph=k=>RESERVED[k]?`img/${RESERVED[k]}`:'';
 const SLIDES=[
- {cat:'fashion',bg:'#1E2B3A',eye:'WINTER OUTER WEEK',h:'겨울 아우터<br>최대 62% 할인',sub:'패딩·코트·플리스 120여 종, 이번 주 일요일까지',img:ph('coat',1)},
- {cat:'fashion',bg:'#5A3B2E',eye:'NEW ARRIVALS',h:'포근한 니트,<br>새로 들어왔어요',sub:'램스울부터 캐시미어 블렌드까지',img:ph('knit',1)},
- {cat:'food',bg:'#5B1F1C',eye:'산지직송',h:'한우·제철 과일<br>새벽에 도착',sub:'밤 11시 전 주문하면 내일 아침 문 앞에',img:ph('meat',0)},
- {cat:'digital',bg:'#1D1F24',eye:'DIGITAL SALE',h:'헤드폰·키보드<br>연말 특가',sub:'노이즈캔슬링 헤드폰 최저가 도전',img:ph('phones',0)}
+ {cat:'fashion',bg:'#1E2B3A',eye:'WINTER OUTER WEEK',h:'겨울 아우터<br>최대 62% 할인',sub:'패딩·코트·플리스 120여 종, 이번 주 일요일까지',img:ph('hero0')},
+ {cat:'fashion',bg:'#5A3B2E',eye:'NEW ARRIVALS',h:'포근한 니트,<br>새로 들어왔어요',sub:'램스울부터 캐시미어 블렌드까지',img:ph('hero1')},
+ {cat:'food',bg:'#5B1F1C',eye:'산지직송',h:'한우·제철 과일<br>새벽에 도착',sub:'밤 11시 전 주문하면 내일 아침 문 앞에',img:ph('hero2')},
+ {cat:'digital',bg:'#1D1F24',eye:'DIGITAL SALE',h:'헤드폰·키보드<br>연말 특가',sub:'노이즈캔슬링 헤드폰 최저가 도전',img:ph('hero3')}
 ];
 let slideAt=0,slideTimer;
 function renderHero(){
@@ -642,9 +643,9 @@ $('#hero').addEventListener('click',e=>{
 });
 
 // ---------- category icons ----------
-const CI={fashion:['coat',0],shoes:['sneaker',0],bag:['backpack',1],digital:['phones',1],living:['mug',0],beauty:['perfume',0],food:['box',1]};
+const CI={fashion:'coat',shoes:'sneaker',bag:'backpack',digital:'phones',living:'mug',beauty:'perfume',food:'box'};
 function renderCatIcons(){
-  $('#caticons').innerHTML=CATS.filter(c=>c.id!=='all').map(c=>{const [t,i]=CI[c.id];return `<button data-ci="${c.id}"><span class="ci">${ph(t,i)?`<img src="${ph(t,i)}" alt="" loading="lazy">`:art(t,40)}</span>${c.name}</button>`}).join('')+
+  $('#caticons').innerHTML=CATS.filter(c=>c.id!=='all').map(c=>{const t=CI[c.id];return `<button data-ci="${c.id}"><span class="ci">${ph('cat_'+c.id)?`<img src="${ph('cat_'+c.id)}" alt="" loading="lazy">`:art(t,40)}</span>${c.name}</button>`}).join('')+
    `<button data-ci="deal"><span class="ci">%</span>특가</button>`;
 }
 $('#caticons').addEventListener('click',e=>{const b=e.target.closest('[data-ci]');if(!b)return;const c=b.dataset.ci;if(c==='deal'){S.cat='all';S.f.deal=true}else S.cat=c;S.q='';$('#q').value='';renderCats();renderChips();renderList();document.getElementById('listTitle').scrollIntoView({behavior:'smooth'})});

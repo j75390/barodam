@@ -1,0 +1,5002 @@
+[
+{
+"id": 1,
+"f": "p001.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "노스폴드 오버핏 헤비코튼 반팔 티셔츠",
+"brand": "노스폴드",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige oversized heavy cotton short-sleeve t-shirt, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 2,
+"f": "p002.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "로우라인 스탠다드 로고 롱슬리브",
+"brand": "로우라인",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory long sleeve t-shirt with small chest print, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 3,
+"f": "p003.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "클라우드핏 와플 조직 헨리넥 티셔츠",
+"brand": "클라우드핏",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown waffle-knit henley t-shirt, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 4,
+"f": "p004.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "모노픽 릴렉스핏 피그먼트 반팔",
+"brand": "모노픽",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow pigment-dyed relaxed t-shirt, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 5,
+"f": "p005.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "어반트레일 기능성 쿨 티셔츠",
+"brand": "어반트레일",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black athletic dry-fit t-shirt, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 6,
+"f": "p006.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "베이직무드 빈티지 그래픽 티셔츠",
+"brand": "베이직무드",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory vintage graphic t-shirt with abstract print, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 7,
+"f": "p007.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "하이드아웃 오버핏 헤비코튼 반팔 티셔츠 에센셜",
+"brand": "하이드아웃",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige oversized heavy cotton short-sleeve t-shirt, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 8,
+"f": "p008.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "노스폴드 스탠다드 로고 롱슬리브 에센셜",
+"brand": "노스폴드",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey long sleeve t-shirt with small chest print, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 9,
+"f": "p009.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "로우라인 와플 조직 헨리넥 티셔츠 에센셜",
+"brand": "로우라인",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige waffle-knit henley t-shirt, side view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 10,
+"f": "p010.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "클라우드핏 릴렉스핏 피그먼트 반팔 에센셜",
+"brand": "클라우드핏",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige pigment-dyed relaxed t-shirt, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 11,
+"f": "p011.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "모노픽 기능성 쿨 티셔츠 에센셜",
+"brand": "모노픽",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey athletic dry-fit t-shirt, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 12,
+"f": "p012.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "어반트레일 빈티지 그래픽 티셔츠 에센셜",
+"brand": "어반트레일",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige vintage graphic t-shirt with abstract print, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 13,
+"f": "p013.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "베이직무드 오버핏 헤비코튼 반팔 티셔츠 프리미엄",
+"brand": "베이직무드",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender oversized heavy cotton short-sleeve t-shirt, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 14,
+"f": "p014.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "하이드아웃 스탠다드 로고 롱슬리브 프리미엄",
+"brand": "하이드아웃",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green long sleeve t-shirt with small chest print, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 15,
+"f": "p015.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "노스폴드 와플 조직 헨리넥 티셔츠 프리미엄",
+"brand": "노스폴드",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream waffle-knit henley t-shirt, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 16,
+"f": "p016.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "로우라인 릴렉스핏 피그먼트 반팔 프리미엄",
+"brand": "로우라인",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki pigment-dyed relaxed t-shirt, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 17,
+"f": "p017.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "클라우드핏 기능성 쿨 티셔츠 프리미엄",
+"brand": "클라우드핏",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown athletic dry-fit t-shirt, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 18,
+"f": "p018.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "모노픽 빈티지 그래픽 티셔츠 프리미엄",
+"brand": "모노픽",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy vintage graphic t-shirt with abstract print, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 19,
+"f": "p019.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "어반트레일 오버핏 헤비코튼 반팔 티셔츠 릴렉스핏",
+"brand": "어반트레일",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey oversized heavy cotton short-sleeve t-shirt, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 20,
+"f": "p020.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "베이직무드 스탠다드 로고 롱슬리브 릴렉스핏",
+"brand": "베이직무드",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy long sleeve t-shirt with small chest print, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 21,
+"f": "p021.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "하이드아웃 와플 조직 헨리넥 티셔츠 릴렉스핏",
+"brand": "하이드아웃",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green waffle-knit henley t-shirt, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 22,
+"f": "p022.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "노스폴드 릴렉스핏 피그먼트 반팔 릴렉스핏",
+"brand": "노스폴드",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy pigment-dyed relaxed t-shirt, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 23,
+"f": "p023.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "로우라인 기능성 쿨 티셔츠 릴렉스핏",
+"brand": "로우라인",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown athletic dry-fit t-shirt, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 24,
+"f": "p024.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "클라우드핏 빈티지 그래픽 티셔츠 릴렉스핏",
+"brand": "클라우드핏",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black vintage graphic t-shirt with abstract print, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 25,
+"f": "p025.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "모노픽 오버핏 헤비코튼 반팔 티셔츠 시즌2",
+"brand": "모노픽",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy oversized heavy cotton short-sleeve t-shirt, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 26,
+"f": "p026.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "어반트레일 스탠다드 로고 롱슬리브 시즌2",
+"brand": "어반트레일",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory long sleeve t-shirt with small chest print, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 27,
+"f": "p027.jpg",
+"type": "tee",
+"cat": "fashion",
+"name": "베이직무드 와플 조직 헨리넥 티셔츠 시즌2",
+"brand": "베이직무드",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey waffle-knit henley t-shirt, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 28,
+"f": "p028.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "노스폴드 옥스포드 버튼다운 셔츠",
+"brand": "노스폴드",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown oxford button-down shirt, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 29,
+"f": "p029.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "로우라인 린넨 오픈카라 셔츠",
+"brand": "로우라인",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige linen open-collar shirt, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 30,
+"f": "p030.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "클라우드핏 스트라이프 오버 셔츠",
+"brand": "클라우드핏",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender striped oversized shirt, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 31,
+"f": "p031.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "모노픽 코듀로이 워크 셔츠",
+"brand": "모노픽",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory corduroy work shirt, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 32,
+"f": "p032.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "어반트레일 플란넬 체크 셔츠",
+"brand": "어반트레일",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender flannel check shirt, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 33,
+"f": "p033.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "베이직무드 옥스포드 버튼다운 셔츠 에센셜",
+"brand": "베이직무드",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive oxford button-down shirt, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 34,
+"f": "p034.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "하이드아웃 린넨 오픈카라 셔츠 에센셜",
+"brand": "하이드아웃",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue linen open-collar shirt, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 35,
+"f": "p035.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "노스폴드 스트라이프 오버 셔츠 에센셜",
+"brand": "노스폴드",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy striped oversized shirt, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 36,
+"f": "p036.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "로우라인 코듀로이 워크 셔츠 에센셜",
+"brand": "로우라인",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow corduroy work shirt, slightly elevated angle, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 37,
+"f": "p037.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "클라우드핏 플란넬 체크 셔츠 에센셜",
+"brand": "클라우드핏",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue flannel check shirt, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 38,
+"f": "p038.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "모노픽 옥스포드 버튼다운 셔츠 프리미엄",
+"brand": "모노픽",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive oxford button-down shirt, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 39,
+"f": "p039.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "어반트레일 린넨 오픈카라 셔츠 프리미엄",
+"brand": "어반트레일",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream linen open-collar shirt, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 40,
+"f": "p040.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "베이직무드 스트라이프 오버 셔츠 프리미엄",
+"brand": "베이직무드",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green striped oversized shirt, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 41,
+"f": "p041.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "하이드아웃 코듀로이 워크 셔츠 프리미엄",
+"brand": "하이드아웃",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy corduroy work shirt, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 42,
+"f": "p042.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "노스폴드 플란넬 체크 셔츠 프리미엄",
+"brand": "노스폴드",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow flannel check shirt, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 43,
+"f": "p043.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "로우라인 옥스포드 버튼다운 셔츠 릴렉스핏",
+"brand": "로우라인",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white oxford button-down shirt, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 44,
+"f": "p044.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "클라우드핏 린넨 오픈카라 셔츠 릴렉스핏",
+"brand": "클라우드핏",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream linen open-collar shirt, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 45,
+"f": "p045.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "모노픽 스트라이프 오버 셔츠 릴렉스핏",
+"brand": "모노픽",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender striped oversized shirt, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 46,
+"f": "p046.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "어반트레일 코듀로이 워크 셔츠 릴렉스핏",
+"brand": "어반트레일",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy corduroy work shirt, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 47,
+"f": "p047.jpg",
+"type": "shirt",
+"cat": "fashion",
+"name": "베이직무드 플란넬 체크 셔츠 릴렉스핏",
+"brand": "베이직무드",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown flannel check shirt, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 48,
+"f": "p048.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "노스폴드 램스울 크루넥 니트",
+"brand": "노스폴드",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue lambswool crewneck sweater, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 49,
+"f": "p049.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "로우라인 케이블 꽈배기 니트",
+"brand": "로우라인",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white cable-knit sweater, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 50,
+"f": "p050.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "클라우드핏 하프집업 스웨터",
+"brand": "클라우드핏",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender half-zip knit sweater, side view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 51,
+"f": "p051.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "모노픽 브이넥 가디건",
+"brand": "모노픽",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey v-neck button cardigan, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 52,
+"f": "p052.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "어반트레일 터틀넥 니트",
+"brand": "어반트레일",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey turtleneck sweater, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 53,
+"f": "p053.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "베이직무드 램스울 크루넥 니트 에센셜",
+"brand": "베이직무드",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow lambswool crewneck sweater, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 54,
+"f": "p054.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "하이드아웃 케이블 꽈배기 니트 에센셜",
+"brand": "하이드아웃",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey cable-knit sweater, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 55,
+"f": "p055.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "노스폴드 하프집업 스웨터 에센셜",
+"brand": "노스폴드",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki half-zip knit sweater, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 56,
+"f": "p056.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "로우라인 브이넥 가디건 에센셜",
+"brand": "로우라인",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender v-neck button cardigan, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 57,
+"f": "p057.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "클라우드핏 터틀넥 니트 에센셜",
+"brand": "클라우드핏",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown turtleneck sweater, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 58,
+"f": "p058.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "모노픽 램스울 크루넥 니트 프리미엄",
+"brand": "모노픽",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue lambswool crewneck sweater, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 59,
+"f": "p059.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "어반트레일 케이블 꽈배기 니트 프리미엄",
+"brand": "어반트레일",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue cable-knit sweater, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 60,
+"f": "p060.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "베이직무드 하프집업 스웨터 프리미엄",
+"brand": "베이직무드",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue half-zip knit sweater, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 61,
+"f": "p061.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "하이드아웃 브이넥 가디건 프리미엄",
+"brand": "하이드아웃",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown v-neck button cardigan, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 62,
+"f": "p062.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "노스폴드 터틀넥 니트 프리미엄",
+"brand": "노스폴드",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown turtleneck sweater, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 63,
+"f": "p063.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "로우라인 램스울 크루넥 니트 릴렉스핏",
+"brand": "로우라인",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey lambswool crewneck sweater, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 64,
+"f": "p064.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "클라우드핏 케이블 꽈배기 니트 릴렉스핏",
+"brand": "클라우드핏",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown cable-knit sweater, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 65,
+"f": "p065.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "모노픽 하프집업 스웨터 릴렉스핏",
+"brand": "모노픽",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey half-zip knit sweater, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 66,
+"f": "p066.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "어반트레일 브이넥 가디건 릴렉스핏",
+"brand": "어반트레일",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive v-neck button cardigan, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 67,
+"f": "p067.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "베이직무드 터틀넥 니트 릴렉스핏",
+"brand": "베이직무드",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown turtleneck sweater, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 68,
+"f": "p068.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "하이드아웃 램스울 크루넥 니트 시즌2",
+"brand": "하이드아웃",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black lambswool crewneck sweater, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 69,
+"f": "p069.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "노스폴드 케이블 꽈배기 니트 시즌2",
+"brand": "노스폴드",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender cable-knit sweater, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 70,
+"f": "p070.jpg",
+"type": "knit",
+"cat": "fashion",
+"name": "로우라인 하프집업 스웨터 시즌2",
+"brand": "로우라인",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream half-zip knit sweater, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 71,
+"f": "p071.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "노스폴드 기모 후드 집업",
+"brand": "노스폴드",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender fleece-lined zip-up hoodie, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 72,
+"f": "p072.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "로우라인 스웻 후디",
+"brand": "로우라인",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy pullover hoodie, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 73,
+"f": "p073.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "클라우드핏 헤비웨이트 맨투맨",
+"brand": "클라우드핏",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow heavyweight crewneck sweatshirt, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 74,
+"f": "p074.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "모노픽 아치 로고 스웻셔츠",
+"brand": "모노픽",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown sweatshirt with arched embroidered lettering (no real brand), three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 75,
+"f": "p075.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "어반트레일 기모 후드 집업 에센셜",
+"brand": "어반트레일",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige fleece-lined zip-up hoodie, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 76,
+"f": "p076.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "베이직무드 스웻 후디 에센셜",
+"brand": "베이직무드",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream pullover hoodie, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 77,
+"f": "p077.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "하이드아웃 헤비웨이트 맨투맨 에센셜",
+"brand": "하이드아웃",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy heavyweight crewneck sweatshirt, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 78,
+"f": "p078.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "노스폴드 아치 로고 스웻셔츠 에센셜",
+"brand": "노스폴드",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue sweatshirt with arched embroidered lettering (no real brand), front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 79,
+"f": "p079.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "로우라인 기모 후드 집업 프리미엄",
+"brand": "로우라인",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory fleece-lined zip-up hoodie, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 80,
+"f": "p080.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "클라우드핏 스웻 후디 프리미엄",
+"brand": "클라우드핏",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy pullover hoodie, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 81,
+"f": "p081.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "모노픽 헤비웨이트 맨투맨 프리미엄",
+"brand": "모노픽",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy heavyweight crewneck sweatshirt, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 82,
+"f": "p082.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "어반트레일 아치 로고 스웻셔츠 프리미엄",
+"brand": "어반트레일",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive sweatshirt with arched embroidered lettering (no real brand), slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 83,
+"f": "p083.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "베이직무드 기모 후드 집업 릴렉스핏",
+"brand": "베이직무드",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown fleece-lined zip-up hoodie, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 84,
+"f": "p084.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "하이드아웃 스웻 후디 릴렉스핏",
+"brand": "하이드아웃",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender pullover hoodie, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 85,
+"f": "p085.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "노스폴드 헤비웨이트 맨투맨 릴렉스핏",
+"brand": "노스폴드",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow heavyweight crewneck sweatshirt, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 86,
+"f": "p086.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "로우라인 아치 로고 스웻셔츠 릴렉스핏",
+"brand": "로우라인",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow sweatshirt with arched embroidered lettering (no real brand), front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 87,
+"f": "p087.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "클라우드핏 기모 후드 집업 시즌2",
+"brand": "클라우드핏",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey fleece-lined zip-up hoodie, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 88,
+"f": "p088.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "모노픽 스웻 후디 시즌2",
+"brand": "모노픽",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki pullover hoodie, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 89,
+"f": "p089.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "어반트레일 헤비웨이트 맨투맨 시즌2",
+"brand": "어반트레일",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey heavyweight crewneck sweatshirt, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 90,
+"f": "p090.jpg",
+"type": "hoodie",
+"cat": "fashion",
+"name": "베이직무드 아치 로고 스웻셔츠 시즌2",
+"brand": "베이직무드",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender sweatshirt with arched embroidered lettering (no real brand), top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 91,
+"f": "p091.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "노스폴드 울 블렌드 싱글 코트",
+"brand": "노스폴드",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue wool blend single-breasted coat, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 92,
+"f": "p092.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "로우라인 경량 구스다운 패딩",
+"brand": "로우라인",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy lightweight goose down puffer jacket, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 93,
+"f": "p093.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "클라우드핏 숏 푸퍼 재킷",
+"brand": "클라우드핏",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey short puffer jacket, slightly elevated angle, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 94,
+"f": "p094.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "모노픽 플리스 보아 재킷",
+"brand": "모노픽",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki sherpa fleece jacket, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 95,
+"f": "p095.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "어반트레일 발마칸 롱 코트",
+"brand": "어반트레일",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender balmacaan long coat, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 96,
+"f": "p096.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "베이직무드 후드 롱패딩",
+"brand": "베이직무드",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy hooded long down parka, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 97,
+"f": "p097.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "하이드아웃 윈드브레이커 아노락",
+"brand": "하이드아웃",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige windbreaker anorak, side view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 98,
+"f": "p098.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "노스폴드 울 블렌드 싱글 코트 에센셜",
+"brand": "노스폴드",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey wool blend single-breasted coat, side view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 99,
+"f": "p099.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "로우라인 경량 구스다운 패딩 에센셜",
+"brand": "로우라인",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black lightweight goose down puffer jacket, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 100,
+"f": "p100.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "클라우드핏 숏 푸퍼 재킷 에센셜",
+"brand": "클라우드핏",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey short puffer jacket, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 101,
+"f": "p101.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "모노픽 플리스 보아 재킷 에센셜",
+"brand": "모노픽",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender sherpa fleece jacket, slightly elevated angle, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 102,
+"f": "p102.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "어반트레일 발마칸 롱 코트 에센셜",
+"brand": "어반트레일",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green balmacaan long coat, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 103,
+"f": "p103.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "베이직무드 후드 롱패딩 에센셜",
+"brand": "베이직무드",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream hooded long down parka, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 104,
+"f": "p104.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "하이드아웃 윈드브레이커 아노락 에센셜",
+"brand": "하이드아웃",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki windbreaker anorak, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 105,
+"f": "p105.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "노스폴드 울 블렌드 싱글 코트 프리미엄",
+"brand": "노스폴드",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive wool blend single-breasted coat, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 106,
+"f": "p106.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "로우라인 경량 구스다운 패딩 프리미엄",
+"brand": "로우라인",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy lightweight goose down puffer jacket, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 107,
+"f": "p107.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "클라우드핏 숏 푸퍼 재킷 프리미엄",
+"brand": "클라우드핏",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy short puffer jacket, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 108,
+"f": "p108.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "모노픽 플리스 보아 재킷 프리미엄",
+"brand": "모노픽",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream sherpa fleece jacket, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 109,
+"f": "p109.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "어반트레일 발마칸 롱 코트 프리미엄",
+"brand": "어반트레일",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green balmacaan long coat, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 110,
+"f": "p110.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "베이직무드 후드 롱패딩 프리미엄",
+"brand": "베이직무드",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey hooded long down parka, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 111,
+"f": "p111.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "하이드아웃 윈드브레이커 아노락 프리미엄",
+"brand": "하이드아웃",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown windbreaker anorak, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 112,
+"f": "p112.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "노스폴드 울 블렌드 싱글 코트 릴렉스핏",
+"brand": "노스폴드",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green wool blend single-breasted coat, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 113,
+"f": "p113.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "로우라인 경량 구스다운 패딩 릴렉스핏",
+"brand": "로우라인",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream lightweight goose down puffer jacket, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 114,
+"f": "p114.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "클라우드핏 숏 푸퍼 재킷 릴렉스핏",
+"brand": "클라우드핏",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive short puffer jacket, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 115,
+"f": "p115.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "모노픽 플리스 보아 재킷 릴렉스핏",
+"brand": "모노픽",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown sherpa fleece jacket, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 116,
+"f": "p116.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "어반트레일 발마칸 롱 코트 릴렉스핏",
+"brand": "어반트레일",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue balmacaan long coat, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 117,
+"f": "p117.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "베이직무드 후드 롱패딩 릴렉스핏",
+"brand": "베이직무드",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey hooded long down parka, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 118,
+"f": "p118.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "하이드아웃 윈드브레이커 아노락 릴렉스핏",
+"brand": "하이드아웃",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy windbreaker anorak, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 119,
+"f": "p119.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "노스폴드 울 블렌드 싱글 코트 시즌2",
+"brand": "노스폴드",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory wool blend single-breasted coat, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 120,
+"f": "p120.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "로우라인 경량 구스다운 패딩 시즌2",
+"brand": "로우라인",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki lightweight goose down puffer jacket, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 121,
+"f": "p121.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "클라우드핏 숏 푸퍼 재킷 시즌2",
+"brand": "클라우드핏",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive short puffer jacket, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 122,
+"f": "p122.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "모노픽 플리스 보아 재킷 시즌2",
+"brand": "모노픽",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey sherpa fleece jacket, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 123,
+"f": "p123.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "어반트레일 발마칸 롱 코트 시즌2",
+"brand": "어반트레일",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory balmacaan long coat, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 124,
+"f": "p124.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "베이직무드 후드 롱패딩 시즌2",
+"brand": "베이직무드",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black hooded long down parka, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 125,
+"f": "p125.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "하이드아웃 윈드브레이커 아노락 시즌2",
+"brand": "하이드아웃",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream windbreaker anorak, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 126,
+"f": "p126.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "노스폴드 울 블렌드 싱글 코트 클래식",
+"brand": "노스폴드",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy wool blend single-breasted coat, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 127,
+"f": "p127.jpg",
+"type": "coat",
+"cat": "fashion",
+"name": "로우라인 경량 구스다운 패딩 클래식",
+"brand": "로우라인",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy lightweight goose down puffer jacket, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 128,
+"f": "p128.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "노스폴드 와이드 데님 팬츠",
+"brand": "노스폴드",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender wide-leg denim jeans, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 129,
+"f": "p129.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "로우라인 원턱 코튼 치노",
+"brand": "로우라인",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey pleated cotton chino trousers, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 130,
+"f": "p130.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "클라우드핏 조거 트레이닝 팬츠",
+"brand": "클라우드핏",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue jogger sweatpants, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 131,
+"f": "p131.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "모노픽 세미와이드 슬랙스",
+"brand": "모노픽",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow semi-wide wool slacks, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 132,
+"f": "p132.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "어반트레일 카고 나일론 팬츠",
+"brand": "어반트레일",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender nylon cargo pants, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 133,
+"f": "p133.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "베이직무드 와이드 데님 팬츠 에센셜",
+"brand": "베이직무드",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy wide-leg denim jeans, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 134,
+"f": "p134.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "하이드아웃 원턱 코튼 치노 에센셜",
+"brand": "하이드아웃",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow pleated cotton chino trousers, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 135,
+"f": "p135.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "노스폴드 조거 트레이닝 팬츠 에센셜",
+"brand": "노스폴드",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black jogger sweatpants, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 136,
+"f": "p136.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "로우라인 세미와이드 슬랙스 에센셜",
+"brand": "로우라인",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender semi-wide wool slacks, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 137,
+"f": "p137.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "클라우드핏 카고 나일론 팬츠 에센셜",
+"brand": "클라우드핏",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream nylon cargo pants, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 138,
+"f": "p138.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "모노픽 와이드 데님 팬츠 프리미엄",
+"brand": "모노픽",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy wide-leg denim jeans, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 139,
+"f": "p139.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "어반트레일 원턱 코튼 치노 프리미엄",
+"brand": "어반트레일",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey pleated cotton chino trousers, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 140,
+"f": "p140.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "베이직무드 조거 트레이닝 팬츠 프리미엄",
+"brand": "베이직무드",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white jogger sweatpants, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 141,
+"f": "p141.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "하이드아웃 세미와이드 슬랙스 프리미엄",
+"brand": "하이드아웃",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy semi-wide wool slacks, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 142,
+"f": "p142.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "노스폴드 카고 나일론 팬츠 프리미엄",
+"brand": "노스폴드",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green nylon cargo pants, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 143,
+"f": "p143.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "로우라인 와이드 데님 팬츠 릴렉스핏",
+"brand": "로우라인",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown wide-leg denim jeans, slightly elevated angle, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 144,
+"f": "p144.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "클라우드핏 원턱 코튼 치노 릴렉스핏",
+"brand": "클라우드핏",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow pleated cotton chino trousers, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 145,
+"f": "p145.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "모노픽 조거 트레이닝 팬츠 릴렉스핏",
+"brand": "모노픽",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive jogger sweatpants, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 146,
+"f": "p146.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "어반트레일 세미와이드 슬랙스 릴렉스핏",
+"brand": "어반트레일",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory semi-wide wool slacks, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 147,
+"f": "p147.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "베이직무드 카고 나일론 팬츠 릴렉스핏",
+"brand": "베이직무드",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy nylon cargo pants, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 148,
+"f": "p148.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "하이드아웃 와이드 데님 팬츠 시즌2",
+"brand": "하이드아웃",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory wide-leg denim jeans, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 149,
+"f": "p149.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "노스폴드 원턱 코튼 치노 시즌2",
+"brand": "노스폴드",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream pleated cotton chino trousers, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 150,
+"f": "p150.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "로우라인 조거 트레이닝 팬츠 시즌2",
+"brand": "로우라인",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy jogger sweatpants, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 151,
+"f": "p151.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "클라우드핏 세미와이드 슬랙스 시즌2",
+"brand": "클라우드핏",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black semi-wide wool slacks, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 152,
+"f": "p152.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "모노픽 카고 나일론 팬츠 시즌2",
+"brand": "모노픽",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow nylon cargo pants, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 153,
+"f": "p153.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "어반트레일 와이드 데님 팬츠 클래식",
+"brand": "어반트레일",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey wide-leg denim jeans, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 154,
+"f": "p154.jpg",
+"type": "pants",
+"cat": "fashion",
+"name": "베이직무드 원턱 코튼 치노 클래식",
+"brand": "베이직무드",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy pleated cotton chino trousers, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 155,
+"f": "p155.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "스텝라인 캔버스 스니커즈",
+"brand": "스텝라인",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki canvas low-top sneakers, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 156,
+"f": "p156.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "데일리풋 쿠셔닝 러닝화",
+"brand": "데일리풋",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey cushioned running shoes, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 157,
+"f": "p157.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "모노픽 레더 코트화",
+"brand": "모노픽",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black leather court sneakers, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 158,
+"f": "p158.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "런데이 청키 스니커즈",
+"brand": "런데이",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive chunky dad sneakers, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 159,
+"f": "p159.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "스텝라인 슬립온 운동화",
+"brand": "스텝라인",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy slip-on mesh shoes, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 160,
+"f": "p160.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "데일리풋 트레일 러닝화",
+"brand": "데일리풋",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy trail running shoes, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 161,
+"f": "p161.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "모노픽 캔버스 스니커즈 2.0",
+"brand": "모노픽",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black canvas low-top sneakers, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 162,
+"f": "p162.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "런데이 쿠셔닝 러닝화 2.0",
+"brand": "런데이",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige cushioned running shoes, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 163,
+"f": "p163.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "스텝라인 레더 코트화 2.0",
+"brand": "스텝라인",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy leather court sneakers, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 164,
+"f": "p164.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "데일리풋 청키 스니커즈 2.0",
+"brand": "데일리풋",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white chunky dad sneakers, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 165,
+"f": "p165.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "모노픽 슬립온 운동화 2.0",
+"brand": "모노픽",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy slip-on mesh shoes, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 166,
+"f": "p166.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "런데이 트레일 러닝화 2.0",
+"brand": "런데이",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy trail running shoes, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 167,
+"f": "p167.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "스텝라인 캔버스 스니커즈 라이트",
+"brand": "스텝라인",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white canvas low-top sneakers, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 168,
+"f": "p168.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "데일리풋 쿠셔닝 러닝화 라이트",
+"brand": "데일리풋",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey cushioned running shoes, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 169,
+"f": "p169.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "모노픽 레더 코트화 라이트",
+"brand": "모노픽",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki leather court sneakers, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 170,
+"f": "p170.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "런데이 청키 스니커즈 라이트",
+"brand": "런데이",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown chunky dad sneakers, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 171,
+"f": "p171.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "스텝라인 슬립온 운동화 라이트",
+"brand": "스텝라인",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white slip-on mesh shoes, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 172,
+"f": "p172.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "데일리풋 트레일 러닝화 라이트",
+"brand": "데일리풋",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige trail running shoes, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 173,
+"f": "p173.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "모노픽 캔버스 스니커즈 프로",
+"brand": "모노픽",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki canvas low-top sneakers, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 174,
+"f": "p174.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "런데이 쿠셔닝 러닝화 프로",
+"brand": "런데이",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white cushioned running shoes, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 175,
+"f": "p175.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "스텝라인 레더 코트화 프로",
+"brand": "스텝라인",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive leather court sneakers, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 176,
+"f": "p176.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "데일리풋 청키 스니커즈 프로",
+"brand": "데일리풋",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue chunky dad sneakers, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 177,
+"f": "p177.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "모노픽 슬립온 운동화 프로",
+"brand": "모노픽",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow slip-on mesh shoes, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 178,
+"f": "p178.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "런데이 트레일 러닝화 프로",
+"brand": "런데이",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow trail running shoes, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 179,
+"f": "p179.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "스텝라인 캔버스 스니커즈 클래식",
+"brand": "스텝라인",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow canvas low-top sneakers, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 180,
+"f": "p180.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "데일리풋 쿠셔닝 러닝화 클래식",
+"brand": "데일리풋",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green cushioned running shoes, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 181,
+"f": "p181.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "모노픽 레더 코트화 클래식",
+"brand": "모노픽",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory leather court sneakers, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 182,
+"f": "p182.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "런데이 청키 스니커즈 클래식",
+"brand": "런데이",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki chunky dad sneakers, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 183,
+"f": "p183.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "스텝라인 슬립온 운동화 클래식",
+"brand": "스텝라인",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black slip-on mesh shoes, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 184,
+"f": "p184.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "데일리풋 트레일 러닝화 클래식",
+"brand": "데일리풋",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream trail running shoes, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 185,
+"f": "p185.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "모노픽 캔버스 스니커즈 에어",
+"brand": "모노픽",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey canvas low-top sneakers, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 186,
+"f": "p186.jpg",
+"type": "sneaker",
+"cat": "shoes",
+"name": "런데이 쿠셔닝 러닝화 에어",
+"brand": "런데이",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green cushioned running shoes, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 187,
+"f": "p187.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "스텝라인 방수 워커 부츠",
+"brand": "스텝라인",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory waterproof work boots, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 188,
+"f": "p188.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "데일리풋 스웨이드 첼시 부츠",
+"brand": "데일리풋",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender suede chelsea boots, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 189,
+"f": "p189.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "모노픽 퍼 방한 부츠",
+"brand": "모노픽",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow fur-lined winter snow boots, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 190,
+"f": "p190.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "런데이 컴뱃 부츠",
+"brand": "런데이",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender lace-up combat boots, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 191,
+"f": "p191.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "스텝라인 방수 워커 부츠 2.0",
+"brand": "스텝라인",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green waterproof work boots, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 192,
+"f": "p192.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "데일리풋 스웨이드 첼시 부츠 2.0",
+"brand": "데일리풋",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white suede chelsea boots, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 193,
+"f": "p193.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "모노픽 퍼 방한 부츠 2.0",
+"brand": "모노픽",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream fur-lined winter snow boots, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 194,
+"f": "p194.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "런데이 컴뱃 부츠 2.0",
+"brand": "런데이",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender lace-up combat boots, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 195,
+"f": "p195.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "스텝라인 방수 워커 부츠 라이트",
+"brand": "스텝라인",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream waterproof work boots, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 196,
+"f": "p196.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "데일리풋 스웨이드 첼시 부츠 라이트",
+"brand": "데일리풋",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black suede chelsea boots, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 197,
+"f": "p197.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "모노픽 퍼 방한 부츠 라이트",
+"brand": "모노픽",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender fur-lined winter snow boots, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 198,
+"f": "p198.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "런데이 컴뱃 부츠 라이트",
+"brand": "런데이",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender lace-up combat boots, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 199,
+"f": "p199.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "스텝라인 방수 워커 부츠 프로",
+"brand": "스텝라인",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white waterproof work boots, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 200,
+"f": "p200.jpg",
+"type": "boot",
+"cat": "shoes",
+"name": "데일리풋 스웨이드 첼시 부츠 프로",
+"brand": "데일리풋",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey suede chelsea boots, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 201,
+"f": "p201.jpg",
+"type": "socks",
+"cat": "shoes",
+"name": "스텝라인 스포츠 양말 5족",
+"brand": "스텝라인",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive five pairs of athletic socks, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 202,
+"f": "p202.jpg",
+"type": "socks",
+"cat": "shoes",
+"name": "데일리풋 울 혼방 겨울 양말 3족",
+"brand": "데일리풋",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive three pairs of wool winter socks, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 203,
+"f": "p203.jpg",
+"type": "socks",
+"cat": "shoes",
+"name": "모노픽 페이크삭스 10족",
+"brand": "모노픽",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow ten pairs of no-show socks, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 204,
+"f": "p204.jpg",
+"type": "socks",
+"cat": "shoes",
+"name": "런데이 스포츠 양말 5족 2.0",
+"brand": "런데이",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive five pairs of athletic socks, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 205,
+"f": "p205.jpg",
+"type": "socks",
+"cat": "shoes",
+"name": "스텝라인 울 혼방 겨울 양말 3족 2.0",
+"brand": "스텝라인",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown three pairs of wool winter socks, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 206,
+"f": "p206.jpg",
+"type": "socks",
+"cat": "shoes",
+"name": "데일리풋 페이크삭스 10족 2.0",
+"brand": "데일리풋",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow ten pairs of no-show socks, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 207,
+"f": "p207.jpg",
+"type": "socks",
+"cat": "shoes",
+"name": "모노픽 스포츠 양말 5족 라이트",
+"brand": "모노픽",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey five pairs of athletic socks, side view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 208,
+"f": "p208.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "하루랩 미니 숄더백",
+"brand": "하루랩",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream mini leather shoulder bag, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 209,
+"f": "p209.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "레더리 캔버스 에코백",
+"brand": "레더리",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy canvas tote bag, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 210,
+"f": "p210.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "모노픽 레더 크로스백",
+"brand": "모노픽",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory leather crossbody bag, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 211,
+"f": "p211.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "어반트레일 나일론 숄더백",
+"brand": "어반트레일",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green nylon shoulder bag, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 212,
+"f": "p212.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "베이직무드 호보백",
+"brand": "베이직무드",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive slouchy hobo bag, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 213,
+"f": "p213.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "하루랩 미니 숄더백 미니",
+"brand": "하루랩",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black mini leather shoulder bag, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 214,
+"f": "p214.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "레더리 캔버스 에코백 미니",
+"brand": "레더리",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy canvas tote bag, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 215,
+"f": "p215.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "모노픽 레더 크로스백 미니",
+"brand": "모노픽",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey leather crossbody bag, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 216,
+"f": "p216.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "어반트레일 나일론 숄더백 미니",
+"brand": "어반트레일",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki nylon shoulder bag, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 217,
+"f": "p217.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "베이직무드 호보백 미니",
+"brand": "베이직무드",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow slouchy hobo bag, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 218,
+"f": "p218.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "하루랩 미니 숄더백 라지",
+"brand": "하루랩",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown mini leather shoulder bag, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 219,
+"f": "p219.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "레더리 캔버스 에코백 라지",
+"brand": "레더리",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white canvas tote bag, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 220,
+"f": "p220.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "모노픽 레더 크로스백 라지",
+"brand": "모노픽",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown leather crossbody bag, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 221,
+"f": "p221.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "어반트레일 나일론 숄더백 라지",
+"brand": "어반트레일",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender nylon shoulder bag, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 222,
+"f": "p222.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "베이직무드 호보백 라지",
+"brand": "베이직무드",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow slouchy hobo bag, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 223,
+"f": "p223.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "하루랩 미니 숄더백 에센셜",
+"brand": "하루랩",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green mini leather shoulder bag, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 224,
+"f": "p224.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "레더리 캔버스 에코백 에센셜",
+"brand": "레더리",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue canvas tote bag, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 225,
+"f": "p225.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "모노픽 레더 크로스백 에센셜",
+"brand": "모노픽",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black leather crossbody bag, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 226,
+"f": "p226.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "어반트레일 나일론 숄더백 에센셜",
+"brand": "어반트레일",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white nylon shoulder bag, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 227,
+"f": "p227.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "베이직무드 호보백 에센셜",
+"brand": "베이직무드",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow slouchy hobo bag, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 228,
+"f": "p228.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "하루랩 미니 숄더백 클래식",
+"brand": "하루랩",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue mini leather shoulder bag, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 229,
+"f": "p229.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "레더리 캔버스 에코백 클래식",
+"brand": "레더리",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige canvas tote bag, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 230,
+"f": "p230.jpg",
+"type": "bag",
+"cat": "bag",
+"name": "모노픽 레더 크로스백 클래식",
+"brand": "모노픽",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy leather crossbody bag, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 231,
+"f": "p231.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "하루랩 노트북 백팩 22L",
+"brand": "하루랩",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki laptop backpack, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 232,
+"f": "p232.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "레더리 롤탑 방수 백팩",
+"brand": "레더리",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green roll-top waterproof backpack, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 233,
+"f": "p233.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "모노픽 경량 데이팩",
+"brand": "모노픽",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey lightweight daypack, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 234,
+"f": "p234.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "어반트레일 캠퍼스 백팩",
+"brand": "어반트레일",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey classic school backpack, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 235,
+"f": "p235.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "베이직무드 노트북 백팩 22L 미니",
+"brand": "베이직무드",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue laptop backpack, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 236,
+"f": "p236.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "하루랩 롤탑 방수 백팩 미니",
+"brand": "하루랩",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue roll-top waterproof backpack, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 237,
+"f": "p237.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "레더리 경량 데이팩 미니",
+"brand": "레더리",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white lightweight daypack, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 238,
+"f": "p238.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "모노픽 캠퍼스 백팩 미니",
+"brand": "모노픽",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige classic school backpack, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 239,
+"f": "p239.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "어반트레일 노트북 백팩 22L 라지",
+"brand": "어반트레일",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white laptop backpack, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 240,
+"f": "p240.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "베이직무드 롤탑 방수 백팩 라지",
+"brand": "베이직무드",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green roll-top waterproof backpack, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 241,
+"f": "p241.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "하루랩 경량 데이팩 라지",
+"brand": "하루랩",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black lightweight daypack, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 242,
+"f": "p242.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "레더리 캠퍼스 백팩 라지",
+"brand": "레더리",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue classic school backpack, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 243,
+"f": "p243.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "모노픽 노트북 백팩 22L 에센셜",
+"brand": "모노픽",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue laptop backpack, slightly elevated angle, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 244,
+"f": "p244.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "어반트레일 롤탑 방수 백팩 에센셜",
+"brand": "어반트레일",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive roll-top waterproof backpack, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 245,
+"f": "p245.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "베이직무드 경량 데이팩 에센셜",
+"brand": "베이직무드",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black lightweight daypack, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 246,
+"f": "p246.jpg",
+"type": "backpack",
+"cat": "bag",
+"name": "하루랩 캠퍼스 백팩 에센셜",
+"brand": "하루랩",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green classic school backpack, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 247,
+"f": "p247.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "하루랩 워싱 볼캡",
+"brand": "하루랩",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue washed baseball cap, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 248,
+"f": "p248.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "레더리 코튼 버킷햇",
+"brand": "레더리",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black cotton bucket hat, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 249,
+"f": "p249.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "모노픽 울 비니",
+"brand": "모노픽",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey ribbed wool beanie, side view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 250,
+"f": "p250.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "어반트레일 캠프캡",
+"brand": "어반트레일",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black 5-panel camp cap, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 251,
+"f": "p251.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "베이직무드 워싱 볼캡 미니",
+"brand": "베이직무드",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow washed baseball cap, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 252,
+"f": "p252.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "하루랩 코튼 버킷햇 미니",
+"brand": "하루랩",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive cotton bucket hat, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 253,
+"f": "p253.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "레더리 울 비니 미니",
+"brand": "레더리",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory ribbed wool beanie, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 254,
+"f": "p254.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "모노픽 캠프캡 미니",
+"brand": "모노픽",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy 5-panel camp cap, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 255,
+"f": "p255.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "어반트레일 워싱 볼캡 라지",
+"brand": "어반트레일",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive washed baseball cap, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 256,
+"f": "p256.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "베이직무드 코튼 버킷햇 라지",
+"brand": "베이직무드",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green cotton bucket hat, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 257,
+"f": "p257.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "하루랩 울 비니 라지",
+"brand": "하루랩",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow ribbed wool beanie, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 258,
+"f": "p258.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "레더리 캠프캡 라지",
+"brand": "레더리",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey 5-panel camp cap, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 259,
+"f": "p259.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "모노픽 워싱 볼캡 에센셜",
+"brand": "모노픽",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow washed baseball cap, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 260,
+"f": "p260.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "어반트레일 코튼 버킷햇 에센셜",
+"brand": "어반트레일",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki cotton bucket hat, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 261,
+"f": "p261.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "베이직무드 울 비니 에센셜",
+"brand": "베이직무드",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey ribbed wool beanie, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 262,
+"f": "p262.jpg",
+"type": "cap",
+"cat": "bag",
+"name": "하루랩 캠프캡 에센셜",
+"brand": "하루랩",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black 5-panel camp cap, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 263,
+"f": "p263.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "하루랩 소가죽 반지갑",
+"brand": "하루랩",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey leather bifold wallet, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 264,
+"f": "p264.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "레더리 슬림 카드지갑",
+"brand": "레더리",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream slim leather card holder, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 265,
+"f": "p265.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "모노픽 지퍼 장지갑",
+"brand": "모노픽",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender zip-around long wallet, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 266,
+"f": "p266.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "어반트레일 미니 동전지갑",
+"brand": "어반트레일",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow small coin purse, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 267,
+"f": "p267.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "베이직무드 소가죽 반지갑 미니",
+"brand": "베이직무드",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue leather bifold wallet, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 268,
+"f": "p268.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "하루랩 슬림 카드지갑 미니",
+"brand": "하루랩",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory slim leather card holder, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 269,
+"f": "p269.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "레더리 지퍼 장지갑 미니",
+"brand": "레더리",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender zip-around long wallet, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 270,
+"f": "p270.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "모노픽 미니 동전지갑 미니",
+"brand": "모노픽",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown small coin purse, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 271,
+"f": "p271.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "어반트레일 소가죽 반지갑 라지",
+"brand": "어반트레일",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue leather bifold wallet, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 272,
+"f": "p272.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "베이직무드 슬림 카드지갑 라지",
+"brand": "베이직무드",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey slim leather card holder, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 273,
+"f": "p273.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "하루랩 지퍼 장지갑 라지",
+"brand": "하루랩",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown zip-around long wallet, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 274,
+"f": "p274.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "레더리 미니 동전지갑 라지",
+"brand": "레더리",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey small coin purse, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 275,
+"f": "p275.jpg",
+"type": "wallet",
+"cat": "bag",
+"name": "모노픽 소가죽 반지갑 에센셜",
+"brand": "모노픽",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black leather bifold wallet, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 276,
+"f": "p276.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "사운드핏 노이즈캔슬링 무선 헤드폰",
+"brand": "사운드핏",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue over-ear wireless noise cancelling headphones, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 277,
+"f": "p277.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "타건공방 모니터 헤드폰",
+"brand": "타건공방",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki studio monitor headphones, side view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 278,
+"f": "p278.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "사운드핏 무선 이어폰",
+"brand": "사운드핏",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy true wireless earbuds with charging case, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 279,
+"f": "p279.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "타건공방 게이밍 헤드셋",
+"brand": "타건공방",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy gaming headset with boom mic, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 280,
+"f": "p280.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "사운드핏 노이즈캔슬링 무선 헤드폰 2세대",
+"brand": "사운드핏",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream over-ear wireless noise cancelling headphones, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 281,
+"f": "p281.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "타건공방 모니터 헤드폰 2세대",
+"brand": "타건공방",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory studio monitor headphones, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 282,
+"f": "p282.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "사운드핏 무선 이어폰 2세대",
+"brand": "사운드핏",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream true wireless earbuds with charging case, side view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 283,
+"f": "p283.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "타건공방 게이밍 헤드셋 2세대",
+"brand": "타건공방",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow gaming headset with boom mic, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 284,
+"f": "p284.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "사운드핏 노이즈캔슬링 무선 헤드폰 프로",
+"brand": "사운드핏",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender over-ear wireless noise cancelling headphones, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 285,
+"f": "p285.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "타건공방 모니터 헤드폰 프로",
+"brand": "타건공방",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue studio monitor headphones, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 286,
+"f": "p286.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "사운드핏 무선 이어폰 프로",
+"brand": "사운드핏",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive true wireless earbuds with charging case, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 287,
+"f": "p287.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "타건공방 게이밍 헤드셋 프로",
+"brand": "타건공방",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue gaming headset with boom mic, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 288,
+"f": "p288.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "사운드핏 노이즈캔슬링 무선 헤드폰 라이트",
+"brand": "사운드핏",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki over-ear wireless noise cancelling headphones, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 289,
+"f": "p289.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "타건공방 모니터 헤드폰 라이트",
+"brand": "타건공방",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow studio monitor headphones, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 290,
+"f": "p290.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "사운드핏 무선 이어폰 라이트",
+"brand": "사운드핏",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory true wireless earbuds with charging case, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 291,
+"f": "p291.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "타건공방 게이밍 헤드셋 라이트",
+"brand": "타건공방",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki gaming headset with boom mic, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 292,
+"f": "p292.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "사운드핏 노이즈캔슬링 무선 헤드폰 플러스",
+"brand": "사운드핏",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender over-ear wireless noise cancelling headphones, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 293,
+"f": "p293.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "타건공방 모니터 헤드폰 플러스",
+"brand": "타건공방",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki studio monitor headphones, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 294,
+"f": "p294.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "사운드핏 무선 이어폰 플러스",
+"brand": "사운드핏",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white true wireless earbuds with charging case, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 295,
+"f": "p295.jpg",
+"type": "phones",
+"cat": "digital",
+"name": "타건공방 게이밍 헤드셋 플러스",
+"brand": "타건공방",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green gaming headset with boom mic, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 296,
+"f": "p296.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "사운드핏 스마트워치",
+"brand": "사운드핏",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive smartwatch with blank black screen, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 297,
+"f": "p297.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "타건공방 스마트밴드",
+"brand": "타건공방",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige fitness band tracker, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 298,
+"f": "p298.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "사운드핏 메탈 손목시계",
+"brand": "사운드핏",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender classic metal analog wristwatch, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 299,
+"f": "p299.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "타건공방 디지털 아웃도어 시계",
+"brand": "타건공방",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow rugged digital outdoor watch, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 300,
+"f": "p300.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "사운드핏 스마트워치 2세대",
+"brand": "사운드핏",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki smartwatch with blank black screen, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 301,
+"f": "p301.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "타건공방 스마트밴드 2세대",
+"brand": "타건공방",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue fitness band tracker, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 302,
+"f": "p302.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "사운드핏 메탈 손목시계 2세대",
+"brand": "사운드핏",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue classic metal analog wristwatch, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 303,
+"f": "p303.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "타건공방 디지털 아웃도어 시계 2세대",
+"brand": "타건공방",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender rugged digital outdoor watch, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 304,
+"f": "p304.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "사운드핏 스마트워치 프로",
+"brand": "사운드핏",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green smartwatch with blank black screen, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 305,
+"f": "p305.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "타건공방 스마트밴드 프로",
+"brand": "타건공방",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow fitness band tracker, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 306,
+"f": "p306.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "사운드핏 메탈 손목시계 프로",
+"brand": "사운드핏",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue classic metal analog wristwatch, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 307,
+"f": "p307.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "타건공방 디지털 아웃도어 시계 프로",
+"brand": "타건공방",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory rugged digital outdoor watch, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 308,
+"f": "p308.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "사운드핏 스마트워치 라이트",
+"brand": "사운드핏",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown smartwatch with blank black screen, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 309,
+"f": "p309.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "타건공방 스마트밴드 라이트",
+"brand": "타건공방",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige fitness band tracker, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 310,
+"f": "p310.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "사운드핏 메탈 손목시계 라이트",
+"brand": "사운드핏",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy classic metal analog wristwatch, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 311,
+"f": "p311.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "타건공방 디지털 아웃도어 시계 라이트",
+"brand": "타건공방",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown rugged digital outdoor watch, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 312,
+"f": "p312.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "사운드핏 스마트워치 플러스",
+"brand": "사운드핏",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white smartwatch with blank black screen, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 313,
+"f": "p313.jpg",
+"type": "watch",
+"cat": "digital",
+"name": "타건공방 스마트밴드 플러스",
+"brand": "타건공방",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory fitness band tracker, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 314,
+"f": "p314.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "사운드핏 저소음 무선 키보드",
+"brand": "사운드핏",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green slim wireless keyboard, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 315,
+"f": "p315.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "타건공방 기계식 키보드 87키",
+"brand": "타건공방",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki tenkeyless mechanical keyboard, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 316,
+"f": "p316.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "사운드핏 로우프로파일 키보드",
+"brand": "사운드핏",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige low-profile keyboard, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 317,
+"f": "p317.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "타건공방 저소음 무선 키보드 2세대",
+"brand": "타건공방",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey slim wireless keyboard, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 318,
+"f": "p318.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "사운드핏 기계식 키보드 87키 2세대",
+"brand": "사운드핏",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy tenkeyless mechanical keyboard, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 319,
+"f": "p319.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "타건공방 로우프로파일 키보드 2세대",
+"brand": "타건공방",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey low-profile keyboard, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 320,
+"f": "p320.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "사운드핏 저소음 무선 키보드 프로",
+"brand": "사운드핏",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory slim wireless keyboard, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 321,
+"f": "p321.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "타건공방 기계식 키보드 87키 프로",
+"brand": "타건공방",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige tenkeyless mechanical keyboard, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 322,
+"f": "p322.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "사운드핏 로우프로파일 키보드 프로",
+"brand": "사운드핏",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white low-profile keyboard, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 323,
+"f": "p323.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "타건공방 저소음 무선 키보드 라이트",
+"brand": "타건공방",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender slim wireless keyboard, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 324,
+"f": "p324.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "사운드핏 기계식 키보드 87키 라이트",
+"brand": "사운드핏",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory tenkeyless mechanical keyboard, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 325,
+"f": "p325.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "타건공방 로우프로파일 키보드 라이트",
+"brand": "타건공방",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki low-profile keyboard, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 326,
+"f": "p326.jpg",
+"type": "keyboard",
+"cat": "digital",
+"name": "사운드핏 저소음 무선 키보드 플러스",
+"brand": "사운드핏",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy slim wireless keyboard, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 327,
+"f": "p327.jpg",
+"type": "mouse",
+"cat": "digital",
+"name": "사운드핏 무소음 무선 마우스",
+"brand": "사운드핏",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey wireless silent mouse, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 328,
+"f": "p328.jpg",
+"type": "mouse",
+"cat": "digital",
+"name": "타건공방 버티컬 마우스",
+"brand": "타건공방",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue ergonomic vertical mouse, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 329,
+"f": "p329.jpg",
+"type": "mouse",
+"cat": "digital",
+"name": "사운드핏 게이밍 마우스",
+"brand": "사운드핏",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige lightweight gaming mouse, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 330,
+"f": "p330.jpg",
+"type": "mouse",
+"cat": "digital",
+"name": "타건공방 무소음 무선 마우스 2세대",
+"brand": "타건공방",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy wireless silent mouse, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 331,
+"f": "p331.jpg",
+"type": "mouse",
+"cat": "digital",
+"name": "사운드핏 버티컬 마우스 2세대",
+"brand": "사운드핏",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender ergonomic vertical mouse, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 332,
+"f": "p332.jpg",
+"type": "mouse",
+"cat": "digital",
+"name": "타건공방 게이밍 마우스 2세대",
+"brand": "타건공방",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green lightweight gaming mouse, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 333,
+"f": "p333.jpg",
+"type": "mouse",
+"cat": "digital",
+"name": "사운드핏 무소음 무선 마우스 프로",
+"brand": "사운드핏",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown wireless silent mouse, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 334,
+"f": "p334.jpg",
+"type": "mouse",
+"cat": "digital",
+"name": "타건공방 버티컬 마우스 프로",
+"brand": "타건공방",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki ergonomic vertical mouse, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 335,
+"f": "p335.jpg",
+"type": "mouse",
+"cat": "digital",
+"name": "사운드핏 게이밍 마우스 프로",
+"brand": "사운드핏",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green lightweight gaming mouse, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 336,
+"f": "p336.jpg",
+"type": "speaker",
+"cat": "digital",
+"name": "사운드핏 방수 블루투스 스피커",
+"brand": "사운드핏",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory portable waterproof bluetooth speaker, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 337,
+"f": "p337.jpg",
+"type": "speaker",
+"cat": "digital",
+"name": "타건공방 북쉘프 스피커",
+"brand": "타건공방",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey pair of bookshelf speakers, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 338,
+"f": "p338.jpg",
+"type": "speaker",
+"cat": "digital",
+"name": "사운드핏 무드등 스피커",
+"brand": "사운드핏",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green speaker with ambient light, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 339,
+"f": "p339.jpg",
+"type": "speaker",
+"cat": "digital",
+"name": "타건공방 방수 블루투스 스피커 2세대",
+"brand": "타건공방",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige portable waterproof bluetooth speaker, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 340,
+"f": "p340.jpg",
+"type": "speaker",
+"cat": "digital",
+"name": "사운드핏 북쉘프 스피커 2세대",
+"brand": "사운드핏",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki pair of bookshelf speakers, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 341,
+"f": "p341.jpg",
+"type": "speaker",
+"cat": "digital",
+"name": "타건공방 무드등 스피커 2세대",
+"brand": "타건공방",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black speaker with ambient light, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 342,
+"f": "p342.jpg",
+"type": "speaker",
+"cat": "digital",
+"name": "사운드핏 방수 블루투스 스피커 프로",
+"brand": "사운드핏",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige portable waterproof bluetooth speaker, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 343,
+"f": "p343.jpg",
+"type": "speaker",
+"cat": "digital",
+"name": "타건공방 북쉘프 스피커 프로",
+"brand": "타건공방",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue pair of bookshelf speakers, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 344,
+"f": "p344.jpg",
+"type": "speaker",
+"cat": "digital",
+"name": "사운드핏 무드등 스피커 프로",
+"brand": "사운드핏",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white speaker with ambient light, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 345,
+"f": "p345.jpg",
+"type": "mug",
+"cat": "living",
+"name": "소담키친 도자기 머그컵",
+"brand": "소담키친",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream ceramic mug, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 346,
+"f": "p346.jpg",
+"type": "mug",
+"cat": "living",
+"name": "밝은방 이중 유리 머그",
+"brand": "밝은방",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black double wall glass mug, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 347,
+"f": "p347.jpg",
+"type": "mug",
+"cat": "living",
+"name": "키친하우스 법랑 머그",
+"brand": "키친하우스",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige enamel camping mug, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 348,
+"f": "p348.jpg",
+"type": "mug",
+"cat": "living",
+"name": "흙빛공방 스톤웨어 컵",
+"brand": "흙빛공방",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown handmade stoneware cup, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 349,
+"f": "p349.jpg",
+"type": "mug",
+"cat": "living",
+"name": "향기온 도자기 머그컵 에센셜",
+"brand": "향기온",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey ceramic mug, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 350,
+"f": "p350.jpg",
+"type": "mug",
+"cat": "living",
+"name": "하루랩 이중 유리 머그 에센셜",
+"brand": "하루랩",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown double wall glass mug, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 351,
+"f": "p351.jpg",
+"type": "mug",
+"cat": "living",
+"name": "폭신당 법랑 머그 에센셜",
+"brand": "폭신당",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy enamel camping mug, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 352,
+"f": "p352.jpg",
+"type": "mug",
+"cat": "living",
+"name": "소담키친 스톤웨어 컵 에센셜",
+"brand": "소담키친",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow handmade stoneware cup, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 353,
+"f": "p353.jpg",
+"type": "mug",
+"cat": "living",
+"name": "밝은방 도자기 머그컵 프리미엄",
+"brand": "밝은방",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream ceramic mug, slightly elevated angle, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 354,
+"f": "p354.jpg",
+"type": "mug",
+"cat": "living",
+"name": "키친하우스 이중 유리 머그 프리미엄",
+"brand": "키친하우스",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki double wall glass mug, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 355,
+"f": "p355.jpg",
+"type": "mug",
+"cat": "living",
+"name": "흙빛공방 법랑 머그 프리미엄",
+"brand": "흙빛공방",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey enamel camping mug, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 356,
+"f": "p356.jpg",
+"type": "mug",
+"cat": "living",
+"name": "향기온 스톤웨어 컵 프리미엄",
+"brand": "향기온",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey handmade stoneware cup, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 357,
+"f": "p357.jpg",
+"type": "mug",
+"cat": "living",
+"name": "하루랩 도자기 머그컵 미니",
+"brand": "하루랩",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey ceramic mug, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 358,
+"f": "p358.jpg",
+"type": "mug",
+"cat": "living",
+"name": "폭신당 이중 유리 머그 미니",
+"brand": "폭신당",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream double wall glass mug, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 359,
+"f": "p359.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "소담키친 보온 텀블러 500ml",
+"brand": "소담키친",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white stainless steel insulated tumbler, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 360,
+"f": "p360.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "밝은방 콜드컵 710ml",
+"brand": "밝은방",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive cold cup with straw, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 361,
+"f": "p361.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "키친하우스 보온병 350ml",
+"brand": "키친하우스",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey compact thermos flask, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 362,
+"f": "p362.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "흙빛공방 물병 1L",
+"brand": "흙빛공방",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory large water bottle, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 363,
+"f": "p363.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "향기온 보온 텀블러 500ml 에센셜",
+"brand": "향기온",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white stainless steel insulated tumbler, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 364,
+"f": "p364.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "하루랩 콜드컵 710ml 에센셜",
+"brand": "하루랩",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black cold cup with straw, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 365,
+"f": "p365.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "폭신당 보온병 350ml 에센셜",
+"brand": "폭신당",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory compact thermos flask, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 366,
+"f": "p366.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "소담키친 물병 1L 에센셜",
+"brand": "소담키친",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey large water bottle, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 367,
+"f": "p367.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "밝은방 보온 텀블러 500ml 프리미엄",
+"brand": "밝은방",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory stainless steel insulated tumbler, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 368,
+"f": "p368.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "키친하우스 콜드컵 710ml 프리미엄",
+"brand": "키친하우스",
+"color": "머스타드",
+"prompt": "Square e-commerce product photo of a mustard yellow cold cup with straw, slightly elevated angle, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 369,
+"f": "p369.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "흙빛공방 보온병 350ml 프리미엄",
+"brand": "흙빛공방",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey compact thermos flask, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 370,
+"f": "p370.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "향기온 물병 1L 프리미엄",
+"brand": "향기온",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki large water bottle, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 371,
+"f": "p371.jpg",
+"type": "tumbler",
+"cat": "living",
+"name": "하루랩 보온 텀블러 500ml 미니",
+"brand": "하루랩",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy stainless steel insulated tumbler, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 372,
+"f": "p372.jpg",
+"type": "pan",
+"cat": "living",
+"name": "소담키친 인덕션 프라이팬 28cm",
+"brand": "소담키친",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy non-stick frying pan, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 373,
+"f": "p373.jpg",
+"type": "pan",
+"cat": "living",
+"name": "밝은방 무쇠 스킬렛",
+"brand": "밝은방",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory cast iron skillet, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 374,
+"f": "p374.jpg",
+"type": "pan",
+"cat": "living",
+"name": "키친하우스 세라믹 웍",
+"brand": "키친하우스",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white ceramic coated wok, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 375,
+"f": "p375.jpg",
+"type": "pan",
+"cat": "living",
+"name": "흙빛공방 인덕션 프라이팬 28cm 에센셜",
+"brand": "흙빛공방",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige non-stick frying pan, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 376,
+"f": "p376.jpg",
+"type": "pan",
+"cat": "living",
+"name": "향기온 무쇠 스킬렛 에센셜",
+"brand": "향기온",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black cast iron skillet, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 377,
+"f": "p377.jpg",
+"type": "pan",
+"cat": "living",
+"name": "하루랩 세라믹 웍 에센셜",
+"brand": "하루랩",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white ceramic coated wok, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 378,
+"f": "p378.jpg",
+"type": "pan",
+"cat": "living",
+"name": "폭신당 인덕션 프라이팬 28cm 프리미엄",
+"brand": "폭신당",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream non-stick frying pan, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 379,
+"f": "p379.jpg",
+"type": "pan",
+"cat": "living",
+"name": "소담키친 무쇠 스킬렛 프리미엄",
+"brand": "소담키친",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive cast iron skillet, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 380,
+"f": "p380.jpg",
+"type": "pan",
+"cat": "living",
+"name": "밝은방 세라믹 웍 프리미엄",
+"brand": "밝은방",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory ceramic coated wok, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 381,
+"f": "p381.jpg",
+"type": "lamp",
+"cat": "living",
+"name": "소담키친 무드등 스탠드",
+"brand": "소담키친",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown small mushroom table lamp, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 382,
+"f": "p382.jpg",
+"type": "lamp",
+"cat": "living",
+"name": "밝은방 LED 독서 스탠드",
+"brand": "밝은방",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey LED desk lamp, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 383,
+"f": "p383.jpg",
+"type": "lamp",
+"cat": "living",
+"name": "키친하우스 클립 조명",
+"brand": "키친하우스",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy clip-on reading lamp, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 384,
+"f": "p384.jpg",
+"type": "lamp",
+"cat": "living",
+"name": "흙빛공방 무드등 스탠드 에센셜",
+"brand": "흙빛공방",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green small mushroom table lamp, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 385,
+"f": "p385.jpg",
+"type": "lamp",
+"cat": "living",
+"name": "향기온 LED 독서 스탠드 에센셜",
+"brand": "향기온",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown LED desk lamp, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 386,
+"f": "p386.jpg",
+"type": "lamp",
+"cat": "living",
+"name": "하루랩 클립 조명 에센셜",
+"brand": "하루랩",
+"color": "아이보리",
+"prompt": "Square e-commerce product photo of a ivory clip-on reading lamp, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 387,
+"f": "p387.jpg",
+"type": "lamp",
+"cat": "living",
+"name": "폭신당 무드등 스탠드 프리미엄",
+"brand": "폭신당",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive small mushroom table lamp, top-down flat lay, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 388,
+"f": "p388.jpg",
+"type": "lamp",
+"cat": "living",
+"name": "소담키친 LED 독서 스탠드 프리미엄",
+"brand": "소담키친",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green LED desk lamp, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 389,
+"f": "p389.jpg",
+"type": "lamp",
+"cat": "living",
+"name": "밝은방 클립 조명 프리미엄",
+"brand": "밝은방",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green clip-on reading lamp, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 390,
+"f": "p390.jpg",
+"type": "pillow",
+"cat": "living",
+"name": "소담키친 경추 베개",
+"brand": "소담키친",
+"color": "라벤더",
+"prompt": "Square e-commerce product photo of a lavender memory foam pillow, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 391,
+"f": "p391.jpg",
+"type": "pillow",
+"cat": "living",
+"name": "밝은방 쿠션 커버 45cm",
+"brand": "밝은방",
+"color": "올리브",
+"prompt": "Square e-commerce product photo of a olive decorative cushion, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 392,
+"f": "p392.jpg",
+"type": "pillow",
+"cat": "living",
+"name": "키친하우스 호텔식 베개",
+"brand": "키친하우스",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy hotel down pillow, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 393,
+"f": "p393.jpg",
+"type": "pillow",
+"cat": "living",
+"name": "흙빛공방 경추 베개 에센셜",
+"brand": "흙빛공방",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue memory foam pillow, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 394,
+"f": "p394.jpg",
+"type": "pillow",
+"cat": "living",
+"name": "향기온 쿠션 커버 45cm 에센셜",
+"brand": "향기온",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown decorative cushion, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 395,
+"f": "p395.jpg",
+"type": "pillow",
+"cat": "living",
+"name": "하루랩 호텔식 베개 에센셜",
+"brand": "하루랩",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown hotel down pillow, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 396,
+"f": "p396.jpg",
+"type": "pillow",
+"cat": "living",
+"name": "폭신당 경추 베개 프리미엄",
+"brand": "폭신당",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black memory foam pillow, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 397,
+"f": "p397.jpg",
+"type": "pillow",
+"cat": "living",
+"name": "소담키친 쿠션 커버 45cm 프리미엄",
+"brand": "소담키친",
+"color": "블랙",
+"prompt": "Square e-commerce product photo of a black decorative cushion, side view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 398,
+"f": "p398.jpg",
+"type": "pillow",
+"cat": "living",
+"name": "밝은방 호텔식 베개 프리미엄",
+"brand": "밝은방",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy hotel down pillow, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 399,
+"f": "p399.jpg",
+"type": "towel",
+"cat": "living",
+"name": "소담키친 호텔식 수건 10장",
+"brand": "소담키친",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white stack of folded hotel towels, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 400,
+"f": "p400.jpg",
+"type": "towel",
+"cat": "living",
+"name": "밝은방 헤어 드라이 타월",
+"brand": "밝은방",
+"color": "네이비",
+"prompt": "Square e-commerce product photo of a navy microfiber hair towel, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 401,
+"f": "p401.jpg",
+"type": "towel",
+"cat": "living",
+"name": "키친하우스 비치 타월",
+"brand": "키친하우스",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki rolled beach towel, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 402,
+"f": "p402.jpg",
+"type": "towel",
+"cat": "living",
+"name": "흙빛공방 호텔식 수건 10장 에센셜",
+"brand": "흙빛공방",
+"color": "베이지",
+"prompt": "Square e-commerce product photo of a beige stack of folded hotel towels, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 403,
+"f": "p403.jpg",
+"type": "towel",
+"cat": "living",
+"name": "향기온 헤어 드라이 타월 에센셜",
+"brand": "향기온",
+"color": "세이지",
+"prompt": "Square e-commerce product photo of a sage green microfiber hair towel, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 404,
+"f": "p404.jpg",
+"type": "towel",
+"cat": "living",
+"name": "하루랩 비치 타월 에센셜",
+"brand": "하루랩",
+"color": "그레이",
+"prompt": "Square e-commerce product photo of a light grey rolled beach towel, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 405,
+"f": "p405.jpg",
+"type": "towel",
+"cat": "living",
+"name": "폭신당 호텔식 수건 10장 프리미엄",
+"brand": "폭신당",
+"color": "크림",
+"prompt": "Square e-commerce product photo of a cream stack of folded hotel towels, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 406,
+"f": "p406.jpg",
+"type": "candle",
+"cat": "living",
+"name": "소담키친 소이 캔들 200g",
+"brand": "소담키친",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue soy candle in glass jar, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 407,
+"f": "p407.jpg",
+"type": "candle",
+"cat": "living",
+"name": "밝은방 디퓨저 200ml",
+"brand": "밝은방",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white reed diffuser, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 408,
+"f": "p408.jpg",
+"type": "candle",
+"cat": "living",
+"name": "키친하우스 티라이트 캔들",
+"brand": "키친하우스",
+"color": "차콜",
+"prompt": "Square e-commerce product photo of a charcoal grey tealight candles, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 409,
+"f": "p409.jpg",
+"type": "candle",
+"cat": "living",
+"name": "흙빛공방 소이 캔들 200g 에센셜",
+"brand": "흙빛공방",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white soy candle in glass jar, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 410,
+"f": "p410.jpg",
+"type": "candle",
+"cat": "living",
+"name": "향기온 디퓨저 200ml 에센셜",
+"brand": "향기온",
+"color": "버건디",
+"prompt": "Square e-commerce product photo of a burgundy reed diffuser, top-down flat lay, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 411,
+"f": "p411.jpg",
+"type": "candle",
+"cat": "living",
+"name": "하루랩 티라이트 캔들 에센셜",
+"brand": "하루랩",
+"color": "화이트",
+"prompt": "Square e-commerce product photo of a white tealight candles, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 412,
+"f": "p412.jpg",
+"type": "candle",
+"cat": "living",
+"name": "폭신당 소이 캔들 200g 프리미엄",
+"brand": "폭신당",
+"color": "브라운",
+"prompt": "Square e-commerce product photo of a brown soy candle in glass jar, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 413,
+"f": "p413.jpg",
+"type": "candle",
+"cat": "living",
+"name": "소담키친 디퓨저 200ml 프리미엄",
+"brand": "소담키친",
+"color": "카키",
+"prompt": "Square e-commerce product photo of a khaki reed diffuser, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 414,
+"f": "p414.jpg",
+"type": "candle",
+"cat": "living",
+"name": "밝은방 티라이트 캔들 프리미엄",
+"brand": "밝은방",
+"color": "스카이블루",
+"prompt": "Square e-commerce product photo of a sky blue tealight candles, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 415,
+"f": "p415.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "맑은결 수분 진정 토너",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a toner bottle with blank label, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 416,
+"f": "p416.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "향기온 클렌징 오일",
+"brand": "향기온",
+"color": "",
+"prompt": "Square e-commerce product photo of a cleansing oil pump bottle with blank label, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 417,
+"f": "p417.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "데이로그 히알루론 앰플",
+"brand": "데이로그",
+"color": "",
+"prompt": "Square e-commerce product photo of a dropper serum bottle with blank label, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 418,
+"f": "p418.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "그린노트 비타민C 세럼",
+"brand": "그린노트",
+"color": "",
+"prompt": "Square e-commerce product photo of a amber dropper bottle with blank label, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 419,
+"f": "p419.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "맑은결 수분 진정 토너 리뉴얼",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a toner bottle with blank label, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 420,
+"f": "p420.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "향기온 클렌징 오일 리뉴얼",
+"brand": "향기온",
+"color": "",
+"prompt": "Square e-commerce product photo of a cleansing oil pump bottle with blank label, side view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 421,
+"f": "p421.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "데이로그 히알루론 앰플 리뉴얼",
+"brand": "데이로그",
+"color": "",
+"prompt": "Square e-commerce product photo of a dropper serum bottle with blank label, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 422,
+"f": "p422.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "그린노트 비타민C 세럼 리뉴얼",
+"brand": "그린노트",
+"color": "",
+"prompt": "Square e-commerce product photo of a amber dropper bottle with blank label, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 423,
+"f": "p423.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "맑은결 수분 진정 토너 기획세트",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a toner bottle with blank label, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 424,
+"f": "p424.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "향기온 클렌징 오일 기획세트",
+"brand": "향기온",
+"color": "",
+"prompt": "Square e-commerce product photo of a cleansing oil pump bottle with blank label, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 425,
+"f": "p425.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "데이로그 히알루론 앰플 기획세트",
+"brand": "데이로그",
+"color": "",
+"prompt": "Square e-commerce product photo of a dropper serum bottle with blank label, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 426,
+"f": "p426.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "그린노트 비타민C 세럼 기획세트",
+"brand": "그린노트",
+"color": "",
+"prompt": "Square e-commerce product photo of a amber dropper bottle with blank label, slightly elevated angle, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 427,
+"f": "p427.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "맑은결 수분 진정 토너 대용량",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a toner bottle with blank label, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 428,
+"f": "p428.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "향기온 클렌징 오일 대용량",
+"brand": "향기온",
+"color": "",
+"prompt": "Square e-commerce product photo of a cleansing oil pump bottle with blank label, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 429,
+"f": "p429.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "데이로그 히알루론 앰플 대용량",
+"brand": "데이로그",
+"color": "",
+"prompt": "Square e-commerce product photo of a dropper serum bottle with blank label, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 430,
+"f": "p430.jpg",
+"type": "bottle",
+"cat": "beauty",
+"name": "그린노트 비타민C 세럼 대용량",
+"brand": "그린노트",
+"color": "",
+"prompt": "Square e-commerce product photo of a amber dropper bottle with blank label, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 431,
+"f": "p431.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "맑은결 톤업 선크림",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a sunscreen tube with blank label, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 432,
+"f": "p432.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "향기온 시카 크림",
+"brand": "향기온",
+"color": "",
+"prompt": "Square e-commerce product photo of a cream jar with blank label, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 433,
+"f": "p433.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "데이로그 립밤 세트",
+"brand": "데이로그",
+"color": "",
+"prompt": "Square e-commerce product photo of a three lip balms, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 434,
+"f": "p434.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "그린노트 폼 클렌저",
+"brand": "그린노트",
+"color": "",
+"prompt": "Square e-commerce product photo of a facial cleanser tube with blank label, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 435,
+"f": "p435.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "맑은결 톤업 선크림 리뉴얼",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a sunscreen tube with blank label, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 436,
+"f": "p436.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "향기온 시카 크림 리뉴얼",
+"brand": "향기온",
+"color": "",
+"prompt": "Square e-commerce product photo of a cream jar with blank label, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 437,
+"f": "p437.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "데이로그 립밤 세트 리뉴얼",
+"brand": "데이로그",
+"color": "",
+"prompt": "Square e-commerce product photo of a three lip balms, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 438,
+"f": "p438.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "그린노트 폼 클렌저 리뉴얼",
+"brand": "그린노트",
+"color": "",
+"prompt": "Square e-commerce product photo of a facial cleanser tube with blank label, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 439,
+"f": "p439.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "맑은결 톤업 선크림 기획세트",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a sunscreen tube with blank label, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 440,
+"f": "p440.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "향기온 시카 크림 기획세트",
+"brand": "향기온",
+"color": "",
+"prompt": "Square e-commerce product photo of a cream jar with blank label, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 441,
+"f": "p441.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "데이로그 립밤 세트 기획세트",
+"brand": "데이로그",
+"color": "",
+"prompt": "Square e-commerce product photo of a three lip balms, slightly elevated angle, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 442,
+"f": "p442.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "그린노트 폼 클렌저 기획세트",
+"brand": "그린노트",
+"color": "",
+"prompt": "Square e-commerce product photo of a facial cleanser tube with blank label, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 443,
+"f": "p443.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "맑은결 톤업 선크림 대용량",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a sunscreen tube with blank label, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 444,
+"f": "p444.jpg",
+"type": "tube",
+"cat": "beauty",
+"name": "향기온 시카 크림 대용량",
+"brand": "향기온",
+"color": "",
+"prompt": "Square e-commerce product photo of a cream jar with blank label, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 445,
+"f": "p445.jpg",
+"type": "perfume",
+"cat": "beauty",
+"name": "맑은결 오 드 퍼퓸 50ml",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a perfume bottle with blank label, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 446,
+"f": "p446.jpg",
+"type": "perfume",
+"cat": "beauty",
+"name": "향기온 바디 미스트",
+"brand": "향기온",
+"color": "",
+"prompt": "Square e-commerce product photo of a body mist spray bottle with blank label, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 447,
+"f": "p447.jpg",
+"type": "perfume",
+"cat": "beauty",
+"name": "데이로그 고체 향수",
+"brand": "데이로그",
+"color": "",
+"prompt": "Square e-commerce product photo of a solid perfume tin, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 448,
+"f": "p448.jpg",
+"type": "perfume",
+"cat": "beauty",
+"name": "그린노트 오 드 퍼퓸 50ml 리뉴얼",
+"brand": "그린노트",
+"color": "",
+"prompt": "Square e-commerce product photo of a perfume bottle with blank label, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 449,
+"f": "p449.jpg",
+"type": "perfume",
+"cat": "beauty",
+"name": "맑은결 바디 미스트 리뉴얼",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a body mist spray bottle with blank label, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 450,
+"f": "p450.jpg",
+"type": "perfume",
+"cat": "beauty",
+"name": "향기온 고체 향수 리뉴얼",
+"brand": "향기온",
+"color": "",
+"prompt": "Square e-commerce product photo of a solid perfume tin, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 451,
+"f": "p451.jpg",
+"type": "perfume",
+"cat": "beauty",
+"name": "데이로그 오 드 퍼퓸 50ml 기획세트",
+"brand": "데이로그",
+"color": "",
+"prompt": "Square e-commerce product photo of a perfume bottle with blank label, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 452,
+"f": "p452.jpg",
+"type": "perfume",
+"cat": "beauty",
+"name": "그린노트 바디 미스트 기획세트",
+"brand": "그린노트",
+"color": "",
+"prompt": "Square e-commerce product photo of a body mist spray bottle with blank label, front view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 453,
+"f": "p453.jpg",
+"type": "perfume",
+"cat": "beauty",
+"name": "맑은결 고체 향수 기획세트",
+"brand": "맑은결",
+"color": "",
+"prompt": "Square e-commerce product photo of a solid perfume tin, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 454,
+"f": "p454.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "산지직송 제주 감귤 3kg",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a box of fresh mandarin oranges, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 455,
+"f": "p455.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "고기마을 꿀참외 2kg",
+"brand": "고기마을",
+"color": "",
+"prompt": "Square e-commerce product photo of a korean melons, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 456,
+"f": "p456.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "바른곳간 부사 사과 5kg",
+"brand": "바른곳간",
+"color": "",
+"prompt": "Square e-commerce product photo of a red fuji apples, top-down flat lay, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 457,
+"f": "p457.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "커피상점 샤인머스캣",
+"brand": "커피상점",
+"color": "",
+"prompt": "Square e-commerce product photo of a green shine muscat grapes, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 458,
+"f": "p458.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "들녘 딸기 500g",
+"brand": "들녘",
+"color": "",
+"prompt": "Square e-commerce product photo of a fresh strawberries in a punnet, side view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 459,
+"f": "p459.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "산지직송 제주 감귤 3kg 특품",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a box of fresh mandarin oranges, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 460,
+"f": "p460.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "고기마을 꿀참외 2kg 특품",
+"brand": "고기마을",
+"color": "",
+"prompt": "Square e-commerce product photo of a korean melons, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 461,
+"f": "p461.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "바른곳간 부사 사과 5kg 특품",
+"brand": "바른곳간",
+"color": "",
+"prompt": "Square e-commerce product photo of a red fuji apples, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 462,
+"f": "p462.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "커피상점 샤인머스캣 특품",
+"brand": "커피상점",
+"color": "",
+"prompt": "Square e-commerce product photo of a green shine muscat grapes, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 463,
+"f": "p463.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "들녘 딸기 500g 특품",
+"brand": "들녘",
+"color": "",
+"prompt": "Square e-commerce product photo of a fresh strawberries in a punnet, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 464,
+"f": "p464.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "산지직송 제주 감귤 3kg 가정용",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a box of fresh mandarin oranges, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 465,
+"f": "p465.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "고기마을 꿀참외 2kg 가정용",
+"brand": "고기마을",
+"color": "",
+"prompt": "Square e-commerce product photo of a korean melons, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 466,
+"f": "p466.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "바른곳간 부사 사과 5kg 가정용",
+"brand": "바른곳간",
+"color": "",
+"prompt": "Square e-commerce product photo of a red fuji apples, slightly elevated angle, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 467,
+"f": "p467.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "커피상점 샤인머스캣 가정용",
+"brand": "커피상점",
+"color": "",
+"prompt": "Square e-commerce product photo of a green shine muscat grapes, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 468,
+"f": "p468.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "들녘 딸기 500g 가정용",
+"brand": "들녘",
+"color": "",
+"prompt": "Square e-commerce product photo of a fresh strawberries in a punnet, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 469,
+"f": "p469.jpg",
+"type": "fruit",
+"cat": "food",
+"name": "산지직송 제주 감귤 3kg 선물세트",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a box of fresh mandarin oranges, front view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 470,
+"f": "p470.jpg",
+"type": "meat",
+"cat": "food",
+"name": "산지직송 한우 등심 300g",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a raw marbled beef sirloin on butcher paper, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 471,
+"f": "p471.jpg",
+"type": "meat",
+"cat": "food",
+"name": "고기마을 돼지 앞다리살 1kg",
+"brand": "고기마을",
+"color": "",
+"prompt": "Square e-commerce product photo of a raw pork shoulder slices, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 472,
+"f": "p472.jpg",
+"type": "meat",
+"cat": "food",
+"name": "바른곳간 닭가슴살 10팩",
+"brand": "바른곳간",
+"color": "",
+"prompt": "Square e-commerce product photo of a packaged chicken breast, front view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 473,
+"f": "p473.jpg",
+"type": "meat",
+"cat": "food",
+"name": "커피상점 양념 LA갈비",
+"brand": "커피상점",
+"color": "",
+"prompt": "Square e-commerce product photo of a marinated beef short ribs, three-quarter view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 474,
+"f": "p474.jpg",
+"type": "meat",
+"cat": "food",
+"name": "들녘 한우 등심 300g 특품",
+"brand": "들녘",
+"color": "",
+"prompt": "Square e-commerce product photo of a raw marbled beef sirloin on butcher paper, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 475,
+"f": "p475.jpg",
+"type": "meat",
+"cat": "food",
+"name": "산지직송 돼지 앞다리살 1kg 특품",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a raw pork shoulder slices, three-quarter view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 476,
+"f": "p476.jpg",
+"type": "meat",
+"cat": "food",
+"name": "고기마을 닭가슴살 10팩 특품",
+"brand": "고기마을",
+"color": "",
+"prompt": "Square e-commerce product photo of a packaged chicken breast, top-down flat lay, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 477,
+"f": "p477.jpg",
+"type": "meat",
+"cat": "food",
+"name": "바른곳간 양념 LA갈비 특품",
+"brand": "바른곳간",
+"color": "",
+"prompt": "Square e-commerce product photo of a marinated beef short ribs, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 478,
+"f": "p478.jpg",
+"type": "meat",
+"cat": "food",
+"name": "커피상점 한우 등심 300g 가정용",
+"brand": "커피상점",
+"color": "",
+"prompt": "Square e-commerce product photo of a raw marbled beef sirloin on butcher paper, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 479,
+"f": "p479.jpg",
+"type": "meat",
+"cat": "food",
+"name": "들녘 돼지 앞다리살 1kg 가정용",
+"brand": "들녘",
+"color": "",
+"prompt": "Square e-commerce product photo of a raw pork shoulder slices, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 480,
+"f": "p480.jpg",
+"type": "meat",
+"cat": "food",
+"name": "산지직송 닭가슴살 10팩 가정용",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a packaged chicken breast, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 481,
+"f": "p481.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "산지직송 콜드브루 원액 1L",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a cold brew coffee bottle with blank label, slightly elevated angle, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 482,
+"f": "p482.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "고기마을 싱글오리진 원두 500g",
+"brand": "고기마을",
+"color": "",
+"prompt": "Square e-commerce product photo of a coffee bean bag with blank label, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 483,
+"f": "p483.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "바른곳간 드립백 커피",
+"brand": "바른곳간",
+"color": "",
+"prompt": "Square e-commerce product photo of a drip bag coffee packets, three-quarter view, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 484,
+"f": "p484.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "커피상점 보리차 티백",
+"brand": "커피상점",
+"color": "",
+"prompt": "Square e-commerce product photo of a barley tea bags, side view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 485,
+"f": "p485.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "들녘 콜드브루 원액 1L 특품",
+"brand": "들녘",
+"color": "",
+"prompt": "Square e-commerce product photo of a cold brew coffee bottle with blank label, front view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 486,
+"f": "p486.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "산지직송 싱글오리진 원두 500g 특품",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a coffee bean bag with blank label, top-down flat lay, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 487,
+"f": "p487.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "고기마을 드립백 커피 특품",
+"brand": "고기마을",
+"color": "",
+"prompt": "Square e-commerce product photo of a drip bag coffee packets, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 488,
+"f": "p488.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "바른곳간 보리차 티백 특품",
+"brand": "바른곳간",
+"color": "",
+"prompt": "Square e-commerce product photo of a barley tea bags, three-quarter view, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 489,
+"f": "p489.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "커피상점 콜드브루 원액 1L 가정용",
+"brand": "커피상점",
+"color": "",
+"prompt": "Square e-commerce product photo of a cold brew coffee bottle with blank label, three-quarter view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 490,
+"f": "p490.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "들녘 싱글오리진 원두 500g 가정용",
+"brand": "들녘",
+"color": "",
+"prompt": "Square e-commerce product photo of a coffee bean bag with blank label, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 491,
+"f": "p491.jpg",
+"type": "coffee",
+"cat": "food",
+"name": "산지직송 드립백 커피 가정용",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a drip bag coffee packets, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 492,
+"f": "p492.jpg",
+"type": "nuts",
+"cat": "food",
+"name": "산지직송 견과류 데일리 30봉",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a mixed nuts in small packs, front view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 493,
+"f": "p493.jpg",
+"type": "nuts",
+"cat": "food",
+"name": "고기마을 구운 아몬드 1kg",
+"brand": "고기마을",
+"color": "",
+"prompt": "Square e-commerce product photo of a roasted almonds in a bowl, front view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 494,
+"f": "p494.jpg",
+"type": "nuts",
+"cat": "food",
+"name": "바른곳간 캐슈넛 500g",
+"brand": "바른곳간",
+"color": "",
+"prompt": "Square e-commerce product photo of a cashew nuts in a bowl, side view, warm beige seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 495,
+"f": "p495.jpg",
+"type": "nuts",
+"cat": "food",
+"name": "커피상점 호두 1kg",
+"brand": "커피상점",
+"color": "",
+"prompt": "Square e-commerce product photo of a walnut halves in a bowl, top-down flat lay, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 496,
+"f": "p496.jpg",
+"type": "nuts",
+"cat": "food",
+"name": "들녘 견과류 데일리 30봉 특품",
+"brand": "들녘",
+"color": "",
+"prompt": "Square e-commerce product photo of a mixed nuts in small packs, side view, soft pastel background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 497,
+"f": "p497.jpg",
+"type": "nuts",
+"cat": "food",
+"name": "산지직송 구운 아몬드 1kg 특품",
+"brand": "산지직송",
+"color": "",
+"prompt": "Square e-commerce product photo of a roasted almonds in a bowl, side view, light grey seamless studio background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 498,
+"f": "p498.jpg",
+"type": "nuts",
+"cat": "food",
+"name": "고기마을 캐슈넛 500g 특품",
+"brand": "고기마을",
+"color": "",
+"prompt": "Square e-commerce product photo of a cashew nuts in a bowl, three-quarter view, white seamless background, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 499,
+"f": "p499.jpg",
+"type": "nuts",
+"cat": "food",
+"name": "바른곳간 호두 1kg 특품",
+"brand": "바른곳간",
+"color": "",
+"prompt": "Square e-commerce product photo of a walnut halves in a bowl, slightly elevated angle, light wooden surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+},
+{
+"id": 500,
+"f": "p500.jpg",
+"type": "nuts",
+"cat": "food",
+"name": "커피상점 견과류 데일리 30봉 가정용",
+"brand": "커피상점",
+"color": "",
+"prompt": "Square e-commerce product photo of a mixed nuts in small packs, slightly elevated angle, concrete texture surface, soft natural studio lighting, realistic, high detail, no text, no watermark, no real brand logos, no people"
+}
+]

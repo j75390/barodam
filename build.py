@@ -1,11 +1,49 @@
-# 바로담 마켓 빌드: src.html + photos.json -> index.html (GitHub Pages 등 어디서나 열리는 완전한 HTML)
-import json, re, pathlib
+# 바로담 마켓 빌드: src.html + catalog.json + extras.json + img/gen/*.jpg -> index.html
+# 사진이 실제로 있는 상품만 넣는다 (사진 1장 = 상품 1개, 같은 사진을 두 상품에 쓰지 않음)
+import json, re, pathlib, hashlib
 root = pathlib.Path(__file__).parent
+gen = root / "img" / "gen"
 src = (root / "src.html").read_text(encoding="utf8")
-photos = json.loads((root / "photos.json").read_text(encoding="utf8"))
-body = re.sub(r"/\*PHOTOS\*/.*?/\*END\*/", "/*PHOTOS*/" + json.dumps(photos, ensure_ascii=False) + "/*END*/", src, flags=re.S)
+catalog = json.loads((root / "catalog.json").read_text(encoding="utf8"))
+extras = json.loads((root / "extras.json").read_text(encoding="utf8"))
+
+seen = {}
+items = []
+for e in catalog:
+    p = gen / e["f"]
+    if not p.exists():
+        continue
+    h = hashlib.md5(p.read_bytes()).hexdigest()
+    if h in seen:  # identical file used twice -> skip
+        print("duplicate photo skipped:", e["f"], "=", seen[h]); continue
+    seen[h] = e["f"]
+    items.append({"f": "gen/" + e["f"], "type": e["type"], "name": e["name"], "brand": e["brand"], "color": e["color"]})
+from PIL import Image
+def dh(path):
+    px=list(Image.open(path).convert("L").resize((9,8)).getdata())
+    return sum(1<<i for i in range(64) if px[(i//8)*9+i%8]>px[(i//8)*9+i%8+1])
+hs=[dh(gen/e["f"][4:]) for e in items]
+cc=json.loads((root/"cc_items.json").read_text(encoding="utf8")) if (root/"cc_items.json").exists() else []
+credits=[]
+for e in cc:
+    p=root/"img"/e["f"]
+    if not p.exists(): continue
+    h=hashlib.md5(p.read_bytes()).hexdigest(); d=dh(p)
+    if h in seen or any(bin(d^x).count("1")<=6 for x in hs):
+        print("duplicate photo skipped:", e["f"]); continue
+    seen[h]=e["f"]; hs.append(d)
+    items.append({k:e[k] for k in ("f","type","name","brand","color")})
+    credits.append((e["f"],e["title"],e["by"],e["src"]))
+lines=["# 사진 출처","","- `img/gen/`: Codex(OpenAI) 이미지 생성으로 만든 사진","- `img/cc/`: Openverse에서 찾은 CC0(퍼블릭 도메인) 사진. 사진 속 상품명·브랜드와 사이트의 상품 정보는 관계없어요.",""]
+lines+=[f"- `{f}` {t or '(제목 없음)'}{' / '+b if b else ''} — {u}" for f,t,b,u in credits]
+(root/"CREDITS.md").write_text("\n".join(lines)+"\n",encoding="utf8")
+reserved = {x["key"]: "gen/" + x["f"] for x in extras if (gen / x["f"]).exists()}
+photos = {"items": items, "reserved": reserved}
+
+body = re.sub(r"/\*PHOTOS\*/.*?/\*END\*/", lambda m: "/*PHOTOS*/" + json.dumps(photos, ensure_ascii=False) + "/*END*/", src, flags=re.S)
 title = re.search(r"<title>.*?</title>", body).group(0)
 body = body.replace(title, "", 1)
+og = "https://barodam.kro.kr/img/" + reserved.get("hero0", "gen/hero0.jpg")
 head = f"""<!doctype html>
 <html lang="ko">
 <head>
@@ -15,7 +53,7 @@ head = f"""<!doctype html>
 <meta name="description" content="바로담 마켓 - 더미 데이터로 만든 쇼핑몰 시제품. 실제 판매는 하지 않아요.">
 <meta property="og:title" content="바로담 마켓">
 <meta property="og:description" content="오늘만 특가, 실시간 랭킹, 가격 비교까지 담은 쇼핑몰 시제품">
-<meta property="og:image" content="https://barodam.kro.kr/img/coat1.jpg">
+<meta property="og:image" content="{og}">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#E8461E">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E8461E'/%3E%3Ctext x='32' y='45' font-size='36' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='900'%3E%EB%8B%B4%3C/text%3E%3C/svg%3E">
@@ -23,4 +61,4 @@ head = f"""<!doctype html>
 """
 out = head + "</head>\n<body>\n" + body + "\n</body>\n</html>\n"
 (root / "index.html").write_text(out, encoding="utf8")
-print("index.html", len(out), "bytes,", sum(len(v) for v in photos.values()), "photos")
+print("index.html", len(out), "bytes,", len(items), "products,", len(reserved), "banner/category photos")
