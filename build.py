@@ -9,9 +9,10 @@ extras = json.loads((root / "extras.json").read_text(encoding="utf8"))
 
 seen = {}
 items = []
+ccset = set(json.loads((root / "cc_assigned.json").read_text(encoding="utf8"))) if (root / "cc_assigned.json").exists() else set()
 for e in catalog:
     p = gen / e["f"]
-    if not p.exists():
+    if not p.exists() or e["f"] in ccset:  # this product already uses a CC0 photo
         continue
     h = hashlib.md5(p.read_bytes()).hexdigest()
     if h in seen:  # identical file used twice -> skip
