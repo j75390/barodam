@@ -80,14 +80,16 @@ export function createSupabaseBackend(): Backend & { ready: Promise<void> } {
   const checkPassword = async (password: string) =>
     !!snapshot && !(await sb.auth.signInWithPassword({ email: authEmail(snapshot.id), password })).error;
 
-  let recentTimer: ReturnType<typeof setTimeout> | undefined;
+  /** Product views are kept on the server so they follow the member across devices. */
   const saveRecent = (list: number[]) => {
     local.set('bd_recent', list);
     if (!snapshot) return;
     snapshot = { ...snapshot, recent: list };
     emit();
-    clearTimeout(recentTimer);
-    recentTimer = setTimeout(() => void sb.rpc('set_recent', { p_recent: list }), 800);
+    // supabase-js builders are lazy: the request is only sent once the promise is consumed.
+    sb.rpc('set_recent', { p_recent: list }).then(({ error }) => {
+      if (error) console.warn('최근 본 상품 저장 실패', error.message);
+    });
   };
 
   sb.auth.onAuthStateChange((event, s) => {
