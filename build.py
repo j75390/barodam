@@ -62,4 +62,9 @@ head = f"""<!doctype html>
 """
 out = head + "</head>\n<body>\n" + body + "\n</body>\n</html>\n"
 (root / "index.html").write_text(out, encoding="utf8")
+# customer center as its own site/window (like help.gmarket.co.kr): same app in help mode at /help/
+helpdir = root / "help"; helpdir.mkdir(exist_ok=True)
+hout = out.replace("<title>바로담 마켓</title>", "<title>바로담 고객센터</title>", 1).replace("<body>\n", "<body>\n<script>window.__HELP=1</script>\n", 1)
+assert "window.__HELP=1" in hout
+(helpdir / "index.html").write_text(hout, encoding="utf8")
 print("index.html", len(out), "bytes,", len(items), "products,", len(reserved), "banner/category photos")

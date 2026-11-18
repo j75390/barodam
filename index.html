@@ -430,6 +430,49 @@ details.faq div{padding:0 4px 14px 22px;color:var(--muted);font-size:13.5px;line
 
 
 
+
+/* help site (/help/): global mini bar + sticky help header, no shop chrome */
+body.csm .util,body.csm header.top,body.csm .tabbar,body.csm .rail,body.csm .totop{display:none!important}
+body.csm{padding-bottom:0}
+.gbar{background:var(--surface);border-bottom:1px solid var(--line);position:relative;z-index:22}
+.gbar .gw{max-width:1180px;margin:0 auto;padding:0 16px;height:46px;display:flex;align-items:center;gap:14px;font-size:13px}
+.gl{width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-family:var(--f-display);font-size:16px;text-decoration:none;flex:none}
+.gs{display:flex;align-items:center;border:1.5px solid var(--accent);border-radius:999px;height:32px;width:170px;padding:0 4px 0 12px}
+.gs input{border:0;outline:0;background:none;flex:1;min-width:0;font-size:12.5px}
+.gs button{border:0;background:none;padding:0 4px}.gs svg{width:17px;height:17px;stroke:var(--accent);fill:none;stroke-width:2.2}
+.gdd{position:relative}
+.gt{border:0;background:none;font-size:13px;color:var(--ink);padding:6px 2px;font-weight:600}
+.gt i{font-style:normal;color:var(--muted);font-size:11px;margin-left:2px}
+.gt[aria-expanded="true"]{color:var(--accent)}
+.gsep{width:1px;height:12px;background:var(--line)}
+.gr{margin-left:auto;display:flex;align-items:center;white-space:nowrap}
+.gr a{color:var(--ink);text-decoration:none;font-size:12.5px}
+.gr a+a::before{content:"";display:inline-block;width:1px;height:10px;background:var(--line);margin:0 10px}
+.gmega{position:fixed;left:50%;transform:translateX(-50%);top:47px;width:min(1080px,calc(100vw - 32px));background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);display:grid;grid-template-columns:224px minmax(0,1fr);grid-template-rows:auto auto;z-index:40}
+.gmega[hidden]{display:none}
+.gl2{grid-row:1/3;background:var(--accent);display:flex;flex-direction:column}
+.gl2 a{color:#fff;text-decoration:none;padding:13px 22px;font-weight:700;font-size:14.5px;border-bottom:1px solid rgba(255,255,255,.18)}
+.gl2 a.on{background:var(--surface);color:var(--accent)}
+.gcols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.gcols>div{padding:24px 26px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:11px;min-height:260px}
+.gcols>div:first-child{border-left:0}
+.gcols h6{margin:0 0 4px;font-size:14px;font-weight:800}
+.gcols a{color:var(--muted);text-decoration:none;font-size:13.5px}.gcols a:hover{color:var(--accent)}
+.gquick{border-top:1px solid var(--line);background:var(--sunk);display:flex;align-items:center;padding:0 26px;height:62px;overflow-x:auto}
+.gquick b{margin-right:26px;white-space:nowrap}.gquick a{color:#2563EB;text-decoration:none;font-size:13.5px;margin-right:34px;white-space:nowrap}
+.gsvc{position:absolute;left:0;top:calc(100% + 7px);background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:10px;padding:8px;display:grid;min-width:170px;z-index:40}
+.gsvc[hidden]{display:none}
+.gsvc a{padding:9px 12px;color:var(--ink);text-decoration:none;border-radius:6px;font-size:13.5px}.gsvc a:hover{background:var(--sunk)}
+.cshead{position:fixed;left:0;right:0;top:0;z-index:30;background:var(--surface);border-bottom:1px solid var(--line);transform:translateY(-100%);transition:transform .2s}
+.cshead.show{transform:none;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.cshead .wrap{display:flex;align-items:center;justify-content:center;gap:28px;padding-block:16px}
+.cshead .brand{display:flex;align-items:baseline;gap:6px;text-decoration:none;color:var(--ink);white-space:nowrap}
+.cshead .brand .logo2{font-family:var(--f-display);font-size:30px}.cshead .brand .logo2 b{color:var(--accent);font-weight:400}
+.cshead .brand span{font-size:24px;font-weight:800}
+.cshead form{flex:1;max-width:440px}.cshead .cs-search{margin:0;max-width:none}
+@media (max-width:820px){.gs{width:120px}.gsep,.gdd:nth-of-type(2){display:none}.gmega{grid-template-columns:120px minmax(0,1fr)}.gcols{grid-template-columns:1fr 1fr}.gcols>div{min-height:0;padding:14px}.gl2 a{padding:11px 12px;font-size:13px}.cshead .wrap{gap:12px}.cshead .brand span{font-size:18px}.cshead .brand .logo2{font-size:24px}}
+@media (max-width:560px){.gr a:not(:first-child){display:none}.gs{width:96px}.cshead .brand{display:none}}
+
 /* help center */
 .cs-hero{text-align:center;padding:30px 0 26px}
 .cs-hero h1{font-size:clamp(26px,4vw,40px);margin:0 0 18px;font-weight:800;letter-spacing:-.5px}
@@ -468,6 +511,50 @@ details.faq div{padding:0 4px 14px 22px;color:var(--muted);font-size:13.5px;line
 .vote{margin-top:12px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
 @media (max-width:820px){.cs-cats{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:16px}.cs-cards{grid-template-columns:1fr 1fr}.cs-grid{grid-template-columns:1fr}.cs-tiles{padding-top:0;grid-template-columns:1fr 1fr}.cs-tiles a{min-height:96px}}
 @media (max-width:560px){.cs-cards{grid-template-columns:1fr}.cs-cats .ic{width:56px;height:56px;font-size:24px}}
+
+
+/* help center: closer to reference (white page, full-bleed bands, line icons, carousel) */
+body.csm{background:var(--surface);overflow-x:clip}
+html:has(body.csm){overflow-x:clip}
+body.csm .totop{display:block!important}
+body.csm #page{padding-top:0}
+.bleed{margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);padding-left:calc(50vw - 50%);padding-right:calc(50vw - 50%)}
+.cs-hero{padding:56px 0 40px}
+.cs-hero h1{font-size:clamp(28px,4.4vw,46px);font-weight:900;letter-spacing:-1.5px;margin-bottom:26px}
+.cs-hero h1 b{color:var(--accent)}
+.cs-hero .cs-search{max-width:600px;padding:6px 10px 6px 24px}
+.cs-login{border-radius:0!important;background:#F1EEFB!important;padding-top:16px!important;padding-bottom:16px!important}
+.cs-sec{margin-top:44px}
+.cs-h2{font-size:22px;font-weight:800;margin:0 0 22px;letter-spacing:-.4px;display:flex;align-items:baseline;gap:12px}
+.cs-cats .ic{width:80px;height:80px;background:var(--surface);border:1px solid var(--line)}
+.cs-cats .ic svg{width:34px;height:34px;stroke:#7A808C;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.cs-cats button[aria-selected="true"] .ic{background:var(--accent);border-color:var(--accent);box-shadow:none}
+.cs-cats button[aria-selected="true"] .ic svg{stroke:#fff}
+.cs-cats button{font-size:13.5px;font-weight:600}
+.cs-band{border-radius:0!important;margin-top:28px!important;padding-top:40px!important;padding-bottom:44px!important}
+.cs-band h3{font-size:22px;font-weight:800}
+.cs-in{max-width:1180px;margin:0 auto;padding:0 16px}
+.cs-car{position:relative}
+.cs-cards{display:grid!important;grid-auto-flow:column;grid-auto-columns:calc((100% - 36px)/4);grid-template-columns:none!important;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.cs-cards::-webkit-scrollbar{display:none}
+.cs-card{scroll-snap-align:start;min-height:170px;border-radius:6px;padding:22px}
+.cs-card b{font-size:22px}
+.cs-arr{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:0;background:rgba(255,255,255,.28);color:#fff;font-size:26px;z-index:2}
+.cs-arr.l{left:-26px}.cs-arr.r{right:-26px}
+.cs-arr[hidden]{display:none}
+.cs-grid{margin-top:52px}
+.cs-list{border-radius:4px}.cs-list a{padding:17px 22px}
+.cs-call{border-radius:4px;padding:22px 26px}
+.cs-call .tel{font-size:28px}
+.cs-big{display:block;margin-top:14px;color:var(--ink);font-weight:800;font-size:18px;text-decoration:none}
+.cs-tiles{padding-top:44px}
+.cs-tiles a{border-radius:4px;min-height:146px}
+.cs-tiles svg{width:34px;height:34px;stroke:#fff;fill:none;stroke-width:1.6}
+.cs-nbar{background:var(--surface);border-top:10px solid var(--sunk);margin-top:56px;padding-top:40px;padding-bottom:30px}
+.cs-notice{background:none;border:0;padding:0}
+.cs-notice a{border:0!important;padding:7px 0;font-size:15px}
+@media (max-width:820px){.cs-cards{grid-auto-columns:calc((100% - 12px)/2)}.cs-arr{display:none}.cs-cats .ic{width:62px;height:62px}.cs-cats .ic svg{width:28px;height:28px}.cs-tiles{padding-top:0}}
+@media (max-width:560px){.cs-cards{grid-auto-columns:85%}}
 
 /* focused auth layout (login/signup/find) */
 body.authm .util,body.authm nav.cats,body.authm .search,body.authm .catbtn,body.authm .iconbtn,body.authm .rail,body.authm .totop{display:none!important}
@@ -754,7 +841,7 @@ nav.cats .wrap a.navx{padding:8px 12px;border-radius:8px;white-space:nowrap;font
 <footer><div class="wrap">
   <div class="corp">
     <div>
-      <div class="flinks"><a class="lnk" href="#/cs/notice">공지사항</a><button class="lnk" data-term="tos">이용약관</button><button class="lnk" data-term="privacy"><b>개인정보처리방침</b></button><a class="lnk" href="#/cs">고객센터</a></div>
+      <div class="flinks"><a class="lnk" href="/help/#/cs/notice" target="_blank" rel="noopener">공지사항</a><button class="lnk" data-term="tos">이용약관</button><button class="lnk" data-term="privacy"><b>개인정보처리방침</b></button><a class="lnk" href="/help/" target="_blank" rel="noopener">고객센터</a></div>
       <div>(주)바로담 · 대표 홍길동 · 사업자등록번호 000-00-00000 · 통신판매업신고 제2026-서울바로-0000호</div>
       <div>주소 서울특별시 바로구 담길 12, 바로담타워 4층 · 이메일 help@barodam.kro.kr</div>
       <div style="margin-top:8px">바로담 마켓은 통신판매중개자로서 오픈마켓 판매 상품의 거래 당사자가 아니며, 판매자가 등록한 상품 정보와 거래에 대한 책임은 각 판매자에게 있어요.</div>
@@ -823,7 +910,7 @@ const CATS=[
 // one CC0 photo per product (never shared between products); banner/category photos are reserved separately
 const PHOTOS=(window.__PHOTOS&&window.__PHOTOS.items)||[];
 const RESERVED=(window.__PHOTOS&&window.__PHOTOS.reserved)||{};
-function pimg(p){return p.photo?`<img src="img/${p.photo}" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">`:art(p.type,p.hue)}
+function pimg(p){return p.photo?`<img src="/img/${p.photo}" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">`:art(p.type,p.hue)}
 const ART_OF={shirt:'tee',knit:'hoodie',cap:'bag',socks:'pants',wallet:'bag',speaker:'phones',mouse:'keyboard',pan:'mug',towel:'pillow',candle:'tumbler',perfume:'bottle',nuts:'pouch',meat:'box'};
 const T=[
  ['fashion','tee',['오버핏 헤비코튼 반팔 티셔츠','스탠다드 로고 롱슬리브','와플 조직 헨리넥 티셔츠','릴렉스핏 피그먼트 반팔','쿨탠다드 기능성 티셔츠','레이어드 슬리브리스','빈티지 그래픽 티셔츠'],[12900,39000],['노스폴드','베이직무드','모노픽','로우라인','하이드아웃']],
@@ -1075,7 +1162,7 @@ function closeOverlay(keep){$('#overlay').innerHTML='';document.body.style.overf
 // ---------- cart ----------
 $('#cartBtn').addEventListener('click',()=>openCart());
 // ---------- hero carousel ----------
-const ph=k=>RESERVED[k]?`img/${RESERVED[k]}`:'';
+const ph=k=>RESERVED[k]?`/img/${RESERVED[k]}`:'';
 const SLIDES=[
  {cat:'fashion',bg:'#1E2B3A',eye:'WINTER OUTER WEEK',h:'겨울 아우터<br>최대 62% 할인',sub:'패딩·코트·플리스 120여 종, 이번 주 일요일까지',img:ph('hero0')},
  {cat:'fashion',bg:'#5A3B2E',eye:'NEW ARRIVALS',h:'포근한 니트,<br>새로 들어왔어요',sub:'램스울부터 캐시미어 블렌드까지',img:ph('hero1')},
@@ -1194,8 +1281,8 @@ function validCoupons(u){return u.coupons.filter(c=>!c.used&&c.exp>Date.now())}
 // ---------- util links / header ----------
 function renderUtil(){
   const u=U();
-  $('#utilLinks').innerHTML=u?`<b>${esc(u.name)}님</b><a href="#/mypage/orders">주문배송</a><a href="#/mypage">마이페이지</a><button id="logoutBtn">로그아웃</button><a href="#/cs">고객센터</a>`
-    :`<a href="#/login">로그인</a><a href="#/signup">회원가입</a><a href="#/mypage/orders">주문배송</a><a href="#/cs">고객센터</a>`;
+  $('#utilLinks').innerHTML=u?`<b>${esc(u.name)}님</b><a href="#/mypage/orders">주문배송</a><a href="#/mypage">마이페이지</a><button id="logoutBtn">로그아웃</button><a href="/help/" target="_blank" rel="noopener">고객센터</a>`
+    :`<a href="#/login">로그인</a><a href="#/signup">회원가입</a><a href="#/mypage/orders">주문배송</a><a href="/help/" target="_blank" rel="noopener">고객센터</a>`;
   const lb=$('#logoutBtn');if(lb)lb.onclick=logout;
   $('#meLbl').textContent=u?'마이':'로그인';
 }
@@ -1208,6 +1295,8 @@ function route(){
   closeDlg();document.body.classList.toggle('authm',/^#\/(login|signup|find)/.test(location.hash));
   const h=location.hash.replace(/^#\/?/,'');const [name,...args]=h.split('/').map(decodeURIComponent);
   closeOverlay(true);
+  if(window.__HELP){if(name&&name!=='cs'){location.href='/'+location.hash;return}mainEl.hidden=true;pageEl.hidden=false;scrollTo(0,0);pCs(...(name?args:[]));return}
+  if(name==='cs'){location.replace('/help/'+location.hash);return}
   if(PAGES[name]){mainEl.hidden=true;pageEl.hidden=false;scrollTo(0,0);navCur(name);PAGES[name](...args);return}
   showMain();
 }
@@ -1462,7 +1551,7 @@ function pMy(tab){
       const c=$('#clrRecent');if(c)c.onclick=()=>{u.recent=[];LS.set('bd_recent',[]);saveUsers();pMy('recent')}},
     coupons:()=>{const L=u.coupons.slice().sort((a,b)=>(!!(a.used||a.exp<Date.now()))-(!!(b.used||b.exp<Date.now())));
       T.innerHTML=`<div class="mp-sec"><h2>쿠폰 <span class="hint num">사용 가능 ${cps}장</span></h2>
-       <form class="box" id="cpf"><div class="fld" style="margin:0"><span>쿠폰 코드 등록</span><div class="with"><input class="inp" name="code" placeholder="예: WELCOME2026" maxlength="20" style="text-transform:uppercase"><button class="btn primary">등록</button></div><small class="hint">이벤트·제휴로 받은 쿠폰 코드를 입력해 주세요. 진행 중인 코드는 <a class="lnk" href="#/cs/notice">공지사항</a>에서 확인할 수 있어요.</small></div></form>
+       <form class="box" id="cpf"><div class="fld" style="margin:0"><span>쿠폰 코드 등록</span><div class="with"><input class="inp" name="code" placeholder="예: WELCOME2026" maxlength="20" style="text-transform:uppercase"><button class="btn primary">등록</button></div><small class="hint">이벤트·제휴로 받은 쿠폰 코드를 입력해 주세요. 진행 중인 코드는 <a class="lnk" href="/help/#/cs/notice" target="_blank" rel="noopener">공지사항</a>에서 확인할 수 있어요.</small></div></form>
        <div style="margin-top:12px">${L.map(couponHtml).join('')||'<div class="empty-box">쿠폰이 없어요</div>'}</div></div>`;
       $('#cpf').onsubmit=e=>{e.preventDefault();const code=e.target.code.value.trim().toUpperCase();const C={WELCOME2026:{name:'웰컴 코드 5,000원',type:'won',val:5000,min:30000},WINTER10:{name:'겨울 10% 할인',type:'rate',val:10,max:20000,min:20000},BARODAM:{name:'바로담 3,000원',type:'won',val:3000,min:15000}}[code];
         if(!C){toast('없는 쿠폰 코드예요');return}u.used_codes=u.used_codes||[];if(u.used_codes.includes(code)){toast('이미 등록한 코드예요');return}
@@ -1787,8 +1876,41 @@ function pComplete(no){
 }
 
 // ---------- customer center ----------
+
+// ---------- help site chrome (/help/): global mini bar like help.gmarket.co.kr + sticky help header ----------
+if(window.__HELP){document.body.classList.add('csm');document.title='바로담 고객센터';
+  const u=U();
+  document.body.insertAdjacentHTML('afterbegin',`<div class="gbar"><div class="gw">
+    <a class="gl" href="/" aria-label="바로담 쇼핑 홈">담</a>
+    <form class="gs" id="gsf" role="search"><input name="q" placeholder="통합검색" aria-label="바로담 통합검색"><button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></button></form>
+    <div class="gdd"><button class="gt" id="gCat" aria-expanded="false">카테고리 <i>▾</i></button><div class="gmega" id="gMega" hidden></div></div>
+    <span class="gsep"></span>
+    <div class="gdd"><button class="gt" id="gSvc" aria-expanded="false">서비스 <i>▾</i></button><div class="gsvc" id="gSvcP" hidden>${[['/#/ranking','바로담 랭킹'],['/#/c/all/deal','오늘의 특가'],['/#/brands','브랜드'],['/#/mypage/coupons','쿠폰 코드 등록'],['/#/login/guest','비회원 주문조회'],['#/cs/faq/safe','안전거래 센터']].map(([h,l])=>`<a href="${h}">${l}</a>`).join('')}</div></div>
+    <nav class="gr">${u?`<a href="/#/mypage">${esc(u.name)}님</a><a href="#" id="gOut">로그아웃</a>`:`<a href="/#/login">로그인</a><a href="/#/signup">회원가입</a>`}<a href="/#/mypage">나의 바로담</a></nav></div></div>
+   <header class="cshead" id="csHead"><div class="wrap"><a class="brand" href="#/cs"><span class="logo2">바로<b>담</b></span><span>고객센터</span></a>
+    <form class="cs-search" id="cshq"><input class="inp" name="q" placeholder="자주하는 질문을 검색해 주세요" aria-label="자주 묻는 질문 검색"><button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></button></form></div></header>`);
+  $('#gsf').onsubmit=e=>{e.preventDefault();const q=e.target.q.value.trim();location.href=q?'/#/search/'+encodeURIComponent(q):'/'};
+  $('#cshq').onsubmit=e=>{e.preventDefault();const q=e.target.q.value.trim();if(q)go('#/cs/search/'+encodeURIComponent(q))};
+  const go2=$('#gOut');if(go2)go2.onclick=e=>{e.preventDefault();me=null;try{sessionStorage.removeItem('bd_sess');localStorage.removeItem('bd_keep')}catch(x){}location.reload()};
+  const mega=$('#gMega'),svc=$('#gSvcP');let at='fashion';
+  const drawM=()=>{const ps=P.filter(p=>p.cat===at),types=[...new Set(ps.map(p=>p.type))],bs=[...new Set(ps.map(p=>p.brand))];
+    const half=Math.ceil(types.length/2);
+    mega.innerHTML=`<div class="gl2">${CATS.filter(c=>c.id!=='all').map(c=>`<a href="/#/c/${c.id}" data-gc="${c.id}" class="${c.id===at?'on':''}">${c.name}</a>`).join('')}</div>
+     <div class="gcols"><div><h6>${catName(at)}</h6>${types.slice(0,half).map(t=>`<a href="/#/c/${at}/${t}">${TL[t]}</a>`).join('')}</div>
+      <div><h6>&nbsp;</h6>${types.slice(half).map(t=>`<a href="/#/c/${at}/${t}">${TL[t]}</a>`).join('')}</div>
+      <div><h6>인기 브랜드</h6>${bs.slice(0,6).map(b=>`<a href="/#/brand/${encodeURIComponent(b)}">${esc(b)}</a>`).join('')}</div>
+      <div><h6>기획전</h6><a href="/#/c/${at}/deal">${catName(at)} 특가</a><a href="/#/ranking">${catName(at)} 랭킹</a><a href="/#/c/${at}">신상품 모아보기</a></div></div>
+     <div class="gquick"><b>바로가기 ›</b>${BRANDS.slice(0,6).map(b=>`<a href="/#/brand/${encodeURIComponent(b)}">${esc(b)}</a>`).join('')}</div>`};
+  const setArrow=(btn,open)=>{btn.setAttribute('aria-expanded',String(open));btn.querySelector('i').textContent=open?'▴':'▾'};
+  const tog=(btn,panel,other,otherBtn)=>{const open=panel.hidden;other.hidden=true;setArrow(otherBtn,false);if(panel===mega&&open)drawM();panel.hidden=!open;setArrow(btn,open)};
+  $('#gCat').onclick=()=>tog($('#gCat'),mega,svc,$('#gSvc'));$('#gSvc').onclick=()=>tog($('#gSvc'),svc,mega,$('#gCat'));
+  mega.addEventListener('mouseover',e=>{const x=e.target.closest('[data-gc]');if(x&&x.dataset.gc!==at){at=x.dataset.gc;drawM()}});
+  document.addEventListener('click',e=>{if(!e.target.closest('.gdd')){mega.hidden=svc.hidden=true;setArrow($('#gCat'),false);setArrow($('#gSvc'),false)}});
+  const head=$('#csHead');addEventListener('scroll',()=>{head.classList.toggle('show',scrollY>230);if(scrollY>60&&!mega.hidden){mega.hidden=true;setArrow($('#gCat'),false)}},{passive:true});
+}
+
 // ---------- customer center (help-center style: search, categories, top FAQ, quick help, contact, notices) ----------
-const FAQC=[['member','회원','👤'],['coupon','쿠폰/혜택/이벤트','🎟️'],['order','주문/결제','🧾'],['ship','배송','🚚'],['return','취소/반품/교환','↩️'],['point','적립금','💰'],['product','상품','📦'],['safe','안전거래','🛡️']];
+const FAQC=[['member','회원','<circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4.5 4.5-6.5 8-6.5s6.5 2 8 6.5"/>'],['coupon','쿠폰/혜택/이벤트','<path d="M3 7h18v3a2 2 0 0 0 0 4v3H3v-3a2 2 0 0 0 0-4z"/><path d="m9 15 6-6"/><circle cx="9.5" cy="9.5" r=".8"/><circle cx="14.5" cy="14.5" r=".8"/>'],['order','주문/결제','<path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/>'],['ship','배송','<path d="M2 7h11v9H2zM13 10h4l3 3v3h-7z"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/>'],['return','취소/반품/교환','<path d="M4 8h12a4 4 0 0 1 0 8H8"/><path d="m7 5-3 3 3 3"/>'],['point','적립금','<circle cx="12" cy="12" r="8.5"/><path d="M9 9h4a2 2 0 0 1 0 4H9V9zm0 4v4"/>'],['product','상품','<path d="m3 7 9-4 9 4v10l-9 4-9-4z"/><path d="m3 7 9 4 9-4M12 11v10"/>'],['safe','안전거래','<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/>']];
 const FAQ=[
  ['member','회원가입은 어떻게 하나요?','화면 오른쪽 위 [회원가입]을 누르고 아이디, 비밀번호, 이름, 이메일, 휴대폰 번호를 입력한 뒤 약관에 동의하면 가입이 끝나요. 가입하면 15% 할인 쿠폰, 무료배송 쿠폰, 적립금 3,000원을 바로 드려요.',1],
  ['member','아이디를 잊어버렸어요.','로그인 화면의 [아이디 찾기]에서 가입할 때 입력한 이름과 이메일을 넣으면 아이디 일부를 확인할 수 있어요.',1],
@@ -1846,35 +1968,38 @@ function pCs(tab,arg){
   tab=tab||'main';const u=U();
   if(tab==='ask'){if(!need('cs/ask'))return;askQ(null);pCs('main');return}
   if(tab==='faq'){const c=FAQC.find(x=>x[0]===arg)||FAQC[0];
-    pageEl.innerHTML=`${crumb('<a href="#/cs">고객센터</a>','자주 묻는 질문')}<div class="cs-top">${csSearchBox()}</div>
-     <h1 class="ptitle">자주 묻는 질문</h1><div class="bfilter">${FAQC.map(x=>`<a class="lnk" style="text-decoration:none" href="#/cs/faq/${x[0]}"><button aria-pressed="${x[0]===c[0]}" tabindex="-1">${x[2]} ${x[1]}</button></a>`).join('')}</div>
+    pageEl.innerHTML=`${crumb('<a href="/help/" target="_blank" rel="noopener">고객센터</a>','자주 묻는 질문')}<div class="cs-top">${csSearchBox()}</div>
+     <h1 class="ptitle">자주 묻는 질문</h1><div class="bfilter">${FAQC.map(x=>`<a class="lnk" style="text-decoration:none" href="#/cs/faq/${x[0]}"><button aria-pressed="${x[0]===c[0]}" tabindex="-1">${x[1]}</button></a>`).join('')}</div>
      <div class="box">${FAQ.filter(f=>f[0]===c[0]).map((f,i)=>faqItem(f,i)).join('')}</div>
      <div class="note">원하는 답을 찾지 못하셨나요? <a class="lnk" href="#/cs/ask">1:1 문의하기</a></div>`;wireCsSearch();wireVotes(pageEl);return}
   if(tab==='search'){const q=(arg||'').trim(),ql=q.toLowerCase(),L=FAQ.filter(f=>(f[1]+f[2]).toLowerCase().includes(ql)||ql.split(/\s+/).every(w=>(f[1]+f[2]).toLowerCase().includes(w)));
-    pageEl.innerHTML=`${crumb('<a href="#/cs">고객센터</a>','검색')}<div class="cs-top">${csSearchBox(q)}</div>
+    pageEl.innerHTML=`${crumb('<a href="/help/" target="_blank" rel="noopener">고객센터</a>','검색')}<div class="cs-top">${csSearchBox(q)}</div>
      <h1 class="ptitle">'${esc(q)}' 검색 결과 <span class="hint num">${L.length}건</span></h1>
      ${L.length?`<div class="box">${L.map((f,i)=>faqItem(f,i,L.length<=2)).join('')}</div>`:`<div class="empty-box">검색 결과가 없어요. 다른 단어로 찾아보거나 1:1 문의를 남겨 주세요.<div style="margin-top:12px"><a class="btn sm primary" style="text-decoration:none" href="#/cs/ask">1:1 문의하기</a></div></div>`}`;wireCsSearch();wireVotes(pageEl);return}
   if(tab==='notice'){const i=arg!==undefined&&arg!==''?+arg:null;
-    pageEl.innerHTML=`${crumb('<a href="#/cs">고객센터</a>','공지사항')}<h1 class="ptitle">공지사항</h1>
+    pageEl.innerHTML=`${crumb('<a href="/help/" target="_blank" rel="noopener">고객센터</a>','공지사항')}<h1 class="ptitle">공지사항</h1>
      ${i!==null&&NOTICE[i]?`<div class="box"><div class="hint num">[${NOTICE[i][1]}] · ${NOTICE[i][0]}</div><h2 style="margin:6px 0 14px;font-size:20px">${NOTICE[i][2]}</h2><div style="white-space:pre-line;line-height:1.7">${esc(NOTICE[i][3])}</div></div>
       <div class="rowb">${i>0?`<a class="lnk" href="#/cs/notice/${i-1}">‹ 다음 글: ${NOTICE[i-1][2]}</a>`:'<span></span>'}${i<NOTICE.length-1?`<a class="lnk" href="#/cs/notice/${i+1}">이전 글: ${NOTICE[i+1][2]} ›</a>`:''}</div><div style="margin-top:14px"><a class="btn ghost" style="text-decoration:none;color:inherit" href="#/cs/notice">목록</a></div>`
      :`<div class="box"><table class="tbl"><thead><tr><th style="width:80px">구분</th><th>제목</th><th class="r" style="width:110px">등록일</th></tr></thead><tbody>${NOTICE.map((n,k)=>`<tr><td>${n[1]}</td><td><a class="lnk" style="text-decoration:none;color:var(--ink);font-weight:600" href="#/cs/notice/${k}">${n[2]}</a>${k<2?' <span class="mine">NEW</span>':''}</td><td class="r num">${n[0]}</td></tr>`).join('')}</tbody></table></div>`}`;return}
   // main
   const c=FAQC.find(x=>x[0]===csCat);const top=FAQ.filter(f=>f[0]===csCat).sort((a,b)=>(b[3]||0)-(a[3]||0)).slice(0,4);
   const recent=u&&u.orders[0];
-  pageEl.innerHTML=`<div class="cs-hero"><h1>바로담이 <b>도와드릴게요!</b></h1>${csSearchBox()}<div class="cs-kw">${['배송 조회','주문 취소','쿠폰 코드','반품','적립금','비밀번호'].map(k=>`<a href="#/cs/search/${encodeURIComponent(k)}">#${k}</a>`).join('')}</div></div>
-   <div class="cs-login">${u?`<span class="emb" style="width:40px;height:40px;background:var(--accent);color:#fff;font-weight:800">${esc(u.name[0])}</span><span><b>${esc(u.name)}</b>님, 무엇을 도와드릴까요?${recent?` <span class="hint">최근 주문: ${fmtD(recent.at)} · ${ostate(recent).label}</span>`:''}</span>${recent?`<a class="btn sm" style="text-decoration:none;color:inherit" href="#/order/${recent.no}">주문 상세</a>`:''}`
+  const top8=FAQ.filter(f=>f[0]===csCat).sort((a,b)=>(b[3]||0)-(a[3]||0));
+  pageEl.innerHTML=`<div class="cs-hero"><h1><b>바로담</b>이 도와드릴게요!</h1>${csSearchBox()}</div>
+   <div class="cs-login bleed">${u?`<span class="emb" style="width:40px;height:40px;background:var(--accent);color:#fff;font-weight:800">${esc(u.name[0])}</span><span><b>${esc(u.name)}</b>님, 무엇을 도와드릴까요?${recent?` <span class="hint">최근 주문: ${fmtD(recent.at)} · ${ostate(recent).label}</span>`:''}</span>${recent?`<a class="btn sm" style="text-decoration:none;color:inherit" href="#/order/${recent.no}">주문 상세</a>`:''}`
      :`<span class="emb" style="width:40px;height:40px;background:var(--sunk);font-size:20px">🙋</span><span>로그인하시면 더욱 편리하게 도움을 받으실 수 있어요</span><a class="btn sm primary" style="text-decoration:none" href="#/login/cs">로그인</a>`}</div>
-   <section><div class="sec-head"><h2>자주 묻는 질문을 확인하세요</h2></div>
-    <div class="cs-cats" role="tablist">${FAQC.map(x=>`<button role="tab" data-cc="${x[0]}" aria-selected="${x[0]===csCat}"><span class="ic">${x[2]}</span>${x[1]}</button>`).join('')}</div></section>
-   <div class="cs-band"><div class="wrap0"><div class="rowb" style="margin:0 0 14px"><h3>‘${c[1]}’ 관련 가장 자주 묻는 질문이에요</h3><a href="#/cs/faq/${c[0]}">질문 더보기 ›</a></div>
-    <div class="cs-cards">${top.map(f=>`<a href="#/cs/faq/${c[0]}" class="cs-card"><b>Q.</b><strong>${esc(f[1])}</strong><span>${esc(f[2].slice(0,64))}…</span></a>`).join('')}</div></div></div>
+   <section class="cs-sec"><h2 class="cs-h2">자주 묻는 질문을 확인하세요</h2>
+    <div class="cs-cats" role="tablist">${FAQC.map(x=>`<button role="tab" data-cc="${x[0]}" aria-selected="${x[0]===csCat}"><span class="ic"><svg viewBox="0 0 24 24">${x[2]}</svg></span>${x[1]}</button>`).join('')}</div></section>
+   <div class="cs-band bleed"><div class="cs-in"><div class="rowb" style="margin:0 0 18px"><h3>‘${c[1]}’ 관련 가장 자주 묻는 질문입니다</h3><a href="#/cs/faq/${c[0]}">질문 더보기 ›</a></div>
+    <div class="cs-car"><button class="cs-arr l" id="carL" aria-label="이전 질문" hidden>‹</button><div class="cs-cards" id="csCards">${top8.map(f=>`<a href="#/cs/faq/${c[0]}" class="cs-card"><b>Q.</b><strong>${esc(f[1])}</strong><span>${esc(f[2].slice(0,70))}…</span></a>`).join('')}</div><button class="cs-arr r" id="carR" aria-label="다음 질문">›</button></div></div></div>
    <div class="cs-grid">
-    <div><h2>간편하게 해결하세요</h2><div class="cs-list">${[['#/mypage/qna','나의 문의내역'],['#/mypage/orders','주문·배송 조회'],['#/login/guest','비회원 주문조회'],['#/mypage/profile','내 회원정보 수정'],['#/find/id','아이디/비밀번호 찾기'],['#/mypage/coupons','쿠폰 코드 등록']].map(([h,l])=>`<a href="${h}">${l}<span>›</span></a>`).join('')}</div></div>
-    <div><h2>상담이 필요하신가요?</h2><div class="cs-call"><div class="hint">일반회원/비회원 상담</div><div class="tel num">0000-0000 <small>평일 09:00 ~ 18:00</small></div><div class="hint" style="margin-top:10px">점심시간 12:00 ~ 13:00 · 주말·공휴일 휴무</div></div>
-      <h2 style="margin-top:22px">판매 상담이 필요하신가요?</h2><div class="cs-call"><div class="hint">입점·판매 문의</div><div class="tel num">0000-0001 <small>평일 09:00 ~ 18:00</small></div><a class="lnk" href="#/cs/ask" style="display:block;margin-top:10px;font-weight:700">입점 문의 남기기 ›</a></div></div>
-    <div class="cs-tiles"><a href="#/cs/ask" class="t1">1:1 문의 작성 ›<span>✉️</span></a><a href="#/cs/faq/safe" class="t2">안전거래 센터 ›<span>🛡️</span></a></div></div>
-   <section><div class="sec-head"><h2>공지사항</h2><a class="lnk" href="#/cs/notice">전체 보기 ›</a></div><div class="cs-notice">${NOTICE.slice(0,4).map((n,k)=>`<a href="#/cs/notice/${k}">[${n[1]}] ${n[2]} <span class="hint num">${n[0].slice(2)}</span></a>`).join('')}</div></section>`;
+    <div><h2 class="cs-h2">간편하게 해결하세요</h2><div class="cs-list">${[['#/mypage/qna','나의 문의내역'],['#/mypage/orders','주문·배송 조회'],['#/login/guest','비회원 주문조회'],['#/mypage/profile','내 회원정보 수정'],['#/find/id','아이디/비밀번호 찾기'],['#/mypage/coupons','쿠폰 코드 등록']].map(([h,l])=>`<a href="${h}">${l}<span>›</span></a>`).join('')}</div></div>
+    <div><h2 class="cs-h2">상담이 필요하신가요?</h2><div class="cs-call"><a class="hint" href="#/cs/faq/member" style="text-decoration:none">일반회원/비회원 이용안내 ›</a><div class="tel num">0000-0000 <small>평일 09:00 ~ 18:00</small></div><a class="hint" href="#/cs/faq/point" style="text-decoration:none;display:block;margin-top:14px">등급회원 전용 이용안내 ›</a><div class="tel num">0000-0002 <small>365일 09:00 ~ 18:00</small></div></div>
+      <h2 class="cs-h2" style="margin-top:26px">판매 상담이 필요하신가요?</h2><div class="cs-call"><div class="hint">판매고객</div><div class="tel num">0000-0001 <small>평일 09:00 ~ 18:00</small></div><a href="#/cs/ask" class="cs-big">판매자 전용 상담 ›</a><a href="#/cs/ask" class="cs-big">입점 문의하기 ›</a></div></div>
+    <div class="cs-tiles"><a href="#/cs/ask" class="t1">문의글 작성 ›<svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="m3 9 9 6 9-6M8 7V4h8v3"/></svg></a><a href="#/cs/faq/safe" class="t2">안전거래<br>신고센터 ›<svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></a></div></div>
+   <div class="cs-nbar bleed"><div class="cs-in"><h2 class="cs-h2">공지사항 <a class="lnk" href="#/cs/notice" style="font-size:13px;font-weight:400">전체 보기 ›</a></h2><div class="cs-notice">${NOTICE.slice(0,3).map((n,k)=>`<a href="#/cs/notice/${k}">[${n[1]}] ${n[2]} <span class="hint num">${n[0].slice(2).replace(/\./g,'.')}</span></a>`).join('')}</div></div></div>`;
+  const cc=$('#csCards'),cl=$('#carL'),cr=$('#carR');const arr=()=>{cl.hidden=cc.scrollLeft<4;cr.hidden=cc.scrollLeft+cc.clientWidth>=cc.scrollWidth-4};
+  cc.addEventListener('scroll',arr,{passive:true});cl.onclick=()=>cc.scrollBy({left:-cc.clientWidth,behavior:'smooth'});cr.onclick=()=>cc.scrollBy({left:cc.clientWidth,behavior:'smooth'});requestAnimationFrame(arr);
   wireCsSearch();
   pageEl.querySelectorAll('[data-cc]').forEach(b=>b.onclick=()=>{csCat=b.dataset.cc;const y=scrollY;pCs('main');scrollTo(0,y)});
 }
@@ -1889,7 +2014,7 @@ function drawSugg(){const q=qIn.value.trim();sgAct=-1;
     <div><h4>인기 검색어 <span class="num">${new Date().getHours()}:00 기준</span></h4><div class="pop">${POP.map((x,i)=>`<button class="it" data-q="${x}"><span class="n num">${i+1}</span><span class="tx">${x}</span></button>`).join('')}</div></div>`}
   else{const ql=q.toLowerCase();const hits=P.filter(p=>(p.name+' '+p.brand).toLowerCase().includes(ql)).slice(0,8);
     const brands=[...new Set(P.map(p=>p.brand))].filter(b=>b.toLowerCase().includes(ql)).slice(0,3);
-    sg.innerHTML=hits.length||brands.length?`<div>${brands.map(b=>`<button class="it" data-q="${esc(b)}"><span class="n">🏷</span><span class="tx">${hl(b,q)} <span class="hint">브랜드</span></span></button>`).join('')}${hits.map(p=>`<button class="it" data-pid="${p.id}">${p.photo?`<img src="img/${p.photo}" alt="">`:''}<span class="tx">${hl(p.name,q)}</span><span class="num hint" style="margin-left:auto">${won(p.price)}</span></button>`).join('')}</div>`
+    sg.innerHTML=hits.length||brands.length?`<div>${brands.map(b=>`<button class="it" data-q="${esc(b)}"><span class="n">🏷</span><span class="tx">${hl(b,q)} <span class="hint">브랜드</span></span></button>`).join('')}${hits.map(p=>`<button class="it" data-pid="${p.id}">${p.photo?`<img src="/img/${p.photo}" alt="">`:''}<span class="tx">${hl(p.name,q)}</span><span class="num hint" style="margin-left:auto">${won(p.price)}</span></button>`).join('')}</div>`
       :`<div class="hint" style="padding:6px">'${esc(q)}'와 맞는 상품이 없어요. 엔터를 눌러 전체 검색해 보세요.</div>`}
   sg.hidden=false}
 function doSearch(q){q=q.trim();if(q){recentQ=[q,...recentQ.filter(x=>x!==q)].slice(0,10);LS.set('bd_recentq',recentQ)}sg.hidden=true;qIn.value=q;qIn.blur();
@@ -2071,8 +2196,8 @@ function pProduct(id){
   const wishOn=wish.has(p.id),cmp=compare(p);
   pageEl.innerHTML=`${crumb(`<a href="#/c/${p.cat}">${catName(p.cat)}</a>`,`<a href="#/c/${p.cat}/${p.type}">${TL[p.type]||''}</a>`)}
    <div class="pdp">
-    <div class="gal"><div class="th">${p.photo?views.map((v,i)=>`<button data-im="${i}" aria-current="${i===0}" aria-label="${i+1}번째 사진"><img src="img/${p.photo}" alt="" style="object-position:${v[0]};transform:scale(${v[1]})"></button>`).join(''):''}</div>
-      <div class="main" id="gmain">${p.photo?`<img src="img/${p.photo}" alt="${esc(p.name)}" id="gimg">`:art(p.type,p.hue)}</div></div>
+    <div class="gal"><div class="th">${p.photo?views.map((v,i)=>`<button data-im="${i}" aria-current="${i===0}" aria-label="${i+1}번째 사진"><img src="/img/${p.photo}" alt="" style="object-position:${v[0]};transform:scale(${v[1]})"></button>`).join(''):''}</div>
+      <div class="main" id="gmain">${p.photo?`<img src="/img/${p.photo}" alt="${esc(p.name)}" id="gimg">`:art(p.type,p.hue)}</div></div>
     <div class="buy">
      <div class="top"><a href="#/brand/${encodeURIComponent(p.brand)}" style="display:flex;align-items:center;gap:8px">${bEmblem(p.brand,30)}${esc(p.brand)} 브랜드관 ›</a><div class="icons"><button id="pWish" aria-pressed="${wishOn}" aria-label="찜하기"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></button><button id="pShare" aria-label="공유하기"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.4M8.2 13.2l7.6 4.4"/></svg></button></div></div>
      <h1>${esc(p.name)}</h1>
@@ -2094,7 +2219,7 @@ function pProduct(id){
    <section style="margin-top:36px"><div class="sec-head"><h2>함께 비교하면 좋을 상품</h2></div><div class="hscroll">${same.map(x=>card(x)).join('')}</div></section>
    <nav class="ptabs2" id="ptabs"><a href="#" data-jump="det" class="on">상품상세</a><a href="#" data-jump="rv">상품평 <span class="num">${p.reviews.toLocaleString()}</span></a><a href="#" data-jump="qa">상품문의 <span class="num">${qs.length}</span></a><a href="#" data-jump="ship">배송·교환·반품</a></nav>
    <div class="psec" id="s-det"><h2>상품 상세</h2>
-     <div class="big-photo">${p.photo?`<img src="img/${p.photo}" alt="${esc(p.name)} 상세" loading="lazy">`:art(p.type,p.hue)}</div>
+     <div class="big-photo">${p.photo?`<img src="/img/${p.photo}" alt="${esc(p.name)} 상세" loading="lazy">`:art(p.type,p.hue)}</div>
      <div class="feat3">${DETAIL[p.cat].map(([i,t,d])=>`<div><i>${i}</i><b>${t}</b>${d}</div>`).join('')}</div>
      ${SIZE_T[p.cat]&&p.sizes?`<h3 id="s-size" style="scroll-margin-top:180px">사이즈 가이드</h3><table class="infot num"><tr><th>사이즈</th>${SIZE_T[p.cat].map(r=>`<td>${r[0]}</td>`).join('')}</tr><tr><th>${p.cat==='fashion'?'권장 체형':'발 길이'}</th>${SIZE_T[p.cat].map(r=>`<td>${r[1]}</td>`).join('')}</tr><tr><th>${p.cat==='fashion'?'가슴단면(cm)':'비고'}</th>${SIZE_T[p.cat].map(r=>`<td>${r[2]}</td>`).join('')}</tr></table><p class="hint">측정 방법에 따라 1~3cm 차이가 있을 수 있어요.</p>`:''}
      <h3>필수 표기 정보</h3><table class="infot">${INFO[p.cat](p).map(([k,v])=>`<tr><th>${k}</th><td>${esc(v||'상세 이미지 참조')}</td></tr>`).join('')}<tr><th>상품번호</th><td class="num">${String(9000000000+p.id*7331)}</td></tr></table>
@@ -2144,7 +2269,7 @@ function pProduct(id){
     const per=5,pages=Math.max(1,Math.ceil(L.length/per));if(pv.page>pages)pv.page=pages;
     $('#rvList').innerHTML=L.length?L.slice((pv.page-1)*per,pv.page*per).map(r=>{const h=r.help+(helped.has(r.id)?1:0);return `<div class="rv"><div class="h"><div class="av">${esc(r.who[0])}</div><div><b>${esc(r.who)}</b>${r.mine?'<span class="mine">내 상품평</span>':''}<div class="meta"><span class="stars-s">${'★'.repeat(r.star)}${'☆'.repeat(5-r.star)}</span> · ${fmtD(r.t)} · 구매 옵션: ${esc(r.opt)}</div></div></div>
       ${r.size||r.color?`<div class="kv2">${r.size?`<span><b>사이즈</b>${r.size}</span>`:''}${r.color?`<span><b>색상</b>${r.color}</span>`:''}</div>`:''}
-      <div class="tx">${esc(r.txt)}</div>${r.photo&&p.photo?`<div class="ph"><img src="img/${p.photo}" alt="" loading="lazy" style="transform:scale(1.6);object-position:${['30% 40%','60% 60%','50% 30%'][r.id.length%3]}"></div>`:''}
+      <div class="tx">${esc(r.txt)}</div>${r.photo&&p.photo?`<div class="ph"><img src="/img/${p.photo}" alt="" loading="lazy" style="transform:scale(1.6);object-position:${['30% 40%','60% 60%','50% 30%'][r.id.length%3]}"></div>`:''}
       <div class="ft">${r.mine?'<span></span>':`<button class="helpful" data-help="${r.id}" aria-pressed="${helped.has(r.id)}">👍 도움돼요 <span class="num">${h||''}</span></button>`}<span class="hint">${h?`${h}명에게 도움이 됐어요`:''}</span></div></div>`}).join('')
       +`<div class="pager">${Array.from({length:pages},(_,i)=>i+1).filter(n=>Math.abs(n-pv.page)<4).map(n=>`<button data-rp="${n}" ${n===pv.page?'aria-current="page"':''}>${n}</button>`).join('')}</div>`
       :'<div class="empty-box">조건에 맞는 상품평이 없어요</div>';
