@@ -250,7 +250,6 @@
 - `cc/x034.jpg` Free cup tea image — https://www.rawpixel.com/image/5912473/photo-image-public-domain-free-tea
 - `cc/p359.jpg` Water Bottle / Alabama Extension — https://www.flickr.com/photos/184594136@N08/51309780179
 - `cc/p360.jpg` Water Bottle / Steve Johnson — https://stocksnap.io/photo/water-bottle-EBUJNKRBLV
-- `cc/p361.jpg` Water Bottle Mockup / kmrzzmaan — https://www.flickr.com/photos/192934727@N03/51330901495
 - `cc/p362.jpg` Water phases and reusable water bottles / RobotAndApril — https://www.flickr.com/photos/196454806@N04/52339340401
 - `cc/p363.jpg` Water bottle — https://www.rawpixel.com/image/6040831/water-bottle-free-public-domain-cc0-image
 - `cc/p372.jpg` Stir Fry Vegetables in Pan — https://www.rawpixel.com/image/6075391/stir-fry-vegetables-pan

@@ -789,12 +789,15 @@ const REVIEW_POOL={
 };
 const NICK=['하루***','달빛**','초록고래','민트***','겨울밤**','코코***','바다**','스니커러버','홈카페**','새벽러너'];
 
-const P=[]; let id=1;
+const P=[];
+// stable product id from the photo file (gen/p123.jpg -> 123, cc/x007.jpg -> 1007) so carts/orders never point at a different product
+const idOf=f=>{const m=/(p|x)(\d+)\.jpg$/.exec(f);return m?(m[1]==='x'?1000:0)+(+m[2]):0};
 const TT=Object.fromEntries(T.map(t=>[t[1],t]));
 const SUFFIX={fashion:['','에센셜','프리미엄','릴렉스핏','시즌2','클래식','데일리','라이트','헤비','투톤'],shoes:['','2.0','라이트','프로','클래식','에어','플러스','오리지널'],bag:['','미니','라지','에센셜','클래식','플러스','데일리'],digital:['','2세대','프로','라이트','플러스','맥스','미니','SE','에어'],living:['','에센셜','프리미엄','미니','라지','클래식','2입 세트'],beauty:['','리뉴얼','기획세트','대용량','미니','리필','민감용'],food:['','특품','가정용','선물세트','대용량','소포장','실속형']};
 const COLORS=['블랙','아이보리','네이비','차콜','세이지','라벤더','베이지','그레이','버건디','카키','스카이블루','크림'];
 const usedNames=new Set(), typeCount={};
 PHOTOS.forEach(ph=>{
+  const pid=idOf(ph.f);if(!pid||P.some(x=>x.id===pid))return;seed=20261118+pid*7919;
   const t=TT[ph.type]||TT[{fruit:'box',coffee:'pouch'}[ph.type]]; if(!t) return;
   const [cat,,names,[lo,hi],brands]=t; const type=ph.type;
   const k=typeCount[type]=(typeCount[type]||0)+1;
@@ -809,13 +812,13 @@ PHOTOS.forEach(ph=>{
   const price=Math.round(base*(1-off/100)/10)*10;
   const r=rnd();
   const colors=['fashion','shoes','bag'].includes(cat)||['mug','tumbler','pillow','towel','keyboard','mouse','phones','speaker','watch'].includes(type)?[...new Set([ph.color,...COLORS.slice().sort(()=>rnd()-.5)].filter(Boolean))].slice(0,2+Math.floor(rnd()*3)):null;
-  P.push({id:id++,cat,type,brand,name,photo:ph.f,hue:Math.floor(rnd()*360),base,off,price,colors,
+  P.push({id:pid,cat,type,brand,name,photo:ph.f,hue:Math.floor(rnd()*360),base,off,price,colors,
     rating:+between(4.1,4.95).toFixed(1),reviews:Math.floor(Math.pow(rnd(),2)*9800)+12,sold:Math.floor(rnd()*5000)+30,
     rocket:r<.55,dawn:r<.25,free:rnd()<.7||price>=19800,stock:Math.floor(between(3,140)),
     sizes:cat==='fashion'?['S','M','L','XL']:(cat==='shoes'&&type!=='socks')?['240','250','260','270','280']:null,
     soldOut:[],trend:Math.floor(between(-4,9))});
 });
-P.forEach(p=>{ if(p.sizes) p.soldOut=p.sizes.filter(()=>rnd()<.18); });
+P.forEach(p=>{ seed=p.id*104729+7; if(p.sizes) p.soldOut=p.sizes.filter(()=>rnd()<.18); });
 
 // ---------- state ----------
 const S={cat:'all',q:'',sort:'rec',f:{rocket:false,free:false,r45:false,deal:false},rankCat:'all'};
