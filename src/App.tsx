@@ -27,6 +27,7 @@ const Info = lazy(() => import('@/pages/Info'));
 const NotFound = lazy(() => import('@/pages/NotFound'));
 const HelpApp = lazy(() => import('@/pages/help/HelpApp'));
 const CareersApp = lazy(() => import('@/pages/careers/CareersApp'));
+const AdminApp = lazy(() => import('@/pages/admin/AdminApp'));
 
 function Loading() {
   return <div className="page-loading" aria-busy="true"><div className="spin" /></div>;
@@ -85,6 +86,7 @@ export default function App() {
         </Route>
         <Route path="help/*" element={<Suspense fallback={<Loading />}><HelpApp /></Suspense>} />
         <Route path="careers/*" element={<Suspense fallback={<Loading />}><CareersApp /></Suspense>} />
+        <Route path="admin/*" element={<Suspense fallback={<Loading />}><AdminApp /></Suspense>} />
         <Route path="index.html" element={<Navigate to="/" replace />} />
       </Routes>
     </>

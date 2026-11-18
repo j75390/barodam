@@ -6,11 +6,11 @@ import { PRODUCTS, productById, productsByBrand } from '@/data/products';
 import { DETAIL_FEATURES, REQUIRED_INFO, SELLER_QNA, SIZE_TABLES } from '@/data/productContent';
 import { generateReviews, reviewKeywords, sellerOffers, type GeneratedReview } from '@/domain/productExtras';
 import { deliveryPromise } from '@/domain/delivery';
-import { inquiryAnswer, isAnswered } from '@/domain/orderText';
 import { orderState } from '@/domain/orderState';
 import { fmtDate, won } from '@/lib/format';
 import { local, session } from '@/lib/storage';
 import { cart, wish } from '@/state/cart';
+import { stockOf } from '@/services/stock';
 import { useBackend, useUser } from '@/state/backendContext';
 import { useUI } from '@/state/ui';
 import type { PublicInquiry, PublicReview } from '@/services/backend';
@@ -62,10 +62,21 @@ function ProductView({ p }: { p: P }) {
   const [memberReviews, setMemberReviews] = useState<PublicReview[]>([]);
   const [questions, setQuestions] = useState<PublicInquiry[]>([]);
   const [tab, setTab] = useState('det');
+  const [stock, setStock] = useState(p.stock);
 
   useEffect(() => {
     be.addRecent(p.id);
   }, [be, p.id]);
+  useEffect(() => {
+    let alive = true;
+    setStock(p.stock);
+    void stockOf(p.id).then((n) => {
+      if (alive) setStock(n);
+    });
+    return () => {
+      alive = false;
+    };
+  }, [p]);
   useEffect(() => {
     let alive = true;
     void Promise.all([be.reviewsFor(p.id), be.inquiriesFor(p.id)]).then(([r, q]) => {
@@ -227,13 +238,15 @@ function ProductView({ p }: { p: P }) {
               <div className="qty">
                 <button aria-label="수량 줄이기" onClick={() => setQty((q) => Math.max(1, q - 1))}>−</button>
                 <span className="num">{qty}</span>
-                <button aria-label="수량 늘리기" onClick={() => (qty >= p.stock ? ui.toast(`재고가 ${p.stock}개 남았어요`) : setQty(qty + 1))}>+</button>
+                <button aria-label="수량 늘리기" onClick={() => (qty >= stock ? ui.toast(`재고가 ${stock}개 남았어요`) : setQty(qty + 1))}>+</button>
               </div>
-              {p.stock < 15 && <span className="num" style={{ color: 'var(--accent)', fontWeight: 700, fontSize: 12.5 }}>품절임박 · {p.stock}개 남음</span>}
+              {stock > 0 && stock < 15 && <span className="num" style={{ color: 'var(--accent)', fontWeight: 700, fontSize: 12.5 }}>품절임박 · {stock}개 남음</span>}
             </div>
           </div>
           <div className="totline"><span>총 상품 금액</span><b className="num">{won(p.price * qty)}</b></div>
-          <div className="ctas"><button className="btn" onClick={addToCart}>장바구니 담기</button><button className="btn primary" onClick={buyNow}>바로 구매</button></div>
+          {stock > 0
+            ? <div className="ctas"><button className="btn" onClick={addToCart}>장바구니 담기</button><button className="btn primary" onClick={buyNow}>바로 구매</button></div>
+            : <div className="ctas" style={{ gridTemplateColumns: '1fr' }}><button className="btn" disabled>일시품절 · 재입고 준비 중이에요</button></div>}
           <div className="seller">판매처별 가격 비교</div>
           <table className="compare num"><tbody>{offers.map((o) => <tr key={o.seller} className={o.lowest ? 'low' : ''}><td>{o.seller}{o.lowest ? ' · 최저가' : ''}</td><td>{o.ship}</td><td>{won(o.price)}</td></tr>)}</tbody></table>
         </div>
@@ -279,7 +292,7 @@ function ProductView({ p }: { p: P }) {
           <div className="qna" key={q.id}>
             <div className="q"><b>Q</b> {q.title} <span className="who rate">{q.who}{q.mine && <span className="mine">내 문의</span>} · {fmtDate(q.t)}</span></div>
             {q.mine && <div style={{ whiteSpace: 'pre-line', marginTop: 4 }}>{q.body}</div>}
-            {isAnswered(q) ? <div className="a"><b>A</b> {inquiryAnswer(q)} <span className="hint">· {lowestSeller}</span></div> : <div className="hint">답변 대기 중</div>}
+            {q.answer ? <div className="a" style={{ whiteSpace: 'pre-line' }}><b>A</b> {q.answer} <span className="hint">· 바로담 {q.answeredAt ? fmtDate(q.answeredAt) : ''}</span></div> : <div className="hint">판매자가 확인하고 있어요. 답변이 달리면 마이페이지 1:1 문의에서도 볼 수 있어요.</div>}
           </div>
         ))}
         {sellerQs.map((q) => (
@@ -311,8 +324,12 @@ function ProductView({ p }: { p: P }) {
 
       <div className="mbar">
         <button className="btn" aria-label={wished ? '찜 해제' : '찜하기'} onClick={toggleWish}>{wished ? '♥' : '♡'}</button>
-        <button className="btn" onClick={addToCart}>장바구니</button>
-        <button className="btn primary" onClick={buyNow}>구매하기</button>
+        {stock > 0 ? (
+          <>
+            <button className="btn" onClick={addToCart}>장바구니</button>
+            <button className="btn primary" onClick={buyNow}>구매하기</button>
+          </>
+        ) : <button className="btn" disabled style={{ gridColumn: 'span 2' }}>일시품절</button>}
       </div>
     </main>
   );

@@ -5,6 +5,9 @@ const store = createPersistentStore<string[]>('bd_follow', []);
 /** Brands the visitor has "liked". */
 export const follows = {
   useIds: store.useStore,
+  get: store.get,
+  subscribe: store.subscribe,
+  replace: (ids: string[]) => store.set(ids),
   toggle(brand: string): boolean {
     const on = !store.get().includes(brand);
     store.set((ids) => (on ? [...ids, brand] : ids.filter((b) => b !== brand)));

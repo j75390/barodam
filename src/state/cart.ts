@@ -12,6 +12,8 @@ export const lineKey = (id: number, color: string | null, size: string | null) =
 export const cart = {
   useLines: store.useStore,
   get: store.get,
+  subscribe: store.subscribe,
+  replace: (lines: CartLine[]) => store.set(lines),
   add(id: number, color: string | null, size: string | null, qty: number) {
     const key = lineKey(id, color, size);
     store.set((lines) => {
@@ -37,6 +39,9 @@ export const cart = {
 const wishStore = createPersistentStore<number[]>('bd_wish', []);
 export const wish = {
   useIds: wishStore.useStore,
+  get: wishStore.get,
+  subscribe: wishStore.subscribe,
+  replace: (ids: number[]) => wishStore.set(ids),
   has: (id: number) => wishStore.get().includes(id),
   toggle(id: number): boolean {
     const on = !wishStore.get().includes(id);

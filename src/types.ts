@@ -142,6 +142,9 @@ export interface Inquiry {
   body: string;
   t: number;
   who: string;
+  /** written by the operator in the admin console */
+  answer?: string | null;
+  answeredAt?: number | null;
 }
 
 export interface User {
@@ -160,6 +163,16 @@ export interface User {
   qna: Inquiry[];
   recent: number[];
   usedCodes: string[];
+  /** cart, wishlist and followed brands, kept on the server so they follow the member */
+  shopping: Shopping;
+  /** operator account (admin console) */
+  isAdmin?: boolean;
+}
+
+export interface Shopping {
+  cart: CartLine[];
+  wish: number[];
+  follows: string[];
 }
 
 export type OrderStateKey = 'paid' | 'ready' | 'ship' | 'done' | 'confirmed' | 'cancel';

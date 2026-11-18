@@ -18,7 +18,13 @@ export interface Application {
   agree: { optional: boolean; sensitive: boolean; pool: boolean };
   at: number;
   cancelledAt?: number;
+  /** set by the recruiter in the admin console */
+  status?: ApplicationStatus;
+  statusAt?: number | null;
 }
+
+export const APPLICATION_STATUSES = ['접수 완료', '서류 검토 중', '면접 진행', '최종 합격', '불합격'] as const;
+export type ApplicationStatus = (typeof APPLICATION_STATUSES)[number];
 export type NewApplication = Omit<Application, 'no' | 'at'>;
 type Submit = { ok: true; app: Application } | { ok: false; error: string };
 
@@ -29,12 +35,18 @@ export interface CareersService {
   inquire(q: { name: string; email: string; type: string; body: string }): Promise<void>;
   /** the application just submitted in this tab (completion page) */
   recent(no: string): Application | null;
-  /** 0 = 접수 완료, 1 = 서류 검토 중 (after an hour), -1 = cancelled */
+  /** -1 cancelled · 0 접수 · 1 서류 검토 · 2 면접 · 3 최종 결과 */
   step(a: Application, now?: number): number;
+  label(a: Application): string;
 }
 
 const LAST = 'bd_app_last';
-const step = (a: Application, now = Date.now()) => (a.cancelledAt ? -1 : (now - a.at) / 36e5 < 1 ? 0 : 1);
+const step = (a: Application, now = Date.now()) => {
+  if (a.cancelledAt) return -1;
+  if (a.status) return Math.min(3, APPLICATION_STATUSES.indexOf(a.status));
+  return (now - a.at) / 36e5 < 1 ? 0 : 1; // browser-only mode has no recruiter
+};
+const label = (a: Application) => (a.cancelledAt ? '지원 취소' : a.status ?? ['접수 완료', '서류 검토 중'][step(a)]);
 const recent = (no: string) => {
   const a = session.get<Application | null>(LAST, null);
   return a && a.no === no ? a : null;
@@ -70,6 +82,7 @@ const localService: CareersService = {
   },
   recent,
   step,
+  label,
 };
 
 /** Applications stored on the server; only reachable through e-mail + application number. */
@@ -95,6 +108,7 @@ const serverService: CareersService = {
   },
   recent,
   step,
+  label,
 };
 
 export const careersService: CareersService = useSupabase ? serverService : localService;

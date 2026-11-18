@@ -1,16 +1,17 @@
-import type { Address, Coupon, Inquiry, Order, PointLog, Review, User } from '@/types';
+import type { Address, CartLine, Coupon, Inquiry, Order, PointLog, Review, User } from '@/types';
 import { local, session } from '@/lib/storage';
 import { ok, fail, type Backend, type GuestOrder, type PublicInquiry, type PublicReview, type Result } from './backend';
 import { authEmail, koreanError, setKeepLogin, supabase } from './supabaseClient';
+import { refreshAllStock } from './stock';
 
 /* Row shapes returned by PostgREST (see supabase/schema.sql). */
-interface ProfileRow { id: string; login_id: string; name: string; email: string; phone: string; marketing: boolean; joined: number; points: number; recent: number[]; used_codes: string[] }
+interface ProfileRow { id: string; login_id: string; name: string; email: string; phone: string; marketing: boolean; joined: number; points: number; recent: number[]; used_codes: string[]; cart: CartLine[]; wish: number[]; follows: string[]; is_admin: boolean }
 interface AddressRow { id: string; label: string; to_name: string; phone: string; zip: string; a1: string; a2: string; def: boolean }
 interface CouponRow extends Omit<Coupon, 'max' | 'cat'> { max: number | null; cat: Coupon['cat'] | null }
 interface OrderRow { no: string; at: number; body: Omit<Order, 'no' | 'at'>; cancelled_at: number | null; confirmed_at: number | null }
 interface OrderJson extends Omit<Order, 'cancelledAt' | 'confirmedAt'> { cancelledAt: number | null; confirmedAt: number | null }
 interface ReviewRow extends Review { uid: string }
-interface InquiryRow extends Inquiry { uid: string }
+interface InquiryRow extends Omit<Inquiry, 'answeredAt'> { uid: string; answered_at: number | null }
 
 const toAddress = (r: AddressRow): Address => ({ id: r.id, label: r.label, to: r.to_name, phone: r.phone, zip: r.zip, a1: r.a1, a2: r.a2, def: r.def });
 const toCoupon = ({ max, cat, ...c }: CouponRow): Coupon => ({ ...c, ...(max != null && { max }), ...(cat && { cat }) });
@@ -21,8 +22,11 @@ function fromJson<T extends Order>(j: OrderJson): T {
 }
 const toOrder = (r: OrderRow): Order => fromJson({ ...r.body, no: r.no, at: r.at, cancelledAt: r.cancelled_at, confirmedAt: r.confirmed_at });
 const strip = <T extends { uid: string }>({ uid: _u, ...rest }: T) => rest;
+const toInquiry = ({ uid: _u, answered_at, ...q }: InquiryRow): Inquiry => ({ ...q, answeredAt: answered_at });
 
 const GUEST = 'bd_gorders_sb';
+/** functions that take or give back stock; the catalog's live stock is refreshed after them */
+const STOCK_CHANGING = new Set(['place_order', 'cancel_order', 'place_guest_order', 'cancel_guest_order']);
 type GuestCache = Record<string, { o: GuestOrder; pw: string }>;
 
 /**
@@ -63,7 +67,9 @@ export function createSupabaseBackend(): Backend & { ready: Promise<void> } {
     snapshot = {
       id: u.login_id, name: u.name, email: u.email, phone: u.phone, joined: u.joined, marketing: u.marketing, points: u.points,
       plog: pl.data ?? [], coupons: (cps.data ?? []).map(toCoupon), addrs: (ad.data ?? []).map(toAddress), orders: (od.data ?? []).map(toOrder),
-      reviews: (rv.data ?? []).map(strip), qna: (qa.data ?? []).map(strip), recent: u.recent, usedCodes: u.used_codes,
+      reviews: (rv.data ?? []).map(strip), qna: (qa.data ?? []).map(toInquiry), recent: u.recent, usedCodes: u.used_codes,
+      shopping: { cart: u.cart ?? [], wish: u.wish ?? [], follows: u.follows ?? [] },
+      isAdmin: u.is_admin,
     };
     emit();
     return snapshot;
@@ -73,6 +79,7 @@ export function createSupabaseBackend(): Backend & { ready: Promise<void> } {
   async function rpc<T>(fn: string, args: Record<string, unknown>, reload = true): Promise<Result<T>> {
     const { data, error } = await sb.rpc(fn, args);
     if (error) return fail(koreanError(error.message));
+    if (STOCK_CHANGING.has(fn)) void refreshAllStock();
     if (reload) await load();
     return ok(data as T);
   }
@@ -244,9 +251,16 @@ export function createSupabaseBackend(): Backend & { ready: Promise<void> } {
     },
     async inquiriesFor(pid) {
       const { data } = await sb.from('inquiries').select('*').eq('pid', pid).order('t', { ascending: false }).limit(200).returns<InquiryRow[]>();
-      return (data ?? []).map((q): PublicInquiry => ({ ...strip(q), mine: q.uid === uid }));
+      return (data ?? []).map((q): PublicInquiry => ({ ...toInquiry(q), mine: q.uid === uid }));
     },
 
+    saveShopping(s) {
+      if (!snapshot) return;
+      snapshot = { ...snapshot, shopping: s };
+      sb.rpc('save_shopping', { p_cart: s.cart, p_wish: s.wish, p_follows: s.follows }).then(({ error }) => {
+        if (error) console.warn('장바구니 저장 실패', error.message);
+      });
+    },
     addRecent(pid) {
       const base = snapshot?.recent ?? local.get<number[]>('bd_recent', []);
       saveRecent([pid, ...base.filter((x) => x !== pid)].slice(0, 40));

@@ -467,3 +467,18 @@ revoke execute on function public.update_profile, public.set_recent, public.dele
   public.place_order, public.cancel_order, public.confirm_order, public.write_review, public.ask from public, anon;
 grant execute on function public.update_profile, public.set_recent, public.delete_account, public.register_coupon,
   public.place_order, public.cancel_order, public.confirm_order, public.write_review, public.ask to authenticated;
+
+-- ───────────────────────── cart · wishlist · followed brands (follow the member across devices) ─────────────────────────
+alter table public.profiles add column if not exists cart    jsonb    not null default '[]';
+alter table public.profiles add column if not exists wish    integer[] not null default '{}';
+alter table public.profiles add column if not exists follows text[]    not null default '{}';
+
+create or replace function public.save_shopping(p_cart jsonb, p_wish integer[], p_follows text[]) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if auth.uid() is null then perform _err('로그인이 필요해요.'); end if;
+  if jsonb_typeof(p_cart) <> 'array' or jsonb_array_length(p_cart) > 100 then perform _err('장바구니에는 100개까지 담을 수 있어요.'); end if;
+  update profiles set cart = p_cart, wish = p_wish[1:300], follows = p_follows[1:100] where id = auth.uid();
+end $$;
+revoke execute on function public.save_shopping from public, anon;
+grant execute on function public.save_shopping to authenticated;

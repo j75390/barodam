@@ -86,6 +86,9 @@ export interface Backend {
   deleteInquiry(id: string): Promise<void>;
   inquiriesFor(pid: number): Promise<PublicInquiry[]>;
 
+  /** store cart / wishlist / followed brands for the signed-in member */
+  saveShopping(s: import('@/types').Shopping): void;
+
   addRecent(pid: number): void;
   clearRecent(): void;
 

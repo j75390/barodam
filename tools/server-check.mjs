@@ -65,6 +65,19 @@ try {
   check('로그인하지 않으면 회원 정보를 읽을 수 없다', (await call('/rest/v1/profiles?select=*', { method: 'GET' })).status >= 400);
   check('로그인하지 않으면 주문을 볼 수 없다', (await call('/rest/v1/orders?select=no', { method: 'GET' })).status >= 400);
   check('로그인하지 않으면 회원 주문 함수를 부를 수 없다', (await rpc('place_order', { p: sheet({}) })).status >= 400);
+  // ── unit price, stock, operator-only functions ──
+  const stockOf = async (pid) => (await call(`/rest/v1/products?select=stock&id=eq.${pid}`, { method: 'GET' })).data?.[0]?.stock;
+  const before = await stockOf(25);
+  const cheap = { ...item(2, 100) };
+  check('상품 단가를 바꾼 주문은 거절된다', (await rpc('place_order', { p: sheet({ items: [cheap], sub: 200, couponId: null, couponAmount: 0, usePoints: 0 }) }, token)).status >= 400);
+  const so = await rpc('place_order', { p: sheet({ couponId: null, couponAmount: 0, usePoints: 0 }) }, token);
+  check('주문하면 재고가 줄어든다', (await stockOf(25)) === before - 2, `${before} → ${await stockOf(25)}`);
+  await rpc('cancel_order', { p_no: so.data?.no }, token);
+  check('주문을 취소하면 재고가 돌아온다', (await stockOf(25)) === before);
+  const tooMany = await rpc('place_order', { p: sheet({ items: [item(before + 1 > 99 ? 99 : before + 1, 8530)], sub: 8530 * Math.min(99, before + 1), couponId: null, couponAmount: 0, usePoints: 0 }) }, token);
+  check('남은 재고보다 많이 주문할 수 없다', before + 1 > 99 || tooMany.status >= 400, tooMany.data?.message);
+  check('일반 회원은 관리자 기능을 쓸 수 없다', (await rpc('admin_overview', {}, token)).status >= 400);
+  check('내부 함수는 직접 부를 수 없다', (await rpc('_check_sheet', { p: sheet({}) }, token)).status >= 400);
   check('같은 쿠폰 코드는 한 번만 등록된다', (await rpc('register_coupon', { p_code: 'BARODAM' }, token)).status < 300 && (await rpc('register_coupon', { p_code: 'barodam' }, token)).status >= 400);
 
   // ── guest order ──

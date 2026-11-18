@@ -6,6 +6,8 @@ import { BackendProvider } from './state/backendContext';
 import { UIProvider } from './state/ui';
 import { createBackend } from './services';
 import { legacyHashToPath } from './lib/legacyHash';
+import { startShoppingSync } from './state/shoppingSync';
+import { refreshAllStock } from './services/stock';
 import './styles/index.css';
 
 // Links shared from the previous version used hash routes (#/p/105). Send them to the new clean URLs.
@@ -25,5 +27,8 @@ const render = () =>
       </BrowserRouter>
     </StrictMode>,
   );
-// Restore the saved login first so member-only pages don't bounce to the login screen on reload.
-void Promise.race([backend.ready ?? Promise.resolve(), new Promise((r) => setTimeout(r, 4000))]).finally(render);
+// Restore the saved login first (so member-only pages don't bounce to login), then let the cart and wishlist follow the member.
+void Promise.race([Promise.all([backend.ready, refreshAllStock().catch(() => undefined)]), new Promise((r) => setTimeout(r, 4000))]).finally(() => {
+  startShoppingSync(backend);
+  render();
+});

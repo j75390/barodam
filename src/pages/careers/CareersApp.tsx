@@ -355,12 +355,12 @@ function AppCard({ a }: { a: Application }) {
         <dt>포지션</dt><dd><Link to={`/careers/jobs/${a.jobId}`}>{a.title}</Link></dd>
         <dt>지원일</dt><dd className="c-num">{new Date(a.at).toLocaleString('ko-KR')}</dd>
         <dt>이력서</dt><dd>{a.files.resume?.name ?? '-'}</dd>
-        <dt>상태</dt><dd><b style={{ color: a.cancelledAt ? 'var(--muted)' : 'var(--accent)' }}>{a.cancelledAt ? '지원 취소' : ['접수 완료', '서류 검토 중'][s]}</b></dd>
+        <dt>상태</dt><dd><b style={{ color: a.cancelledAt ? 'var(--muted)' : 'var(--accent)' }}>{careersService.label(a)}</b></dd>
       </dl>
       {!a.cancelledAt && (
         <>
-          <div className="c-steps"><div className="c-on">접수 완료</div><div className={s >= 1 ? 'c-on' : ''}>서류 검토</div><div>면접</div><div>최종 결과</div></div>
-          <p style={{ color: 'var(--muted)', fontSize: 13.5, margin: '10px 0 0' }}>서류 결과는 보통 1~2주 안에 {a.email} 로 안내해 드려요.</p>
+          <div className="c-steps">{['접수 완료', '서류 검토', '면접', '최종 결과'].map((t, i) => <div key={t} className={s >= i ? 'c-on' : ''}>{t}</div>)}</div>
+          <p style={{ color: 'var(--muted)', fontSize: 13.5, margin: '10px 0 0' }}>{s >= 3 ? `결과는 ${a.email} 로도 안내해 드렸어요.` : s === 2 ? `면접 일정은 ${a.email} 로 안내해 드려요.` : `서류 결과는 보통 1~2주 안에 ${a.email} 로 안내해 드려요.`}</p>
         </>
       )}
     </div>

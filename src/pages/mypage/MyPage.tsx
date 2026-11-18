@@ -4,7 +4,7 @@ import type { User } from '@/types';
 import { productById } from '@/data/products';
 import { orderState, isDelivered } from '@/domain/orderState';
 import { grade } from '@/domain/pricing';
-import { inquiryAnswer, isAnswered, optionText } from '@/domain/orderText';
+import { optionText } from '@/domain/orderText';
 import { fmtDate, fmtDateTime, formatPhone, won } from '@/lib/format';
 import { EMAIL_RE, isPasswordOk, PHONE_RE } from '@/lib/validators';
 import { wish } from '@/state/cart';
@@ -43,7 +43,7 @@ export default function MyPage() {
     orders: states.filter((s) => s !== 'cancel' && s !== 'confirmed').length,
     wish: wishCount,
     coupons: usable,
-    qna: user.qna.filter((q) => !isAnswered(q)).length,
+    qna: user.qna.filter((q) => !q.answer).length,
   };
   const reviewable = reviewableItems(user);
 
@@ -259,10 +259,10 @@ function Qna({ user }: { user: User }) {
     <Section title="1:1 문의" right={<button className="btn sm primary" onClick={() => void openInquiryForm(ui, be, {})}>문의하기</button>}>
       {user.qna.length ? user.qna.map((q) => (
         <details className="faq box" style={{ padding: '4px 14px' }} key={q.id}>
-          <summary><span style={{ flex: 1 }}>[{q.pid ? '상품' : q.cat}] {q.title}</span><span className="hint">{isAnswered(q) ? <b style={{ color: 'var(--ship)' }}>답변완료</b> : '답변대기'} · {fmtDate(q.t)}</span></summary>
+          <summary><span style={{ flex: 1 }}>[{q.pid ? '상품' : q.cat}] {q.title}</span><span className="hint">{q.answer ? <b style={{ color: 'var(--ship)' }}>답변완료</b> : '답변대기'} · {fmtDate(q.t)}</span></summary>
           <div>
             <div style={{ color: 'var(--ink)', whiteSpace: 'pre-line' }}>{q.body}</div>
-            {isAnswered(q) ? <div className="qna"><div className="a"><b>바로담 고객센터</b> · {fmtDateTime(q.t + 120000)}<br />{inquiryAnswer(q)}</div></div> : <p className="hint">순서대로 확인 후 답변해 드릴게요.</p>}
+            {q.answer ? <div className="qna"><div className="a" style={{ whiteSpace: 'pre-line' }}><b>바로담 고객센터</b> · {q.answeredAt ? fmtDateTime(q.answeredAt) : ''}<br />{q.answer}</div></div> : <p className="hint">담당자가 확인하고 있어요. 보통 영업일 기준 1일 안에 답변드려요.</p>}
             <button className="lnk" onClick={async () => { if (await ui.confirm('문의 삭제', '이 문의를 지울까요?', '삭제')) await be.deleteInquiry(q.id); }}>문의 삭제</button>
           </div>
         </details>

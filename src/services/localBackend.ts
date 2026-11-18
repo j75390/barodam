@@ -79,7 +79,7 @@ export function createLocalBackend(): Backend {
       const salt = uid();
       const u: StoredUser = {
         id, name: i.name, email: i.email, phone: i.phone, marketing: i.marketing, joined: Date.now(),
-        points: 0, plog: [], coupons: [], addrs: [], orders: [], reviews: [], qna: [], recent: [], usedCodes: [],
+        points: 0, plog: [], coupons: [], addrs: [], orders: [], reviews: [], qna: [], recent: [], usedCodes: [], shopping: { cart: [], wish: [], follows: [] },
         salt, hash: await hashSecret(i.password, salt),
       };
       giveCoupon(u, { name: '신규가입 15% 할인', type: 'rate', val: 15, max: 10000, min: 10000 });
@@ -302,6 +302,13 @@ export function createLocalBackend(): Backend {
       return out;
     },
 
+    saveShopping(s) {
+      const u = cur();
+      if (!u) return;
+      u.shopping = s;
+      local.set(K.users, users);
+      snapshot = strip(u);
+    },
     addRecent(pid) {
       local.set(K.recent, [pid, ...local.get<number[]>(K.recent, []).filter((x) => x !== pid)].slice(0, 40));
       const u = cur();
@@ -362,6 +369,7 @@ function migrate(map: Record<string, StoredUser & { used_codes?: string[] }>): R
     u.usedCodes ??= u.used_codes ?? [];
     delete u.used_codes;
     u.recent ??= [];
+    u.shopping ??= { cart: [], wish: [], follows: [] };
   }
   return map;
 }
