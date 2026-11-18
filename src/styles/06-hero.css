@@ -1,0 +1,15 @@
+/* Hero carousel */
+.hero{position:relative;margin-top:20px;border-radius:18px;overflow:hidden;aspect-ratio:1180/400;min-height:240px;max-width:100%;background:var(--ink)}
+.slide{position:absolute;inset:0;height:100%;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);grid-template-rows:100%;align-items:stretch;opacity:0;transition:opacity .6s;border:0;padding:0;text-align:left;color:#fff;width:100%;cursor:pointer}
+.slide.on{opacity:1;z-index:1}
+.slide .txt{padding:clamp(20px,3.4vw,40px) clamp(24px,4.5vw,56px);padding-bottom:clamp(36px,4vw,52px);display:flex;flex-direction:column;justify-content:center;gap:10px;min-width:0;min-height:0}
+.slide .eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;opacity:.85}
+.slide h2{font-family:var(--f-display);font-weight:400;font-size:clamp(26px,4.2vw,50px);line-height:1.08;margin:0;text-wrap:balance}
+.slide .sub{font-size:clamp(13px,1.4vw,16px);opacity:.9}
+.slide .go{margin-top:10px;align-self:flex-start;background:#fff;color:#15171C;font-weight:800;border-radius:999px;padding:9px 16px;font-size:13px}
+.slide .ph{position:relative;min-width:0}
+.slide .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.slide .ph::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--slide-bg) 0,transparent 35%)}
+.dots{position:absolute;right:16px;bottom:14px;z-index:2;display:flex;gap:6px;align-items:center;background:rgba(0,0,0,.35);border-radius:999px;padding:5px 10px;color:#fff;font-size:12px}
+.dots button{width:8px;height:8px;border-radius:50%;border:0;background:rgba(255,255,255,.45);padding:0}
+.dots button[aria-current="true"]{background:#fff;width:20px;border-radius:4px}

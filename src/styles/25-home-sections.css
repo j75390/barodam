@@ -1,0 +1,27 @@
+/* home sections */
+.bweek{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.bt{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;color:var(--ink);display:grid;gap:10px}
+.bt .bn{min-height:26px;display:flex;align-items:center}
+.emb{display:inline-grid;place-items:center;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.bmark{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;line-height:1}
+.blogo{font-size:0}
+.bt .tg{font-size:12.5px;color:var(--muted)}
+.bt .ims{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.bt .ims div{aspect-ratio:1;border-radius:8px;overflow:hidden;background:var(--sunk)}
+.bt .ims img{width:100%;height:100%;object-fit:cover}
+.bt .cpn{font-size:12px;font-weight:800;color:var(--accent)}
+.catsec{display:grid;grid-template-columns:190px minmax(0,1fr);border:1px solid var(--line);border-top:3px solid var(--c,var(--accent));border-radius:0 0 14px 14px;background:var(--surface);margin-top:16px}
+.catsec .lft{padding:18px;border-right:1px solid var(--line)}
+.catsec .lft h3{margin:0;font-size:20px;color:var(--c,var(--accent))}
+.catsec .lft a.more{font-size:12px;color:var(--muted)}
+.catsec .lft .hk{margin-top:16px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.catsec .lft .hk b{font-size:12.5px}
+.catsec .lft .hk a{font-size:12px;color:var(--c,var(--accent));border:1px solid currentColor;border-radius:4px;padding:2px 8px;text-decoration:none}
+.catsec .rgt{padding:16px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.bcircles{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:14px 8px}
+.bcircles a{display:grid;justify-items:center;gap:4px;text-decoration:none;color:var(--ink);font-size:12px;font-weight:700;text-align:center}
+.bcircles .lg{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;font-size:15px;position:relative}
+.bcircles .cb{font-size:10px;background:var(--accent-soft);color:var(--accent);border-radius:4px;padding:0 5px}
+.bfilter{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.bfilter button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:12.5px;font-weight:700}
+.bfilter button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}

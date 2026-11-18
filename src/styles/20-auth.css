@@ -1,0 +1,39 @@
+/* focused auth layout (login/signup/find) */
+.authm .util,.authm nav.cats,.authm .search,.authm .catbtn,.authm .iconbtn,.authm .rail,.authm .totop{display:none!important}
+.authm .top .wrap{justify-content:center;padding-block:22px}
+.authm .logo{font-size:38px;flex:none}
+.authm #page{padding-top:28px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.auth2{max-width:400px;margin:0 auto}
+.atabs{display:grid;grid-template-columns:1fr 1fr}
+.atabs button{padding:13px;border:1px solid var(--line);border-bottom-color:var(--accent);background:var(--sunk);color:var(--muted);font-weight:700;font-size:15px}
+.atabs button:first-child{border-radius:10px 0 0 0}.atabs button:last-child{border-radius:0 10px 0 0}
+.atabs button[aria-selected="true"]{background:var(--surface);color:var(--ink);border:2px solid var(--accent);border-bottom-color:transparent}
+.igroup{border:1px solid var(--line);border-top:0;background:var(--surface);border-radius:0 0 10px 10px;overflow:hidden}
+.ifield{display:flex;align-items:center;gap:10px;padding:0 14px;height:54px}
+.ifield+.ifield{border-top:1px solid var(--line)}
+.ifield:focus-within{box-shadow:inset 0 0 0 2px var(--ink)}
+.ifield svg{width:20px;height:20px;stroke:var(--muted);fill:none;stroke-width:1.7;flex:none}
+.ifield input{flex:1;min-width:0;border:0;outline:0;background:none;font-size:15px;color:var(--ink)}
+.showpw{border:0;background:none;font-size:12px;text-decoration:underline;color:var(--ink);white-space:nowrap;padding:0}
+.btn.xl{height:54px;font-size:17px;padding:0}
+.alinks{display:flex;justify-content:center;margin-top:18px;font-size:13.5px}
+.alinks a{color:var(--muted);text-decoration:none}
+.alinks a+a::before{content:"";display:inline-block;width:1px;height:11px;background:var(--line);margin:0 14px}
+.abanner{margin-top:26px;border-top:1px solid var(--line);padding-top:18px;font-size:13px;color:var(--muted);text-align:center;line-height:1.7}
+.abanner .acc{color:var(--accent)}.abanner a{color:var(--ink);font-weight:700}
+
+/* ===== Benchmark round: product page, search results, ranking, brand, home sections ===== */
+.catbtn{border:0;background:var(--ink);color:var(--surface);border-radius:10px;padding:0 14px;align-self:stretch;display:flex;align-items:center;gap:6px;font-weight:800;white-space:nowrap;position:relative}
+.catbtn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
+.mega{position:absolute;left:0;top:100%;z-index:36;display:grid;grid-template-columns:180px 420px;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;margin-top:6px;color:var(--ink);text-align:left}
+.mega .l{background:var(--sunk);padding:8px 0}
+.mega .l button{display:flex;justify-content:space-between;width:100%;border:0;background:none;padding:10px 16px;font-weight:700;font-size:13.5px}
+.mega .l button.on{background:var(--surface);color:var(--accent)}
+.mega .r{padding:16px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 16px;align-content:start}
+.mega .r h5{grid-column:1/-1;margin:0 0 6px;font-size:15px}
+.mega .r a{color:var(--ink);text-decoration:none;font-size:13.5px;padding:6px 0}
+.mega .r a:hover{color:var(--accent)}
+.mega .r .b{grid-column:1/-1;margin-top:10px;border-top:1px solid var(--line);padding-top:10px;display:flex;gap:6px;flex-wrap:wrap}
+.mega .r .b a{border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:12px}
+nav.cats .wrap a.navx{padding:8px 12px;border-radius:8px;white-space:nowrap;font-weight:700;color:var(--accent);text-decoration:none}

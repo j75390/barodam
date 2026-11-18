@@ -1,0 +1,5 @@
+/* brand */
+.bhead{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:18px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:16px}
+.blogo{width:96px;height:96px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-size:30px;color:#fff}
+.bhead h1{margin:0;font-size:24px}
+.bhead .st2{color:var(--muted);font-size:13px;margin-top:4px}

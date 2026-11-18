@@ -1,7 +1,8 @@
 # 사진 출처
 
-- `img/gen/`: Codex(OpenAI) 이미지 생성으로 만든 사진
-- `img/cc/`: Openverse에서 찾은 CC0(퍼블릭 도메인) 사진. 사진 속 상품명·브랜드와 사이트의 상품 정보는 관계없어요.
+- `public/img/gen/`: Codex(OpenAI) 이미지 생성으로 만든 사진
+- `public/img/cc/`: Openverse에서 찾은 CC0(퍼블릭 도메인) 사진. 사진 속 상품명·브랜드와 사이트의 상품 정보는 관계없어요.
+- `public/img/careers/`: StockSnap CC0 사진
 
 - `cc/p001.jpg` row t-shirts different colors Petersham — https://www.rawpixel.com/image/3301357/free-photo-image-t-shirt-shirt-color-clothes-hanging
 - `cc/p002.jpg` T-shirts hanger — https://www.rawpixel.com/image/5928381/photo-image-public-domain-t-shirt-free

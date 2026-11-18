@@ -1,0 +1,46 @@
+/* site footer (notice line, promo band, link rows, company info, legal links) */
+.fnotice{background:var(--surface);border-top:1px solid var(--line);margin-top:48px}
+.fnotice .wrap{display:flex;gap:10px;align-items:center;padding-block:18px;font-size:14px;min-width:0}
+.fnotice .arw{color:var(--muted)}
+.fnotice a{color:var(--ink);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.fdate{color:var(--muted);font-size:13px;border-left:1px solid var(--line);padding-left:10px;white-space:nowrap}
+footer.sitefoot{margin-top:0;border-top:0;background:var(--sunk)}
+footer.sitefoot .wrap{display:block;padding-block:0;font-size:inherit;color:inherit}
+.fpromo{background:var(--accent);color:#fff;overflow:hidden;position:relative}
+.fpromo .wrap{display:flex!important;align-items:center;justify-content:center;gap:16px;padding-block:16px!important;font-size:19px!important;position:relative;color:#fff!important;flex-wrap:wrap;text-align:center}
+.fpromo p{margin:0;position:relative;z-index:1}
+.fpromo .fbtn{position:relative;z-index:1;background:#fff;color:var(--accent);border-radius:999px;padding:8px 20px;font-weight:800;font-size:14px;text-decoration:none}
+.fpromo .deco{position:absolute;font-family:var(--f-display);font-size:130px;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.4);left:3%;top:-34px;line-height:1;pointer-events:none}
+.fpromo .deco.d2{left:auto;right:5%;top:-10px}
+.flinks2{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);gap:12px;flex-wrap:wrap}
+.flinks2 nav{display:flex;flex-wrap:wrap;row-gap:6px}
+.flinks2 nav a{color:var(--ink);text-decoration:none;font-size:13.5px}
+.flinks2 nav a+a::before{content:"";display:inline-block;width:1px;height:12px;background:var(--line);margin:0 22px;vertical-align:-1px}
+.fsel{position:relative}
+.fsel button{border:1px solid var(--line);background:var(--surface);padding:8px 14px;font-size:13px;border-radius:4px}
+.fsel button i{font-style:normal;color:var(--muted)}
+.fselp{position:absolute;right:0;bottom:calc(100% + 4px);background:var(--surface);border:1px solid var(--line);border-radius:6px;display:grid;min-width:150px;padding:6px;box-shadow:var(--shadow);z-index:5}
+.fselp[hidden]{display:none}
+.fselp a{padding:8px 10px;color:var(--ink);text-decoration:none;font-size:13px;border-radius:4px}.fselp a:hover{background:var(--sunk)}
+.fcorp{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);line-height:1.9}
+.fcorp .ft{display:block;color:var(--ink);font-weight:800;font-size:14px;text-decoration:none;margin-bottom:4px}
+.fchip{border:1px solid var(--line);background:var(--surface);font-size:11.5px;padding:1px 6px;color:var(--ink);text-decoration:none;margin-left:4px;white-space:nowrap}
+.fcorp a.tel{color:#2563EB;text-decoration:none}
+.flegal{padding:14px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);display:grid;gap:8px}
+.flegal div{display:flex;flex-wrap:wrap;gap:6px 24px}
+.flegal a{color:var(--muted);text-decoration:none}.flegal a:hover{color:var(--ink)}
+.fdisc{padding:16px 0 30px;font-size:12px;color:var(--muted);line-height:1.8}
+.fdisc p{margin:0 0 6px}.fdisc a{color:var(--ink)}
+.faward{display:flex;align-items:center;gap:10px;margin-top:8px}
+.kola{font-weight:900;color:var(--ink);letter-spacing:-.5px}
+.faward button{border:0;background:none;color:var(--muted);text-decoration:underline;font-size:12px;padding:0}
+.faward button i{font-style:normal}
+.fawardl{margin:8px 0 0;padding-left:18px}.fawardl[hidden]{display:none}
+.infopage h3{margin:24px 0 8px;font-size:16px}
+.infopage .lead{font-size:17px;font-weight:700;line-height:1.6}
+.infopage ul,.infopage ol{padding-left:20px;line-height:1.9}
+.istat{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
+.istat div{background:var(--sunk);border-radius:12px;padding:16px;text-align:center;font-size:12.5px;color:var(--muted)}
+.istat b{display:block;font-size:24px;color:var(--ink)}
+.csm .fnotice{margin-top:0}
+@media (max-width:820px){.fcorp{grid-template-columns:1fr}.flinks2 nav a+a::before{margin:0 10px}.istat{grid-template-columns:1fr 1fr}.fpromo .wrap{font-size:15px!important}.fpromo .deco{font-size:90px}}

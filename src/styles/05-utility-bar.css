@@ -1,0 +1,6 @@
+/* Utility bar */
+.util{background:var(--sunk);font-size:12px;color:var(--muted)}
+.util .wrap{display:flex;justify-content:space-between;gap:12px;padding-block:6px;flex-wrap:wrap}
+.util a,.util button{color:var(--muted);background:none;border:0;padding:0;font-size:12px;text-decoration:none}
+.util .links{display:flex;gap:14px}
+.util .promo b{color:var(--accent)}
