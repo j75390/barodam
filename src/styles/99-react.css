@@ -5,3 +5,5 @@
 .page-loading{min-height:50vh;display:grid;place-items:center}
 .tabbar button[aria-current="page"]{color:var(--ink)}
 .authm .top .wrap{justify-content:center;padding-block:22px}
+.bt{min-width:0}.bt .bn{min-width:0;overflow:hidden}.bt .bmark{max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.bt>*{min-width:0}.bt{grid-template-columns:minmax(0,1fr)}
