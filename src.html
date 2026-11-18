@@ -213,12 +213,210 @@ aside.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);backgro
   .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 10px}
   .iconbtn span.lbl{display:none}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ===== Member / order / my page features ===== */
+.inp,select.inp,textarea.inp{width:100%;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:11px 12px;font-size:14px;outline:none}
+.inp:focus{border-color:var(--ink)}
+textarea.inp{min-height:110px;resize:vertical;line-height:1.5}
+.fld{display:grid;gap:6px;margin-top:14px}
+.fld>span{font-weight:700;font-size:13px}
+.fld .with{display:flex;gap:6px}
+.fld .with .inp{flex:1;min-width:0}
+.fld .with .btn{padding:0 14px;white-space:nowrap;font-size:13px}
+.hint{font-size:12px;color:var(--muted)}
+.hint.ok{color:var(--ship)}.hint.bad{color:var(--accent)}
+.err{color:var(--accent);font-size:13px;font-weight:700;margin:10px 0 0}
+.ck{display:inline-flex;align-items:center;gap:6px;font-size:13px;cursor:pointer}
+.ck input{width:17px;height:17px;accent-color:var(--accent)}
+.wide{width:100%;margin-top:16px}
+.btn.sm{padding:7px 12px;font-size:12.5px;border-radius:8px;font-weight:700}
+.btn.ghost{border-color:var(--line)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+a.lnk,button.lnk{color:var(--muted);background:none;border:0;padding:0;font-size:13px;text-decoration:underline;cursor:pointer}
+#page{padding-top:24px;min-height:60vh}
+.crumb{font-size:12px;color:var(--muted);margin-bottom:8px}
+.crumb a{color:inherit}
+.ptitle{font-family:var(--f-display);font-weight:400;font-size:28px;margin:0 0 16px;letter-spacing:-.3px}
+.auth{max-width:440px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px 24px}
+.auth .ptitle{text-align:center}
+.auth-links{display:flex;justify-content:center;gap:16px;margin-top:16px}
+.rowb{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+.note{background:var(--sunk);border-radius:10px;padding:10px 12px;font-size:12px;color:var(--muted);margin-top:16px;line-height:1.55}
+.or{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:12px;margin:18px 0 0}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+.terms{border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:16px;display:grid;gap:10px}
+.terms .all{font-weight:800;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.terms .t{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ptabs{display:flex;border-bottom:1px solid var(--line);margin-bottom:6px}
+.ptabs button{flex:1;border:0;background:none;padding:12px;font-weight:700;color:var(--muted);border-bottom:2px solid transparent}
+.ptabs button[aria-selected="true"]{color:var(--ink);border-color:var(--ink)}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.box+.box{margin-top:12px}
+.box h3{margin:0 0 10px;font-size:16px}
+/* my page */
+.mp{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;align-items:start}
+.mp-nav{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px;display:grid;gap:2px;position:sticky;top:130px}
+.mp-nav .g{font-size:11px;color:var(--muted);font-weight:800;padding:10px 10px 4px}
+.mp-nav a{padding:9px 10px;border-radius:8px;color:var(--ink);text-decoration:none;font-weight:600;font-size:13.5px;display:flex;justify-content:space-between}
+.mp-nav a[aria-current="page"]{background:var(--ink);color:var(--surface)}
+.mp-nav a .num{color:var(--accent);font-weight:800}
+.mp-nav a[aria-current="page"] .num{color:inherit}
+.mp-head{background:var(--ink);color:var(--surface);border-radius:16px;padding:20px 22px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center}
+.mp-head .hi{font-size:20px;font-weight:800}
+.mp-head .grade{display:inline-block;background:var(--accent);color:var(--on-accent);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:800;margin-left:6px;vertical-align:middle}
+.mp-head .sub{opacity:.7;font-size:12.5px;margin-top:4px}
+.mp-head .assets{display:flex;gap:22px}
+.mp-head .assets a{color:inherit;text-decoration:none;text-align:center}
+.mp-head .assets b{display:block;font-size:20px}
+.mp-head .assets span{font-size:12px;opacity:.7}
+.ostat{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-top:12px}
+.ostat a{text-align:center;padding:14px 4px;color:var(--ink);text-decoration:none;position:relative;font-size:12.5px;color:var(--muted)}
+.ostat a b{display:block;font-size:22px;color:var(--ink)}
+.ostat a.on b{color:var(--accent)}
+.ostat a+a::before{content:"›";position:absolute;left:-4px;top:50%;transform:translateY(-50%);color:var(--line);font-size:20px}
+.mp-sec{margin-top:18px}
+.mp-sec h2{font-size:18px;margin:0 0 10px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.filters button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.ocard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px}
+.ocard .oh{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline;margin-bottom:10px}
+.ocard .oh b{font-size:15px}
+.ocard .oh .no{color:var(--muted);font-size:12px}
+.ocard .oh a{font-size:13px;color:var(--ink);font-weight:700}
+.st{font-weight:800;font-size:15px}
+.st.ok{color:var(--ship)}.st.cancel{color:var(--muted)}.st.go{color:var(--accent)}
+.oi{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.oi .pic{border-radius:8px;cursor:pointer}
+.oi .nm{font-size:13.5px;font-weight:600;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}
+.oi .op{font-size:12px;color:var(--muted)}
+.oi .acts{display:grid;gap:6px;justify-items:stretch;min-width:96px}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:8px 0 4px;counter-reset:s}
+.steps div{text-align:center;font-size:12px;color:var(--muted);position:relative;padding-top:26px}
+.steps div::before{content:"";position:absolute;top:6px;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:var(--line);z-index:1}
+.steps div::after{content:"";position:absolute;top:12px;left:-50%;width:100%;height:2px;background:var(--line)}
+.steps div:first-child::after{display:none}
+.steps div.on{color:var(--ink);font-weight:800}
+.steps div.on::before{background:var(--accent)}
+.steps div.on::after{background:var(--accent)}
+.steps small{display:block;font-weight:400;color:var(--muted);font-size:11px}
+.track{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.track li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:13px}
+.track li:first-child{font-weight:800;color:var(--ink)}
+.track li span{color:var(--muted)}
+.kv{display:grid;grid-template-columns:110px minmax(0,1fr);gap:8px 12px;font-size:13.5px}
+.kv dt{color:var(--muted)}.kv dd{margin:0}
+.paysum .sum{font-size:14px;padding:3px 0}
+.paysum .sum.total{font-size:19px;border-top:1px solid var(--line);margin-top:6px;padding-top:10px}
+.cp{display:grid;grid-template-columns:110px minmax(0,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);margin-bottom:10px}
+.cp .v{background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font-size:22px;font-weight:900;padding:14px 6px;text-align:center;line-height:1.1}
+.cp .v small{display:block;font-size:11px;font-weight:700;opacity:.85}
+.cp .d{padding:12px 14px;font-size:13px}
+.cp .d b{display:block;font-size:14px;margin-bottom:2px}
+.cp.off{opacity:.5}.cp.off .v{background:var(--muted)}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl th,.tbl td{text-align:left;padding:10px 6px;border-bottom:1px solid var(--line)}
+.tbl th{color:var(--muted);font-weight:700;font-size:12px}
+.tbl td.r,.tbl th.r{text-align:right}
+.plus{color:var(--ship);font-weight:800}.minus{color:var(--accent);font-weight:800}
+.addr{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--surface);margin-bottom:10px;display:grid;gap:3px;font-size:13.5px}
+.addr .t{display:flex;gap:8px;align-items:center;font-weight:800}
+.addr .def{background:var(--ship-soft);color:var(--ship);font-size:11px;padding:1px 7px;border-radius:999px;font-weight:800}
+.addr .a{display:flex;gap:10px;margin-top:6px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px}
+.empty-box{text-align:center;color:var(--muted);padding:44px 12px;background:var(--surface);border:1px dashed var(--line);border-radius:14px}
+.mp .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+/* checkout */
+.co{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;align-items:start}
+.co .side{position:sticky;top:130px}
+.radios{display:grid;gap:8px}
+.rcard{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;background:var(--surface)}
+.rcard:has(input:checked){border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.rcard input{margin-top:3px;accent-color:var(--accent)}
+.rcard .x{font-size:13px;color:var(--muted)}
+.pays{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.pays label{border:1px solid var(--line);border-radius:10px;padding:12px 6px;text-align:center;font-weight:700;font-size:13px;cursor:pointer;background:var(--surface)}
+.pays label:has(input:checked){border-color:var(--accent);color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.pays input{position:absolute;opacity:0;pointer-events:none}
+.coline{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line);font-size:13px}
+.coline:first-child{border-top:0}
+.coline .pic{border-radius:8px}
+.spin{width:44px;height:44px;border-radius:50%;border:4px solid var(--line);border-top-color:var(--accent);animation:sp 0.8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+/* dialog */
+#dlg .scrim{align-items:center;z-index:70}
+.dbox{background:var(--surface);border-radius:16px;padding:22px;width:100%;max-width:420px;box-shadow:var(--shadow)}
+.dbox h3{margin:0 0 8px;font-size:17px}
+.dbox p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.6;white-space:pre-line}
+.dbox .ctas{margin-top:18px}
+.stars{display:flex;gap:4px}
+.stars button{border:0;background:none;font-size:30px;color:var(--line);padding:0;line-height:1}
+.stars button.on{color:var(--star)}
+/* search suggest */
+.search{position:relative;overflow:visible}
+.search input{border-radius:8px 0 0 8px}
+.search button[type=submit]{border-radius:0 7px 7px 0}
+.sugg{position:absolute;left:-2px;right:-2px;top:calc(100% + 6px);background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);z-index:35;padding:12px;display:grid;gap:12px;max-height:70vh;overflow-y:auto}
+.sugg button{color:var(--ink);background:none;align-self:auto;padding:0;border-radius:6px}.sugg button.lnk,.sugg .chipsr span button{color:var(--muted)}
+.sugg h4{margin:0 0 6px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+.sugg .chipsr{display:flex;gap:6px;flex-wrap:wrap}
+.sugg .chipsr span{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 10px;font-size:12.5px}
+.sugg .chipsr span button{border:0;background:none;color:var(--muted);padding:0 4px;font-size:12px}
+.sugg .pop{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 16px;counter-reset:pp}
+.sugg button.it{border:0;background:none;text-align:left;padding:6px 4px;border-radius:6px;font-size:13px;display:flex;gap:8px;align-items:center;width:100%;min-width:0}
+.sugg button.it:hover,.sugg button.it.act{background:var(--sunk)}
+.sugg button.it .n{color:var(--accent);font-weight:800;width:16px;flex:none}
+.sugg button.it .tx{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sugg button.it mark{background:none;color:var(--accent);font-weight:800}
+.sugg button.it img{width:32px;height:32px;border-radius:6px;object-fit:cover;flex:none}
+.util .links b{color:var(--ink)}
+/* detail extras */
+.dx{grid-column:1/-1;border-top:1px solid var(--line);padding-top:6px}
+.dx .rowb{margin-top:6px}
+.qna{border-top:1px solid var(--line);padding:10px 0;font-size:13px}
+.qna .q b{color:var(--accent)} .qna .a{background:var(--sunk);border-radius:8px;padding:8px 10px;margin-top:6px}
+.mine{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:11px;font-weight:800;border-radius:4px;padding:0 6px;margin-left:4px}
+/* faq */
+details.faq{border-bottom:1px solid var(--line);padding:4px 0}
+details.faq summary{cursor:pointer;padding:12px 4px;font-weight:700;list-style:none;display:flex;gap:8px}
+details.faq summary::before{content:"Q";color:var(--accent);font-weight:900}
+details.faq div{padding:0 4px 14px 22px;color:var(--muted);font-size:13.5px;line-height:1.6}
+/* mobile tab bar */
+.tabbar{display:none}
+.iconbtn.me svg{stroke:var(--ink)}
+@media (max-width:820px){
+  .mp{grid-template-columns:1fr}
+  .mp-nav{position:static;display:flex;overflow-x:auto;scrollbar-width:none;padding:6px;gap:4px}
+  .mp-nav .g{display:none}
+  .mp-nav a{white-space:nowrap;flex:none}
+  .co{grid-template-columns:1fr}
+  .co .side{position:static}
+  .mp-head{grid-template-columns:1fr}
+  .tabbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+  .tabbar a,.tabbar button{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;padding:7px 0 6px;font-size:10.5px;color:var(--muted);text-decoration:none;font-weight:700}
+  .tabbar svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8}
+  .tabbar [aria-current="page"]{color:var(--ink)}
+  body{padding-bottom:calc(58px + env(safe-area-inset-bottom,0px))}
+  .toast{bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+}
+@media (max-width:560px){
+  .pays{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid2{grid-template-columns:1fr}
+  .ostat a b{font-size:18px}
+  .ostat a{font-size:11px;word-break:keep-all;padding:12px 2px}
+  .oi{grid-template-columns:60px minmax(0,1fr)}
+  .oi .acts{grid-column:1/-1;grid-template-columns:repeat(auto-fit,minmax(90px,1fr))}
+  .kv,.track li{grid-template-columns:90px minmax(0,1fr)}
+  .auth{padding:22px 16px;border:0;background:none}
+  .sugg .pop{grid-template-columns:1fr}
+}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation-duration:2s!important}}
 </style>
 
 <div class="util"><div class="wrap">
   <span class="promo">첫 구매 <b>15% 쿠폰</b> · 19,800원 이상 무료배송</span>
-  <span class="links"><button data-demo>로그인</button><button data-demo>회원가입</button><button data-demo>주문배송</button><button data-demo>고객센터</button></span>
+  <span class="links" id="utilLinks"></span>
 </div></div>
 <header class="top">
   <div class="wrap">
@@ -226,7 +424,12 @@ aside.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);backgro
     <form class="search" id="searchForm" role="search">
       <input id="q" type="search" placeholder="상품명이나 브랜드를 검색해 보세요 (예: 패딩, 텀블러)" aria-label="상품 검색" autocomplete="off">
       <button type="submit">검색</button>
+      <div class="sugg" id="sugg" hidden></div>
     </form>
+    <button class="iconbtn me" id="meBtn" aria-label="마이페이지">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+      <span class="lbl" id="meLbl">로그인</span>
+    </button>
     <button class="iconbtn" id="wishBtn" aria-label="찜한 상품 보기">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
       <span class="lbl">찜</span><span class="badge num" id="wishCount" hidden>0</span>
@@ -269,11 +472,12 @@ aside.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);backgro
     <div class="grid" id="grid" style="margin-top:10px"></div>
   </section>
 </main>
+<div id="page" class="wrap" hidden></div>
 
 <footer><div class="wrap">
   <div class="corp">
     <div>
-      <div class="flinks"><span>회사소개</span><span>이용약관</span><span>개인정보처리방침</span><span>입점 문의</span></div>
+      <div class="flinks"><a class="lnk" href="#/cs/notice">공지사항</a><button class="lnk" data-term="tos">이용약관</button><button class="lnk" data-term="privacy"><b>개인정보처리방침</b></button><a class="lnk" href="#/cs">고객센터</a></div>
       <div>(주)바로담 · 대표 홍길동 · 사업자등록번호 000-00-00000 · 통신판매업신고 제0000-가상-0000호</div>
       <div>주소 가상시 예시구 샘플로 123, 4층 · 이메일 help@example.com</div>
       <div style="margin-top:8px">모든 상품, 브랜드, 가격, 후기는 시연용으로 지어낸 더미 데이터예요. 실제 판매나 결제는 일어나지 않아요. 사진은 CC0 퍼블릭 도메인 이미지예요.</div>
@@ -288,7 +492,15 @@ aside.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);backgro
 </div></footer>
 
 <div id="overlay"></div>
+<div id="dlg"></div>
 <div class="toast" id="toast" role="status" hidden></div>
+<nav class="tabbar" id="tabbar" aria-label="하단 메뉴">
+  <a href="#/" data-nav="home"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z"/></svg>홈</a>
+  <a href="#/" data-nav="cat"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>카테고리</a>
+  <a href="#/" data-nav="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>검색</a>
+  <a href="#/mypage/wish" data-nav="wish"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>찜</a>
+  <a href="#/mypage" data-nav="mypage"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>마이</a>
+</nav>
 
 <script>window.__PHOTOS=/*PHOTOS*/{}/*END*/;</script>
 <script>
@@ -430,7 +642,7 @@ function renderCats(){
   $('#cats').innerHTML=CATS.map(c=>`<button data-cat="${c.id}" aria-pressed="${S.cat===c.id}">${c.name}</button>`).join('');
 }
 $('#cats').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;S.cat=b.dataset.cat;S.q='';$('#q').value='';renderCats();renderList();document.getElementById('listTitle').scrollIntoView({behavior:'smooth',block:'start'})});
-$('#searchForm').addEventListener('submit',e=>{e.preventDefault();S.q=$('#q').value.trim();S.cat='all';renderCats();renderList();document.getElementById('listTitle').scrollIntoView({behavior:'smooth',block:'start'})});
+$('#searchForm').addEventListener('submit',e=>{e.preventDefault();doSearch($('#q').value)});
 $('#home').addEventListener('click',()=>{S.cat='all';S.q='';$('#q').value='';Object.keys(S.f).forEach(k=>S.f[k]=false);renderCats();renderChips();renderList();window.scrollTo({top:0,behavior:'smooth'})});
 $('#wishBtn').addEventListener('click',()=>{if(!wish.size){toast('하트를 눌러 마음에 드는 상품을 담아 보세요');return}S.cat='wish';renderCats();renderList();document.getElementById('listTitle').scrollIntoView({behavior:'smooth'})});
 
@@ -568,7 +780,8 @@ function openDetail(pid){
   $('#qm').onclick=()=>{cur.qty=Math.max(1,cur.qty-1);$('#qv').textContent=cur.qty};
   $('#qp').onclick=()=>{cur.qty=Math.min(p.stock,cur.qty+1);$('#qv').textContent=cur.qty};
   $('#addCart').onclick=()=>{if(add())toast('장바구니에 담았어요')};
-  $('#buyNow').onclick=()=>{if(add())openCart()};
+  $('#buyNow').onclick=()=>buyNow();
+  afterDetail(p);
 }
 function add(){
   const {p,size,color,qty}=cur;
@@ -577,52 +790,10 @@ function add(){
   const key=p.id+'|'+(color||'')+'|'+(size||'');const ex=cart.find(c=>c.key===key);
   ex?ex.qty+=qty:cart.push({key,id:p.id,size,color,qty});save();counts();return true;
 }
-function closeOverlay(){$('#overlay').innerHTML='';document.body.style.overflow=''}
+function closeOverlay(keep){$('#overlay').innerHTML='';document.body.style.overflow='';if(!keep&&location.hash.startsWith('#/p/'))history.replaceState(null,'',mainEl.hidden?location.hash:'#/')}
 
 // ---------- cart ----------
-$('#cartBtn').addEventListener('click',openCart);
-function openCart(){
-  const FREE=19800;
-  const lines=cart.map(c=>({...c,p:byId(c.id)})).filter(c=>c.p);
-  const sub=lines.reduce((a,c)=>a+c.p.price*c.qty,0);
-  const disc=lines.reduce((a,c)=>a+(c.p.base-c.p.price)*c.qty,0);
-  const ship=!lines.length||sub>=FREE||lines.every(c=>c.p.free)?0:3000;
-  $('#overlay').innerHTML=`<div class="scrim" id="scrim" style="justify-content:flex-end;padding:0"></div>
-  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cTitle">
-    <header><h2 id="cTitle">장바구니</h2><button class="close" style="position:static" id="cClose" aria-label="닫기">✕</button></header>
-    <div class="body" id="cBody">
-      ${lines.length?`<div class="freebar">${sub>=FREE?'무료배송 조건을 채웠어요':`<b class="num">${won(FREE-sub)}</b> 더 담으면 무료배송`}<div class="track"><i style="width:${Math.min(100,sub/FREE*100)}%"></i></div></div>`+
-      lines.map(c=>`<div class="line"><div class="pic">${pimg(c.p)}</div><div><div class="ln">${esc(c.p.name)}</div><div class="op">${c.color?c.color+' · ':''}${c.size?'사이즈 '+c.size+' · ':''}${arrive(c.p)}</div>
-        <div style="display:flex;gap:10px;align-items:center;margin-top:6px"><div class="qty"><button data-dq="${c.key}" data-d="-1" aria-label="줄이기">−</button><span class="num">${c.qty}</span><button data-dq="${c.key}" data-d="1" aria-label="늘리기">+</button></div><button class="rm" data-rm="${c.key}">삭제</button></div></div>
-        <div class="now num" style="font-size:14px">${won(c.p.price*c.qty)}</div></div>`).join('')
-      :`<div class="done"><div style="font-size:15px;font-weight:700">장바구니가 비어 있어요</div><div class="rate">마음에 드는 상품을 담아 보세요</div></div>`}
-    </div>
-    ${lines.length?`<footer>
-      <div class="sum"><span>상품 금액</span><span class="num">${won(sub+disc)}</span></div>
-      <div class="sum"><span>할인</span><span class="num" style="color:var(--accent)">−${won(disc)}</span></div>
-      <div class="sum"><span>배송비</span><span class="num">${ship?won(ship):'무료'}</span></div>
-      <div class="sum total"><span>결제 예정 금액</span><span class="num">${won(sub+ship)}</span></div>
-      <button class="btn primary" id="order">${won(sub+ship)} 주문하기</button>
-    </footer>`:''}
-  </aside>`;
-  document.body.style.overflow='hidden';
-  $('#cClose').focus();
-  $('#scrim').onclick=closeOverlay;$('#cClose').onclick=closeOverlay;
-  $('#cBody').addEventListener('click',e=>{
-    const q=e.target.closest('[data-dq]'),r=e.target.closest('[data-rm]');
-    if(q){const c=cart.find(x=>x.key===q.dataset.dq);c.qty=Math.max(1,c.qty+ +q.dataset.d);save();counts();openCart()}
-    if(r){cart=cart.filter(x=>x.key!==r.dataset.rm);save();counts();openCart()}
-  });
-  const o=$('#order');if(o)o.onclick=()=>{
-    const no='BD'+new Date().toISOString().slice(2,10).replace(/-/g,'')+'-'+String(Math.floor(Math.random()*90000)+10000);
-    const first=lines.reduce((a,c)=>c.p.rocket&&a?a:c.p,lines[0].p);
-    cart=[];save();counts();
-    $('#cBody').innerHTML=`<div class="done"><div class="ok">✓</div><div style="font-size:18px;font-weight:800">주문이 접수됐어요</div><div class="num">주문번호 ${no}</div><div class="rate">${arrive(first)} · 시연용이라 실제 결제는 되지 않았어요</div><button class="btn" id="keep" style="margin-top:12px">쇼핑 계속하기</button></div>`;
-    document.querySelector('.drawer footer').remove();
-    $('#keep').onclick=closeOverlay;
-  };
-}
-
+$('#cartBtn').addEventListener('click',()=>openCart());
 // ---------- hero carousel ----------
 const ph=k=>RESERVED[k]?`img/${RESERVED[k]}`:'';
 const SLIDES=[
@@ -652,9 +823,675 @@ function renderCatIcons(){
    `<button data-ci="deal"><span class="ci">%</span>특가</button>`;
 }
 $('#caticons').addEventListener('click',e=>{const b=e.target.closest('[data-ci]');if(!b)return;const c=b.dataset.ci;if(c==='deal'){S.cat='all';S.f.deal=true}else S.cat=c;S.q='';$('#q').value='';renderCats();renderChips();renderList();document.getElementById('listTitle').scrollIntoView({behavior:'smooth'})});
-document.querySelectorAll('[data-demo]').forEach(b=>b.addEventListener('click',()=>toast('시연용 쇼핑몰이라 이 메뉴는 아직 없어요')));
 
-renderHero();autoplay();renderCatIcons();
+
+// =====================================================================
+// Members, checkout, orders, my page, customer center (all data stays in this browser)
+// =====================================================================
+const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},
+  set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
+const SS={get(k,d){try{const v=sessionStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},
+  set(k,v){try{sessionStorage.setItem(k,JSON.stringify(v))}catch(e){}},del(k){try{sessionStorage.removeItem(k)}catch(e){}}};
+let users=LS.get('bd_users',{});
+let me=(()=>{try{return sessionStorage.getItem('bd_sess')||localStorage.getItem('bd_keep')}catch(e){return null}})();
+if(me&&!users[me])me=null;
+const U=()=>me?users[me]:null;
+function saveUsers(){LS.set('bd_users',users)}
+const pageEl=$('#page'),mainEl=$('main');
+const go=h=>{if(location.hash===h)route();else location.hash=h};
+const fmtD=t=>{const d=new Date(t);return `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`};
+const fmtDT=t=>{const d=new Date(t);return fmtD(t)+` ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`};
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const mask=s=>s.length<=3?s[0]+'**':s.slice(0,3)+'*'.repeat(Math.min(4,s.length-3));
+const phoneFmt=v=>{const d=v.replace(/\D/g,'').slice(0,11);return d.length<4?d:d.length<8?d.slice(0,3)+'-'+d.slice(3):d.slice(0,3)+'-'+d.slice(3,d.length-4)+'-'+d.slice(-4)};
+async function hashPw(pw,salt){
+  const txt=salt+':'+pw;
+  if(window.crypto&&crypto.subtle){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(txt));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+  let h=5381;for(const c of txt)h=(h*33^c.charCodeAt(0))>>>0;return 'x'+h.toString(16);
+}
+const ID_RE=/^[a-z][a-z0-9]{3,15}$/, EMAIL_RE=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/, PHONE_RE=/^01[016789]-\d{3,4}-\d{4}$/;
+function pwRule(pw){return {len:pw.length>=8&&pw.length<=20,mix:/[a-zA-Z]/.test(pw)&&/\d/.test(pw),sp:!/\s/.test(pw)}}
+
+// ---------- dialogs (no browser alert/confirm) ----------
+function dlg(html){const d=$('#dlg');d.innerHTML=`<div class="scrim" id="dscrim"><div class="dbox" role="dialog" aria-modal="true">${html}</div></div>`;
+  $('#dscrim').addEventListener('click',e=>{if(e.target.id==='dscrim')closeDlg()});const f=d.querySelector('input,textarea,button.primary,button');f&&f.focus();return d}
+function closeDlg(){$('#dlg').innerHTML=''}
+function ask(title,msg,ok='확인',cancel='취소'){return new Promise(res=>{dlg(`<h3>${title}</h3><p>${msg}</p><div class="ctas"><button class="btn" id="dNo">${cancel}</button><button class="btn primary" id="dOk">${ok}</button></div>`);
+  $('#dNo').onclick=()=>{closeDlg();res(false)};$('#dOk').onclick=()=>{closeDlg();res(true)}})}
+function info(title,msg){dlg(`<h3>${title}</h3><p>${msg}</p><div class="ctas" style="grid-template-columns:1fr"><button class="btn primary" id="dOk">확인</button></div>`);$('#dOk').onclick=closeDlg}
+const TERMS={
+ tos:['이용약관','제1조(목적) 이 약관은 바로담 마켓(시제품)이 제공하는 서비스의 이용 조건을 정합니다.\n제2조(시제품) 이 사이트는 포트폴리오용 시제품으로 실제 판매·결제·배송이 일어나지 않습니다.\n제3조(회원) 회원 정보는 이용자의 브라우저에만 저장되며 운영자에게 전송되지 않습니다.'],
+ privacy:['개인정보 수집·이용','수집 항목: 아이디, 이름, 이메일, 휴대폰 번호, 배송지\n이용 목적: 시제품의 회원·주문 기능 시연\n보관: 이용자 브라우저(localStorage)에만 저장되며, 회원탈퇴 또는 브라우저 데이터 삭제 시 지워집니다.\n실제 개인정보 대신 예시 정보를 입력해도 됩니다.'],
+ age:['만 14세 이상 확인','만 14세 미만은 법정대리인 동의가 필요합니다. (시제품 안내 문구)'],
+ mkt:['마케팅 정보 수신(선택)','이벤트·할인 소식을 받습니다. 동의 시 가입 적립금 2,000원을 추가로 드립니다. (시제품이라 실제 발송은 없습니다)']};
+function showTerm(k){info(TERMS[k][0],TERMS[k][1])}
+
+// ---------- account helpers ----------
+function newUser(o){return {id:o.id,name:o.name,email:o.email,phone:o.phone,salt:o.salt,hash:o.hash,joined:Date.now(),marketing:!!o.marketing,
+  points:0,plog:[],coupons:[],addrs:[],orders:[],reviews:[],qna:[],recent:[]}}
+function givePoints(u,amt,why){u.points+=amt;u.plog.unshift({t:Date.now(),amt,why,bal:u.points})}
+function giveCoupon(u,c){u.coupons.unshift({id:uid(),got:Date.now(),exp:Date.now()+30*864e5,used:null,...c})}
+function welcome(u){
+  giveCoupon(u,{name:'신규가입 15% 할인',type:'rate',val:15,max:10000,min:10000});
+  giveCoupon(u,{name:'첫 주문 배송비 무료',type:'ship',val:3000,min:0});
+  giveCoupon(u,{name:'겨울 아우터 5,000원',type:'won',val:5000,min:50000,cat:'fashion'});
+  givePoints(u,3000,'회원가입 축하 적립금');
+  if(u.marketing)givePoints(u,2000,'마케팅 수신 동의 적립금');
+}
+function login(id,keep){me=id;try{sessionStorage.setItem('bd_sess',id);keep?localStorage.setItem('bd_keep',id):localStorage.removeItem('bd_keep')}catch(e){}
+  const u=U();(LS.get('bd_recent',[])).forEach(pid=>{if(!u.recent.includes(pid))u.recent.push(pid)});u.recent=u.recent.slice(0,40);saveUsers();renderUtil()}
+function logout(){me=null;try{sessionStorage.removeItem('bd_sess');localStorage.removeItem('bd_keep')}catch(e){}renderUtil();toast('로그아웃했어요');go('#/')}
+function need(next){if(U())return true;toast('로그인이 필요한 메뉴예요');go('#/login/'+encodeURIComponent(next));return false}
+
+// demo account: lets visitors see a filled-in my page immediately
+async function ensureDemo(){
+  if(users.demo)return;
+  const salt=uid(),u=newUser({id:'demo',name:'체험회원',email:'demo@example.com',phone:'010-0000-0000',salt,hash:await hashPw('demo1234',salt),marketing:true});
+  welcome(u);
+  u.addrs.push({id:uid(),label:'우리집',to:'체험회원',phone:'010-0000-0000',zip:'00000',a1:'가상시 예시구 샘플로 123',a2:'101동 1001호',def:true});
+  const mk=(ago,ids,status)=>{const items=ids.map(i=>P[i%P.length]).map(p=>({pid:p.id,name:p.name,photo:p.photo,type:p.type,hue:p.hue,color:p.colors?p.colors[0]:null,size:p.sizes?p.sizes.find(s=>!p.soldOut.includes(s)):null,qty:1,price:p.price,base:p.base}));
+    const sub=items.reduce((a,i)=>a+i.price*i.qty,0);const o=mkOrder(u,{items,sub,disc:items.reduce((a,i)=>a+(i.base-i.price)*i.qty,0),cpAmt:0,cp:null,usePts:0,ship:sub>=19800?0:3000,pay:{m:'card',d:'바로카드'},addr:u.addrs[0],memo:'문 앞에 놓아 주세요'},Date.now()-ago);
+    if(status==='confirmed'){o.confirmedAt=o.at+16*6e4;givePoints(u,o.earn,'구매확정 적립 ('+o.no+')')}return o};
+  mk(3*864e5,[11,57],'confirmed');mk(25*6e4,[140]);mk(30*1000,[205,260]);
+  users.demo=u;saveUsers();
+}
+
+// ---------- orders ----------
+const STEPS=['결제완료','상품준비중','배송중','배송완료'], STEP_MIN=[0,1,3,10];
+function ostate(o){
+  if(o.cancelledAt)return {k:'cancel',label:'주문취소',i:-1};
+  if(o.confirmedAt)return {k:'confirmed',label:'구매확정',i:3};
+  const m=(Date.now()-o.at)/6e4;let i=0;STEP_MIN.forEach((t,k)=>{if(m>=t)i=k});
+  return {k:['paid','ready','ship','done'][i],label:STEPS[i],i};
+}
+function mkOrder(u,d,at=Date.now()){
+  const dt=new Date(at);const no=String(dt.getFullYear()).slice(2)+String(dt.getMonth()+1).padStart(2,'0')+String(dt.getDate()).padStart(2,'0')+'-'+String(Math.floor(Math.random()*9e6)+1e6);
+  const total=Math.max(0,d.sub-d.cpAmt-d.usePts+d.ship);
+  const o={no,at,...d,total,earn:Math.floor(total*0.01),inv:'5'+String(Math.floor(Math.random()*9e10)+1e10)};
+  u.orders.unshift(o);return o;
+}
+function trackLog(o){
+  const s=ostate(o);if(s.k==='cancel')return [{t:o.cancelledAt,w:'주문취소',d:'주문이 취소되고 결제가 환불되었어요'}];
+  const ev=[[0,'결제완료','바로담 마켓','주문 결제가 완료되었어요'],[1,'상품준비중','바로담 물류센터','상품을 포장하고 있어요'],[3,'집하','바로담 물류센터','택배사에 상품이 전달되었어요'],[4,'간선상차','중부 허브','배송지 지역으로 이동 중이에요'],[7,'배송출발','가상시 예시구 대리점','배송 기사님이 출발했어요'],[10,'배송완료','문 앞','고객님이 요청하신 장소에 배송되었어요']];
+  const m=o.confirmedAt?1e9:(Date.now()-o.at)/6e4;
+  return ev.filter(e=>m>=e[0]).map(e=>({t:o.at+e[0]*6e4,w:e[1],p:e[2],d:e[3]})).reverse();
+}
+function orderSteps(o){const s=ostate(o);if(s.k==='cancel')return '';
+  return `<div class="steps">${STEPS.map((n,k)=>`<div class="${k<=s.i?'on':''}">${n}${k<=s.i?`<small class="num">${fmtDT(o.at+STEP_MIN[k]*6e4).slice(5)}</small>`:''}</div>`).join('')}</div>`}
+const itemImg=i=>{const p=byId(i.pid);return p?pimg(p):art(i.type,i.hue)};
+const optTxt=i=>[i.color,i.size&&('사이즈 '+i.size)].filter(Boolean).join(' · ')||'기본';
+function grade(u){const spent=u.orders.filter(o=>!o.cancelledAt).reduce((a,o)=>a+o.total,0);
+  return spent>=1e6?{n:'골드',rate:3,next:null,spent}:spent>=3e5?{n:'실버',rate:2,next:['골드',1e6-spent],spent}:{n:'일반',rate:1,next:['실버',3e5-spent],spent}}
+function validCoupons(u){return u.coupons.filter(c=>!c.used&&c.exp>Date.now())}
+
+// ---------- util links / header ----------
+function renderUtil(){
+  const u=U();
+  $('#utilLinks').innerHTML=u?`<b>${esc(u.name)}님</b><a href="#/mypage/orders">주문배송</a><a href="#/mypage">마이페이지</a><button id="logoutBtn">로그아웃</button><a href="#/cs">고객센터</a>`
+    :`<a href="#/login">로그인</a><a href="#/signup">회원가입</a><a href="#/mypage/orders">주문배송</a><a href="#/cs">고객센터</a>`;
+  const lb=$('#logoutBtn');if(lb)lb.onclick=logout;
+  $('#meLbl').textContent=u?'마이':'로그인';
+}
+$('#meBtn').addEventListener('click',()=>go(U()?'#/mypage':'#/login'));
+
+// ---------- router ----------
+const PAGES={login:pLogin,signup:pSignup,find:pFind,mypage:pMy,order:pOrder,checkout:pCheckout,complete:pComplete,cs:pCs};
+function showMain(){pageEl.hidden=true;pageEl.innerHTML='';mainEl.hidden=false;navCur('home')}
+function route(){
+  closeDlg();
+  const h=location.hash.replace(/^#\/?/,'');const [name,...args]=h.split('/').map(decodeURIComponent);
+  if(name==='p'&&args[0]){if(!mainEl.hidden&&$('#overlay').innerHTML)return;showMain();openDetail(+args[0]);return}
+  closeOverlay(true);
+  if(PAGES[name]){mainEl.hidden=true;pageEl.hidden=false;scrollTo(0,0);navCur(name);PAGES[name](...args);return}
+  showMain();
+}
+addEventListener('hashchange',route);
+function navCur(n){document.querySelectorAll('.tabbar [data-nav]').forEach(a=>a.toggleAttribute('aria-current',a.dataset.nav===n||(n==='login'&&a.dataset.nav==='mypage')||(n==='signup'&&a.dataset.nav==='mypage')))}
+function crumb(...xs){return `<div class="crumb"><a href="#/">홈</a> › ${xs.join(' › ')}</div>`}
+
+// ---------- login ----------
+function pLogin(next){
+  next=next||'';const saved=LS.get('bd_saveid','');
+  if(U()){go(next?'#/'+next:'#/mypage');return}
+  pageEl.innerHTML=`<div class="auth"><h1 class="ptitle">로그인</h1>
+   <form id="lf" novalidate>
+    <label class="fld"><span>아이디</span><input class="inp" name="uid" autocomplete="username" value="${esc(saved)}" placeholder="아이디" required></label>
+    <label class="fld"><span>비밀번호</span><input class="inp" name="pw" type="password" autocomplete="current-password" placeholder="비밀번호" required></label>
+    <div class="rowb"><label class="ck"><input type="checkbox" name="keep"> 로그인 상태 유지</label><label class="ck"><input type="checkbox" name="saveid" ${saved?'checked':''}> 아이디 저장</label></div>
+    <p class="err" id="lerr" hidden></p>
+    <button class="btn primary wide">로그인</button>
+   </form>
+   <div class="auth-links"><a class="lnk" href="#/find">아이디·비밀번호 찾기</a><a class="lnk" href="#/signup${next?'/'+encodeURIComponent(next):''}">회원가입</a></div>
+   <div class="or">처음 오셨나요?</div>
+   <button class="btn wide ghost" id="demoIn" style="margin-top:12px">체험 계정으로 바로 둘러보기</button>
+   <div class="note">시제품이라 회원 정보는 <b>이 브라우저에만</b> 저장되고 어디에도 전송되지 않아요. 다른 사이트에서 쓰는 실제 비밀번호는 넣지 마세요.</div></div>`;
+  const f=$('#lf'),err=$('#lerr');
+  (saved?f.pw:f.uid).focus();
+  f.onsubmit=async e=>{e.preventDefault();err.hidden=true;
+    const id=f.uid.value.trim().toLowerCase(),pw=f.pw.value;
+    if(!id||!pw){err.textContent='아이디와 비밀번호를 입력해 주세요.';err.hidden=false;return}
+    const u=users[id];
+    if(u&&u.lockUntil&&u.lockUntil>Date.now()){err.textContent=`비밀번호를 5번 틀려 ${Math.ceil((u.lockUntil-Date.now())/6e4)}분 동안 로그인할 수 없어요.`;err.hidden=false;return}
+    if(!u||await hashPw(pw,u.salt)!==u.hash){
+      if(u){u.fail=(u.fail||0)+1;if(u.fail>=5){u.lockUntil=Date.now()+5*6e4;u.fail=0}saveUsers()}
+      err.textContent=u?`비밀번호가 맞지 않아요. (${u.fail||5}/5)`:'가입되지 않은 아이디이거나 비밀번호가 맞지 않아요.';err.hidden=false;f.pw.value='';f.pw.focus();return}
+    u.fail=0;u.lastLogin=Date.now();
+    f.saveid.checked?LS.set('bd_saveid',id):LS.del('bd_saveid');
+    login(id,f.keep.checked);toast(`${u.name}님, 반가워요!`);go(next?'#/'+next:'#/');
+  };
+  $('#demoIn').onclick=async()=>{await ensureDemo();login('demo',false);toast('체험회원으로 로그인했어요');go(next?'#/'+next:'#/mypage')};
+}
+
+// ---------- signup ----------
+function pSignup(next){
+  next=next||'';if(U()){go('#/mypage');return}
+  pageEl.innerHTML=`<div class="auth"><h1 class="ptitle">회원가입</h1>
+   <div class="note" style="margin:0 0 4px">가입하면 <b>15% 할인 쿠폰 + 무료배송 쿠폰 + 적립금 3,000원</b>을 바로 드려요.</div>
+   <form id="sf" novalidate>
+    <label class="fld"><span>아이디</span><div class="with"><input class="inp" name="uid" autocomplete="username" placeholder="영문 소문자로 시작, 4~16자" maxlength="16"><button type="button" class="btn ghost" id="dup">중복확인</button></div><small class="hint" id="hId">영문 소문자·숫자 4~16자</small></label>
+    <label class="fld"><span>비밀번호</span><input class="inp" name="pw" type="password" autocomplete="new-password" placeholder="영문+숫자 8~20자" maxlength="20"><small class="hint" id="hPw">영문과 숫자를 섞어 8~20자</small></label>
+    <label class="fld"><span>비밀번호 확인</span><input class="inp" name="pw2" type="password" autocomplete="new-password" maxlength="20"><small class="hint" id="hPw2"></small></label>
+    <label class="fld"><span>이름</span><input class="inp" name="uname" autocomplete="name" maxlength="20"></label>
+    <label class="fld"><span>이메일</span><input class="inp" name="email" type="email" autocomplete="email" placeholder="example@example.com"></label>
+    <label class="fld"><span>휴대폰 번호</span><input class="inp num" name="phone" inputmode="numeric" autocomplete="tel" placeholder="010-0000-0000"></label>
+    <div class="terms">
+     <label class="ck all"><input type="checkbox" id="tAll"> 전체 동의 (선택 항목 포함)</label>
+     ${[['tos','[필수] 이용약관 동의'],['privacy','[필수] 개인정보 수집·이용 동의'],['age','[필수] 만 14세 이상입니다'],['mkt','[선택] 마케팅 정보 수신 (+2,000원)']].map(([k,l])=>`<div class="t"><label class="ck"><input type="checkbox" data-t="${k}"> ${l}</label><button type="button" class="lnk" data-term="${k}">보기</button></div>`).join('')}
+    </div>
+    <p class="err" id="serr" hidden></p>
+    <button class="btn primary wide">가입하기</button>
+   </form>
+   <div class="auth-links"><span class="hint">이미 회원이세요?</span><a class="lnk" href="#/login${next?'/'+encodeURIComponent(next):''}">로그인</a></div>
+   <div class="note">회원 정보는 이 브라우저에만 저장돼요. 예시 정보를 넣어도 되고, 실제로 쓰는 비밀번호는 넣지 마세요.</div></div>`;
+  const f=$('#sf');let checked='';
+  const set=(el,txt,ok)=>{el.textContent=txt;el.className='hint'+(ok===true?' ok':ok===false?' bad':'')};
+  f.uid.oninput=()=>{f.uid.value=f.uid.value.toLowerCase().replace(/[^a-z0-9]/g,'');checked='';set($('#hId'),'영문 소문자·숫자 4~16자, 중복확인을 눌러 주세요')};
+  $('#dup').onclick=()=>{const id=f.uid.value;if(!ID_RE.test(id)){set($('#hId'),'영문 소문자로 시작하는 4~16자로 입력해 주세요',false);return}
+    if(users[id]||id==='admin'){set($('#hId'),'이미 쓰고 있는 아이디예요',false);checked='';return}checked=id;set($('#hId'),'쓸 수 있는 아이디예요',true)};
+  f.pw.oninput=f.pw2.oninput=()=>{const r=pwRule(f.pw.value);
+    f.pw.value?set($('#hPw'),`${r.len?'✓':'✗'} 8~20자  ${r.mix?'✓':'✗'} 영문+숫자  ${r.sp?'✓':'✗'} 공백 없음`,r.len&&r.mix&&r.sp):set($('#hPw'),'영문과 숫자를 섞어 8~20자');
+    f.pw2.value?set($('#hPw2'),f.pw.value===f.pw2.value?'비밀번호가 같아요':'비밀번호가 달라요',f.pw.value===f.pw2.value):set($('#hPw2'),'')};
+  f.phone.oninput=()=>{f.phone.value=phoneFmt(f.phone.value)};
+  const tb=[...f.querySelectorAll('[data-t]')];
+  $('#tAll').onchange=e=>tb.forEach(x=>x.checked=e.target.checked);
+  tb.forEach(x=>x.onchange=()=>$('#tAll').checked=tb.every(y=>y.checked));
+  f.querySelectorAll('[data-term]').forEach(b=>b.onclick=()=>showTerm(b.dataset.term));
+  f.onsubmit=async e=>{e.preventDefault();const err=$('#serr');const bad=(m,el)=>{err.textContent=m;err.hidden=false;el&&el.focus();return false};err.hidden=true;
+    const v=Object.fromEntries([['id','uid'],['pw','pw'],['pw2','pw2'],['name','uname'],['email','email'],['phone','phone']].map(([k,n])=>[k,f[n].value.trim()]));const T=Object.fromEntries(tb.map(x=>[x.dataset.t,x.checked]));
+    if(!ID_RE.test(v.id))return bad('아이디를 영문 소문자로 시작하는 4~16자로 입력해 주세요.',f.uid);
+    if(checked!==v.id){$('#dup').click();if(checked!==v.id)return bad('아이디 중복확인을 해 주세요.',f.uid)}
+    const r=pwRule(f.pw.value);if(!(r.len&&r.mix&&r.sp))return bad('비밀번호는 영문과 숫자를 섞어 8~20자로 만들어 주세요.',f.pw);
+    if(f.pw.value.includes(v.id))return bad('비밀번호에 아이디를 넣을 수 없어요.',f.pw);
+    if(f.pw.value!==f.pw2.value)return bad('비밀번호 확인이 맞지 않아요.',f.pw2);
+    if(v.name.length<2)return bad('이름을 2자 이상 입력해 주세요.',f.uname);
+    if(!EMAIL_RE.test(v.email))return bad('이메일 형식이 맞지 않아요.',f.email);
+    if(Object.values(users).some(u=>u.email===v.email))return bad('이미 가입된 이메일이에요. 아이디 찾기를 이용해 주세요.',f.email);
+    if(!PHONE_RE.test(v.phone))return bad('휴대폰 번호를 010-0000-0000 형식으로 입력해 주세요.',f.phone);
+    if(!(T.tos&&T.privacy&&T.age))return bad('필수 약관에 모두 동의해 주세요.');
+    const salt=uid();const u=newUser({...v,salt,hash:await hashPw(f.pw.value,salt),marketing:T.mkt});welcome(u);users[v.id]=u;saveUsers();login(v.id,false);
+    pageEl.innerHTML=`<div class="auth"><div class="done"><div class="ok">✓</div><h1 class="ptitle" style="margin:0">가입을 환영해요!</h1>
+      <p class="rate" style="font-size:14px">${esc(v.name)}님께 가입 혜택을 드렸어요.</p>
+      <div style="width:100%;text-align:left">${u.coupons.map(couponHtml).join('')}<div class="addr"><div class="t">적립금</div><div class="num" style="font-size:18px;font-weight:800">${won(u.points)}</div></div></div>
+      <button class="btn primary wide" id="gogo">${next?'하던 일 계속하기':'쇼핑 시작하기'}</button><a class="lnk" href="#/mypage">마이페이지 보기</a></div></div>`;
+    $('#gogo').onclick=()=>go(next?'#/'+next:'#/');scrollTo(0,0);
+  };
+}
+
+// ---------- find id / reset pw ----------
+function pFind(tab){
+  tab=tab==='pw'?'pw':'id';
+  pageEl.innerHTML=`<div class="auth"><h1 class="ptitle">${tab==='id'?'아이디 찾기':'비밀번호 재설정'}</h1>
+   <div class="ptabs" role="tablist"><button role="tab" aria-selected="${tab==='id'}" data-ft="id">아이디 찾기</button><button role="tab" aria-selected="${tab==='pw'}" data-ft="pw">비밀번호 재설정</button></div>
+   <form id="ff" novalidate>
+    ${tab==='pw'?`<label class="fld"><span>아이디</span><input class="inp" name="uid" autocomplete="username"></label>`:`<label class="fld"><span>이름</span><input class="inp" name="uname" autocomplete="name"></label>`}
+    <label class="fld"><span>가입한 이메일</span><input class="inp" name="email" type="email" autocomplete="email"></label>
+    <p class="err" id="ferr" hidden></p><div id="fout"></div>
+    <button class="btn primary wide">${tab==='id'?'아이디 찾기':'본인 확인'}</button></form>
+   <div class="auth-links"><a class="lnk" href="#/login">로그인</a><a class="lnk" href="#/signup">회원가입</a></div></div>`;
+  pageEl.querySelectorAll('[data-ft]').forEach(b=>b.onclick=()=>go('#/find/'+b.dataset.ft));
+  const f=$('#ff'),err=$('#ferr');
+  f.onsubmit=async e=>{e.preventDefault();err.hidden=true;const email=f.email.value.trim();
+    if(tab==='id'){const hit=Object.values(users).find(u=>u.name===f.uname.value.trim()&&u.email===email);
+      if(!hit){err.textContent='입력한 정보와 일치하는 회원이 없어요.';err.hidden=false;return}
+      $('#fout').innerHTML=`<div class="note" style="font-size:14px">가입한 아이디는 <b class="num">${mask(hit.id)}</b> 예요. (가입일 ${fmtD(hit.joined)})</div>`;return}
+    const u=users[f.uid.value.trim().toLowerCase()];
+    if(!u||u.email!==email){err.textContent='아이디와 이메일이 일치하는 회원이 없어요.';err.hidden=false;return}
+    pageEl.querySelector('.auth').innerHTML=`<h1 class="ptitle">새 비밀번호</h1><form id="rf" novalidate>
+      <label class="fld"><span>새 비밀번호</span><input class="inp" name="pw" type="password" autocomplete="new-password" maxlength="20" placeholder="영문+숫자 8~20자"></label>
+      <label class="fld"><span>새 비밀번호 확인</span><input class="inp" name="pw2" type="password" autocomplete="new-password" maxlength="20"></label>
+      <p class="err" id="rerr" hidden></p><button class="btn primary wide">비밀번호 바꾸기</button></form>`;
+    const r=$('#rf');r.pw.focus();
+    r.onsubmit=async e=>{e.preventDefault();const x=pwRule(r.pw.value),re=$('#rerr');
+      if(!(x.len&&x.mix&&x.sp)){re.textContent='영문과 숫자를 섞어 8~20자로 만들어 주세요.';re.hidden=false;return}
+      if(r.pw.value!==r.pw2.value){re.textContent='비밀번호 확인이 맞지 않아요.';re.hidden=false;return}
+      u.salt=uid();u.hash=await hashPw(r.pw.value,u.salt);u.fail=0;u.lockUntil=0;saveUsers();toast('비밀번호를 바꿨어요. 새 비밀번호로 로그인해 주세요');go('#/login')}
+  };
+}
+
+// ---------- my page ----------
+const MPM=[['쇼핑',[['orders','주문·배송'],['cancel','취소 내역'],['wish','찜한 상품'],['recent','최근 본 상품']]],['혜택',[['coupons','쿠폰'],['points','적립금']]],['활동',[['reviews','나의 리뷰'],['qna','1:1 문의']]],['회원정보',[['addrs','배송지 관리'],['profile','회원정보 수정']]]];
+function couponHtml(c){const off=c.used||c.exp<Date.now();
+  return `<div class="cp ${off?'off':''}"><div class="v num">${c.type==='rate'?c.val+'%':c.type==='ship'?'무료<small>배송</small>':(c.val/1000)+'천원'}<small>${c.type==='rate'?'할인':c.type==='ship'?'':'할인'}</small></div>
+   <div class="d"><b>${esc(c.name)}</b>${c.min?won(c.min)+' 이상 구매 시':'금액 조건 없음'}${c.max?` · 최대 ${won(c.max)}`:''}${c.cat?` · ${CATS.find(x=>x.id===c.cat).name} 전용`:''}<div class="hint num">${c.used?`${fmtD(c.used)} 사용함`:c.exp<Date.now()?'기간 만료':`${fmtD(c.exp)}까지 · D-${Math.ceil((c.exp-Date.now())/864e5)}`}</div></div></div>`}
+function pMy(tab){
+  if(tab==='logout'){logout();return}
+  if(!need('mypage'+(tab?'/'+tab:'')))return;const u=U();tab=tab||'home';
+  const os=u.orders.map(o=>({o,s:ostate(o)}));const cnt=k=>os.filter(x=>x.s.k===k).length;
+  const g=grade(u),cps=validCoupons(u).length;
+  const navCount={orders:os.filter(x=>!['cancel','confirmed'].includes(x.s.k)).length,wish:wish.size,coupons:cps,qna:u.qna.filter(q=>!answered(q)).length};
+  pageEl.innerHTML=`${crumb('마이페이지')}<div class="mp">
+   <nav class="mp-nav" aria-label="마이페이지 메뉴"><a href="#/mypage" ${tab==='home'?'aria-current="page"':''}>마이페이지 홈</a>${MPM.map(([gname,items])=>`<div class="g">${gname}</div>`+items.map(([k,l])=>`<a href="#/mypage/${k}" ${tab===k?'aria-current="page"':''}>${l}${navCount[k]?`<span class="num">${navCount[k]}</span>`:''}</a>`).join('')).join('')}
+    <div class="g">계정</div><a href="#/mypage/logout" id="mpLogout">로그아웃</a></nav>
+   <div id="mpBody">
+    <div class="mp-head"><div><div class="hi">${esc(u.name)}님<span class="grade">${g.n}</span></div>
+      <div class="sub num">${g.next?`${g.next[0]} 등급까지 ${won(g.next[1])} 남았어요 · `:''}구매 적립 ${g.rate}% · 가입일 ${fmtD(u.joined)}</div></div>
+      <div class="assets"><a href="#/mypage/points"><b class="num">${u.points.toLocaleString()}</b><span>적립금</span></a><a href="#/mypage/coupons"><b class="num">${cps}</b><span>쿠폰</span></a><a href="#/mypage/reviews"><b class="num">${reviewable(u).length}</b><span>쓸 수 있는 리뷰</span></a></div></div>
+    <div class="ostat">${[['paid','결제완료'],['ready','상품준비중'],['ship','배송중'],['done','배송완료'],['confirmed','구매확정']].map(([k,l])=>`<a href="#/mypage/orders/${k}" class="${cnt(k)?'on':''}"><b class="num">${cnt(k)}</b>${l}</a>`).join('')}</div>
+    <div id="mpTab"></div></div></div>`;
+  $('#mpLogout').onclick=e=>{e.preventDefault();logout()};
+  if(tab==='logout'){logout();return}
+  const T=$('#mpTab');const sub=arguments[1];
+  const F={home:()=>{T.innerHTML=`<div class="mp-sec"><h2>최근 주문 <a class="lnk" href="#/mypage/orders">전체 보기</a></h2>${u.orders.length?u.orders.slice(0,2).map(orderCard).join(''):`<div class="empty-box">아직 주문한 상품이 없어요<br><a class="lnk" href="#/">쇼핑하러 가기</a></div>`}</div>
+      <div class="mp-sec"><h2>최근 본 상품 <a class="lnk" href="#/mypage/recent">전체 보기</a></h2>${recentGrid(u,5)}</div>`},
+    orders:()=>{const fs=[['all','전체'],['paid','결제완료'],['ready','상품준비중'],['ship','배송중'],['done','배송완료'],['confirmed','구매확정']];const f=sub||'all';
+      const L=os.filter(x=>x.s.k!=='cancel'&&(f==='all'||x.s.k===f));
+      T.innerHTML=`<div class="mp-sec"><h2>주문·배송 조회</h2><div class="filters">${fs.map(([k,l])=>`<button data-of="${k}" aria-pressed="${f===k}">${l}</button>`).join('')}</div>
+       <p class="hint">시제품이라 배송이 빨리 진행돼요: 결제 1분 뒤 상품준비중, 3분 뒤 배송중, 10분 뒤 배송완료</p>
+       ${L.length?L.map(x=>orderCard(x.o)).join(''):`<div class="empty-box">해당하는 주문이 없어요</div>`}</div>`;
+      T.querySelectorAll('[data-of]').forEach(b=>b.onclick=()=>go('#/mypage/orders/'+b.dataset.of))},
+    cancel:()=>{const L=os.filter(x=>x.s.k==='cancel');T.innerHTML=`<div class="mp-sec"><h2>취소 내역</h2>${L.length?L.map(x=>orderCard(x.o)).join(''):`<div class="empty-box">취소한 주문이 없어요</div>`}</div>`},
+    wish:()=>{const L=[...wish].map(byId).filter(Boolean);T.innerHTML=`<div class="mp-sec"><h2>찜한 상품 <span class="hint num">${L.length}개</span></h2>${L.length?`<div class="grid">${L.map(card).join('')}</div>`:`<div class="empty-box">하트를 눌러 마음에 드는 상품을 담아 보세요</div>`}</div>`},
+    recent:()=>{T.innerHTML=`<div class="mp-sec"><h2>최근 본 상품 ${u.recent.length?'<button class="lnk" id="clrRecent">전체 삭제</button>':''}</h2>${recentGrid(u,40)}</div>`;
+      const c=$('#clrRecent');if(c)c.onclick=()=>{u.recent=[];LS.set('bd_recent',[]);saveUsers();pMy('recent')}},
+    coupons:()=>{const L=u.coupons.slice().sort((a,b)=>(!!(a.used||a.exp<Date.now()))-(!!(b.used||b.exp<Date.now())));
+      T.innerHTML=`<div class="mp-sec"><h2>쿠폰 <span class="hint num">사용 가능 ${cps}장</span></h2>
+       <form class="box" id="cpf"><div class="fld" style="margin:0"><span>쿠폰 코드 등록</span><div class="with"><input class="inp" name="code" placeholder="예: WELCOME2026" maxlength="20" style="text-transform:uppercase"><button class="btn primary">등록</button></div><small class="hint">시연용 코드: WELCOME2026, WINTER10, BARODAM</small></div></form>
+       <div style="margin-top:12px">${L.map(couponHtml).join('')||'<div class="empty-box">쿠폰이 없어요</div>'}</div></div>`;
+      $('#cpf').onsubmit=e=>{e.preventDefault();const code=e.target.code.value.trim().toUpperCase();const C={WELCOME2026:{name:'웰컴 코드 5,000원',type:'won',val:5000,min:30000},WINTER10:{name:'겨울 10% 할인',type:'rate',val:10,max:20000,min:20000},BARODAM:{name:'바로담 3,000원',type:'won',val:3000,min:15000}}[code];
+        if(!C){toast('없는 쿠폰 코드예요');return}u.used_codes=u.used_codes||[];if(u.used_codes.includes(code)){toast('이미 등록한 코드예요');return}
+        u.used_codes.push(code);giveCoupon(u,C);saveUsers();toast('쿠폰을 받았어요');pMy('coupons')}},
+    points:()=>{const soon=u.orders.filter(o=>!o.cancelledAt&&!o.confirmedAt).reduce((a,o)=>a+o.earn,0);
+      T.innerHTML=`<div class="mp-sec"><h2>적립금</h2><div class="box"><div class="rowb" style="margin:0"><div><div class="hint">사용 가능</div><div class="num" style="font-size:26px;font-weight:900">${won(u.points)}</div></div><div style="text-align:right"><div class="hint">구매확정하면 적립 예정</div><div class="num" style="font-size:18px;font-weight:800">${won(soon)}</div></div></div></div>
+       <div class="box"><table class="tbl num"><thead><tr><th>날짜</th><th>내용</th><th class="r">금액</th><th class="r">잔액</th></tr></thead><tbody>${u.plog.map(l=>`<tr><td>${fmtD(l.t)}</td><td>${esc(l.why)}</td><td class="r ${l.amt>0?'plus':'minus'}">${l.amt>0?'+':''}${l.amt.toLocaleString()}</td><td class="r">${l.bal.toLocaleString()}</td></tr>`).join('')||'<tr><td colspan="4">내역이 없어요</td></tr>'}</tbody></table></div></div>`},
+    reviews:()=>{const can=reviewable(u);
+      T.innerHTML=`<div class="mp-sec"><h2>쓸 수 있는 리뷰 <span class="hint num">${can.length}개</span></h2><p class="hint">배송완료 또는 구매확정된 상품에 리뷰를 쓸 수 있어요. 리뷰마다 적립금 500원을 드려요.</p>
+       ${can.length?can.map(({o,i,k})=>`<div class="oi"><div class="pic" data-open="${i.pid}">${itemImg(i)}</div><div><div class="nm" data-open="${i.pid}">${esc(i.name)}</div><div class="op">${optTxt(i)} · ${fmtD(o.at)} 주문</div></div><div class="acts"><button class="btn sm primary" data-rv="${o.no}|${k}">리뷰 쓰기</button></div></div>`).join(''):'<div class="empty-box">지금 쓸 수 있는 리뷰가 없어요</div>'}</div>
+       <div class="mp-sec"><h2>내가 쓴 리뷰 <span class="hint num">${u.reviews.length}개</span></h2>${u.reviews.map(r=>`<div class="box"><div class="rowb" style="margin:0"><b data-open="${r.pid}" style="cursor:pointer">${esc(r.name)}</b><button class="lnk" data-rvdel="${r.id}">삭제</button></div><div class="rate"><b>${'★'.repeat(r.star)}${'☆'.repeat(5-r.star)}</b> · ${fmtD(r.t)} · ${esc(r.opt)}</div><div style="margin-top:6px;white-space:pre-line">${esc(r.txt)}</div></div>`).join('')||'<div class="empty-box">아직 쓴 리뷰가 없어요</div>'}</div>`;
+      T.querySelectorAll('[data-rvdel]').forEach(b=>b.onclick=async()=>{if(!await ask('리뷰 삭제','이 리뷰를 지울까요? 받은 적립금은 그대로예요.','삭제'))return;u.reviews=u.reviews.filter(r=>r.id!==b.dataset.rvdel);saveUsers();toast('리뷰를 지웠어요');pMy('reviews')})},
+    qna:()=>{T.innerHTML=`<div class="mp-sec"><h2>1:1 문의 <button class="btn sm primary" id="newQ">문의하기</button></h2>
+       ${u.qna.length?u.qna.map(q=>`<details class="faq box" style="padding:4px 14px"><summary><span style="flex:1">${q.pid?`[상품] `:`[${esc(q.cat)}] `}${esc(q.title)}</span><span class="hint">${answered(q)?'<b style="color:var(--ship)">답변완료</b>':'답변대기'} · ${fmtD(q.t)}</span></summary><div><div style="color:var(--ink);white-space:pre-line">${esc(q.body)}</div>${answered(q)?`<div class="qna"><div class="a"><b>바로담 고객센터</b> · ${fmtDT(q.t+12e4)}<br>${esc(autoAnswer(q))}</div></div>`:'<p class="hint">보통 2분 안에 답변해 드려요 (시제품 자동 답변)</p>'}<button class="lnk" data-qdel="${q.id}">문의 삭제</button></div></details>`).join(''):'<div class="empty-box">문의한 내역이 없어요</div>'}</div>`;
+      $('#newQ').onclick=()=>askQ(null);
+      T.querySelectorAll('[data-qdel]').forEach(b=>b.onclick=async()=>{if(!await ask('문의 삭제','이 문의를 지울까요?','삭제'))return;u.qna=u.qna.filter(q=>q.id!==b.dataset.qdel);saveUsers();pMy('qna')})},
+    addrs:()=>{T.innerHTML=`<div class="mp-sec"><h2>배송지 관리 <button class="btn sm primary" id="addA">새 배송지 추가</button></h2>
+       ${u.addrs.length?u.addrs.map(a=>`<div class="addr"><div class="t">${esc(a.label||a.to)}${a.def?'<span class="def">기본 배송지</span>':''}</div><div>${esc(a.to)} · <span class="num">${esc(a.phone)}</span></div><div class="num">(${esc(a.zip)}) ${esc(a.a1)} ${esc(a.a2)}</div>
+        <div class="a"><button class="lnk" data-ae="${a.id}">수정</button>${a.def?'':`<button class="lnk" data-ad="${a.id}">기본으로</button><button class="lnk" data-ax="${a.id}">삭제</button>`}</div></div>`).join(''):'<div class="empty-box">저장된 배송지가 없어요</div>'}</div>`;
+      $('#addA').onclick=()=>addrForm(null,()=>pMy('addrs'));
+      T.querySelectorAll('[data-ae]').forEach(b=>b.onclick=()=>addrForm(u.addrs.find(a=>a.id===b.dataset.ae),()=>pMy('addrs')));
+      T.querySelectorAll('[data-ad]').forEach(b=>b.onclick=()=>{u.addrs.forEach(a=>a.def=a.id===b.dataset.ad);saveUsers();toast('기본 배송지를 바꿨어요');pMy('addrs')});
+      T.querySelectorAll('[data-ax]').forEach(b=>b.onclick=async()=>{if(!await ask('배송지 삭제','이 배송지를 지울까요?','삭제'))return;u.addrs=u.addrs.filter(a=>a.id!==b.dataset.ax);saveUsers();pMy('addrs')})},
+    profile:()=>{T.innerHTML=`<div class="mp-sec"><h2>회원정보 수정</h2>
+       <form class="box" id="pf" novalidate><div class="kv"><dt>아이디</dt><dd><b>${esc(u.id)}</b></dd><dt>가입일</dt><dd class="num">${fmtD(u.joined)}</dd></div>
+        <label class="fld"><span>이름</span><input class="inp" name="uname" value="${esc(u.name)}" maxlength="20"></label>
+        <label class="fld"><span>이메일</span><input class="inp" name="email" type="email" value="${esc(u.email)}"></label>
+        <label class="fld"><span>휴대폰 번호</span><input class="inp num" name="phone" value="${esc(u.phone)}" inputmode="numeric"></label>
+        <label class="ck" style="margin-top:14px"><input type="checkbox" name="mkt" ${u.marketing?'checked':''}> 마케팅 정보 받기</label>
+        <p class="err" id="perr" hidden></p><button class="btn primary wide">저장</button></form>
+       <form class="box" id="pwf" novalidate><h3>비밀번호 변경</h3>
+        <label class="fld"><span>현재 비밀번호</span><input class="inp" name="cur" type="password" autocomplete="current-password"></label>
+        <label class="fld"><span>새 비밀번호</span><input class="inp" name="pw" type="password" autocomplete="new-password" maxlength="20" placeholder="영문+숫자 8~20자"></label>
+        <label class="fld"><span>새 비밀번호 확인</span><input class="inp" name="pw2" type="password" autocomplete="new-password" maxlength="20"></label>
+        <p class="err" id="pwerr" hidden></p><button class="btn wide">비밀번호 바꾸기</button></form>
+       <div class="box"><h3>회원탈퇴</h3><p class="hint">탈퇴하면 주문 내역, 쿠폰, 적립금(${won(u.points)})이 모두 사라지고 되돌릴 수 없어요.</p><button class="btn ghost wide" id="bye">회원탈퇴</button></div></div>`;
+      const pf=$('#pf');pf.phone.oninput=()=>pf.phone.value=phoneFmt(pf.phone.value);
+      pf.onsubmit=e=>{e.preventDefault();const er=$('#perr');er.hidden=true;const n=pf.uname.value.trim(),em=pf.email.value.trim(),ph=pf.phone.value.trim();
+        if(n.length<2){er.textContent='이름을 2자 이상 입력해 주세요.';er.hidden=false;return}
+        if(!EMAIL_RE.test(em)||Object.values(users).some(x=>x!==u&&x.email===em)){er.textContent='이메일이 형식에 맞지 않거나 이미 쓰이고 있어요.';er.hidden=false;return}
+        if(!PHONE_RE.test(ph)){er.textContent='휴대폰 번호 형식이 맞지 않아요.';er.hidden=false;return}
+        u.name=n;u.email=em;u.phone=ph;u.marketing=pf.mkt.checked;saveUsers();renderUtil();toast('회원정보를 저장했어요');pMy('profile')};
+      const pw=$('#pwf');pw.onsubmit=async e=>{e.preventDefault();const er=$('#pwerr');er.hidden=true;
+        if(await hashPw(pw.cur.value,u.salt)!==u.hash){er.textContent='현재 비밀번호가 맞지 않아요.';er.hidden=false;return}
+        const r=pwRule(pw.pw.value);if(!(r.len&&r.mix&&r.sp)){er.textContent='새 비밀번호는 영문과 숫자를 섞어 8~20자로 만들어 주세요.';er.hidden=false;return}
+        if(pw.pw.value!==pw.pw2.value){er.textContent='새 비밀번호 확인이 맞지 않아요.';er.hidden=false;return}
+        u.salt=uid();u.hash=await hashPw(pw.pw.value,u.salt);saveUsers();toast('비밀번호를 바꿨어요');pw.reset()};
+      $('#bye').onclick=()=>{dlg(`<h3>정말 탈퇴할까요?</h3><p>주문 내역·쿠폰·적립금이 모두 지워지고 되돌릴 수 없어요.\n확인을 위해 비밀번호를 입력해 주세요.</p><input class="inp" id="byePw" type="password" style="margin-top:12px" autocomplete="current-password"><p class="err" id="byeErr" hidden></p><div class="ctas"><button class="btn" id="dNo">취소</button><button class="btn primary" id="dOk">탈퇴하기</button></div>`);
+        $('#dNo').onclick=closeDlg;$('#dOk').onclick=async()=>{if(await hashPw($('#byePw').value,u.salt)!==u.hash){const x=$('#byeErr');x.textContent='비밀번호가 맞지 않아요.';x.hidden=false;return}
+          delete users[u.id];saveUsers();closeDlg();me=null;try{sessionStorage.removeItem('bd_sess');localStorage.removeItem('bd_keep')}catch(e){}renderUtil();toast('탈퇴했어요. 그동안 고마웠어요');go('#/')}}}
+  };
+  (F[tab]||F.home)();
+  wireOrderButtons(T);
+}
+function recentGrid(u,n){const L=u.recent.map(byId).filter(Boolean).slice(0,n);return L.length?`<div class="grid">${L.map(card).join('')}</div>`:'<div class="empty-box">아직 본 상품이 없어요</div>'}
+function reviewable(u){const out=[];u.orders.forEach(o=>{const s=ostate(o);if(!['done','confirmed'].includes(s.k))return;o.items.forEach((i,k)=>{if(!u.reviews.some(r=>r.oid===o.no&&r.k===k))out.push({o,i,k})})});return out}
+const answered=q=>Date.now()-q.t>12e4;
+function autoAnswer(q){return q.pid?`안녕하세요, 바로담입니다. 문의하신 상품은 현재 정상 판매 중이며 평일 오후 2시 이전 주문은 당일 출고돼요. 사이즈·색상은 상세페이지 옵션을 참고해 주세요. 감사합니다.`
+  :{'주문/결제':'안녕하세요, 바로담입니다. 결제 내역은 마이페이지 > 주문·배송에서 확인하실 수 있어요. 시제품이라 실제 결제는 일어나지 않았어요.','배송':'안녕하세요, 바로담입니다. 배송 현황은 주문 상세의 배송조회에서 실시간으로 확인하실 수 있어요.','취소/반품/교환':'안녕하세요, 바로담입니다. 배송 출발 전까지는 주문 상세에서 바로 취소하실 수 있어요. 반품은 배송완료 후 7일 이내 접수해 주세요.'}[q.cat]||'안녕하세요, 바로담입니다. 문의 주셔서 감사합니다. 확인 후 안내드린 내용으로 처리해 드렸어요.'}
+
+function orderCard(o){const s=ostate(o);
+  return `<div class="ocard"><div class="oh"><div><b class="num">${fmtD(o.at)} 주문</b> <span class="no num">주문번호 ${o.no}</span></div><a href="#/order/${o.no}">주문 상세 ›</a></div>
+   <div class="st ${s.k==='cancel'?'cancel':['done','confirmed'].includes(s.k)?'ok':'go'}">${s.label}${s.k==='ship'?' · 내일 도착 예정':''}</div>
+   ${o.items.map((i,k)=>`<div class="oi"><div class="pic" data-open="${i.pid}">${itemImg(i)}</div><div><div class="nm" data-open="${i.pid}">${esc(i.name)}</div><div class="op num">${optTxt(i)} · ${i.qty}개 · ${won(i.price*i.qty)}</div></div>
+    <div class="acts">${k===0?orderActs(o,s):''}${['done','confirmed'].includes(s.k)&&!U().reviews.some(r=>r.oid===o.no&&r.k===k)?`<button class="btn sm ghost" data-rv="${o.no}|${k}">리뷰 쓰기</button>`:''}</div></div>`).join('')}</div>`}
+function orderActs(o,s){
+  const b=[];
+  if(['paid','ready'].includes(s.k))b.push(`<button class="btn sm ghost" data-oc="${o.no}">주문 취소</button>`);
+  if(['ship','done','confirmed'].includes(s.k))b.push(`<a class="btn sm ghost" style="text-align:center;text-decoration:none;color:inherit" href="#/order/${o.no}">배송 조회</a>`);
+  if(s.k==='done')b.push(`<button class="btn sm primary" data-ok="${o.no}">구매 확정</button>`);
+  if(['confirmed','cancel'].includes(s.k))b.push(`<button class="btn sm ghost" data-re="${o.no}">재구매</button>`);
+  return b.join('');
+}
+function wireOrderButtons(root){
+  root.addEventListener('click',async e=>{
+    const u=U();if(!u)return;const t=e.target.closest('button,[data-open]');if(!t)return;
+    if(t.dataset.open){openDetail(+t.dataset.open);return}
+    const find=no=>u.orders.find(o=>o.no===no);
+    if(t.dataset.oc){const o=find(t.dataset.oc);if(!['paid','ready'].includes(ostate(o).k)){toast('이미 배송이 시작돼 취소할 수 없어요');refresh();return}
+      if(!await ask('주문 취소',`주문번호 ${o.no}\n결제 금액 ${won(o.total)}을 취소할까요?\n사용한 쿠폰과 적립금은 돌려드려요.`,'주문 취소','닫기'))return;
+      if(!['paid','ready'].includes(ostate(o).k)){toast('그 사이 배송이 시작돼 취소할 수 없어요');refresh();return}
+      o.cancelledAt=Date.now();if(o.cpId){const c=u.coupons.find(c=>c.id===o.cpId);if(c)c.used=null}if(o.usePts)givePoints(u,o.usePts,'주문취소 적립금 반환 ('+o.no+')');
+      saveUsers();toast('주문을 취소했어요');refresh()}
+    if(t.dataset.ok){const o=find(t.dataset.ok);if(!await ask('구매 확정',`구매를 확정하면 적립금 ${won(o.earn)}을 드려요.\n확정 후에는 반품 접수가 어려워요.`,'구매 확정'))return;
+      o.confirmedAt=Date.now();givePoints(u,o.earn,'구매확정 적립 ('+o.no+')');saveUsers();toast(`적립금 ${won(o.earn)}을 드렸어요`);refresh()}
+    if(t.dataset.re){const o=find(t.dataset.re);o.items.forEach(i=>{if(!byId(i.pid))return;const key=i.pid+'|'+(i.color||'')+'|'+(i.size||'');const ex=cart.find(c=>c.key===key);ex?ex.qty+=i.qty:cart.push({key,id:i.pid,size:i.size,color:i.color,qty:i.qty,sel:true})});save();counts();toast('장바구니에 다시 담았어요');openCart()}
+    if(t.dataset.rv){const [no,k]=t.dataset.rv.split('|');reviewForm(find(no),+k)}
+  });
+}
+function refresh(){route()}
+
+// ---------- order detail ----------
+function pOrder(no){
+  if(!need('order/'+no))return;const u=U(),o=u.orders.find(x=>x.no===no);
+  if(!o){pageEl.innerHTML=`${crumb('주문 상세')}<div class="empty-box">주문을 찾을 수 없어요<br><a class="lnk" href="#/mypage/orders">주문 목록으로</a></div>`;return}
+  const s=ostate(o),tl=trackLog(o);
+  pageEl.innerHTML=`<div id="odWrap">${crumb('<a href="#/mypage">마이페이지</a>','<a href="#/mypage/orders">주문·배송</a>','주문 상세')}
+   <h1 class="ptitle">주문 상세</h1>
+   <div class="box"><div class="rowb" style="margin:0"><div><b class="num">${fmtDT(o.at)} 주문</b> <span class="hint num">주문번호 ${o.no}</span></div><span class="st ${s.k==='cancel'?'cancel':['done','confirmed'].includes(s.k)?'ok':'go'}">${s.label}</span></div>${orderSteps(o)}</div>
+   <div class="ocard" style="margin-top:12px">${o.items.map((i,k)=>`<div class="oi"><div class="pic" data-open="${i.pid}">${itemImg(i)}</div><div><div class="nm" data-open="${i.pid}">${esc(i.name)}</div><div class="op num">${optTxt(i)} · ${i.qty}개 · ${won(i.price*i.qty)}</div></div><div class="acts">${k===0?orderActs(o,s):''}${['done','confirmed'].includes(s.k)&&!u.reviews.some(r=>r.oid===o.no&&r.k===k)?`<button class="btn sm ghost" data-rv="${o.no}|${k}">리뷰 쓰기</button>`:''}</div></div>`).join('')}</div>
+   ${s.k!=='cancel'?`<div class="box"><h3>배송 조회</h3><div class="kv" style="margin-bottom:10px"><dt>택배사</dt><dd>바로담 택배 (시연용)</dd><dt>운송장 번호</dt><dd class="num">${s.i>=2?o.inv:'상품 준비 후 발급돼요'}</dd></div>
+     <ul class="track num">${tl.map(e=>`<li><span>${fmtDT(e.t).slice(5)}</span><div><b>${e.w}</b>${e.p?` · ${e.p}`:''}<div class="hint">${e.d}</div></div></li>`).join('')}</ul></div>`
+   :`<div class="box"><h3>취소 정보</h3><div class="kv"><dt>취소 일시</dt><dd class="num">${fmtDT(o.cancelledAt)}</dd><dt>환불 금액</dt><dd class="num"><b>${won(o.total)}</b> (${payName(o.pay)})</dd></div></div>`}
+   <div class="box"><h3>배송지</h3><div class="kv"><dt>받는 분</dt><dd>${esc(o.addr.to)}</dd><dt>연락처</dt><dd class="num">${esc(o.addr.phone)}</dd><dt>주소</dt><dd class="num">(${esc(o.addr.zip)}) ${esc(o.addr.a1)} ${esc(o.addr.a2)}</dd><dt>요청사항</dt><dd>${esc(o.memo||'없음')}</dd></div></div>
+   <div class="box paysum"><h3>결제 정보</h3>${payRows(o)}<div class="sum" style="margin-top:8px"><span>결제 수단</span><span>${payName(o.pay)}</span></div>${o.pay.m==='bank'?`<div class="sum"><span>입금 계좌</span><span class="num">${o.pay.acct}</span></div>`:''}<div class="sum"><span>적립 ${o.confirmedAt?'완료':'예정'}</span><span class="num">${won(o.earn)}</span></div></div>
+   <div class="rowb"><a class="btn ghost" style="text-decoration:none;color:inherit" href="#/mypage/orders">주문 목록</a><button class="btn ghost" id="askO">이 주문 문의하기</button></div></div>`;
+  wireOrderButtons($('#odWrap'));
+  $('#askO').onclick=()=>askQ(null,'주문/결제',`주문번호 ${o.no} 문의`);
+}
+const payName=p=>({card:'신용·체크카드',baro:'바로페이',bank:'무통장 입금',phone:'휴대폰 결제'}[p.m]||'')+(p.d?` (${p.d})`:'');
+function payRows(o){return `<div class="sum"><span>상품 금액</span><span class="num">${won(o.sub+o.disc)}</span></div>
+  ${o.disc?`<div class="sum"><span>상품 할인</span><span class="num minus">−${won(o.disc)}</span></div>`:''}
+  ${o.cpAmt?`<div class="sum"><span>쿠폰 (${esc(o.cp)})</span><span class="num minus">−${won(o.cpAmt)}</span></div>`:''}
+  ${o.usePts?`<div class="sum"><span>적립금 사용</span><span class="num minus">−${won(o.usePts)}</span></div>`:''}
+  <div class="sum"><span>배송비</span><span class="num">${o.ship?won(o.ship):'무료'}</span></div>
+  <div class="sum total"><span>총 결제 금액</span><span class="num">${won(o.total)}</span></div>`}
+
+// ---------- address form ----------
+function addrForm(a,done){const u=U();
+  dlg(`<h3>${a?'배송지 수정':'새 배송지'}</h3><form id="af" novalidate>
+   <label class="fld"><span>배송지 이름</span><input class="inp" name="label" value="${esc(a?a.label:'')}" placeholder="예: 우리집, 회사" maxlength="10"></label>
+   <div class="grid2"><label class="fld"><span>받는 분</span><input class="inp" name="to" value="${esc(a?a.to:u.name)}" maxlength="20"></label>
+   <label class="fld"><span>연락처</span><input class="inp num" name="phone" value="${esc(a?a.phone:u.phone)}" inputmode="numeric"></label></div>
+   <label class="fld"><span>우편번호</span><input class="inp num" name="zip" value="${esc(a?a.zip:'')}" inputmode="numeric" maxlength="5" placeholder="5자리"></label>
+   <label class="fld"><span>주소</span><input class="inp" name="a1" value="${esc(a?a.a1:'')}" placeholder="도로명 주소"></label>
+   <label class="fld"><span>상세 주소</span><input class="inp" name="a2" value="${esc(a?a.a2:'')}" placeholder="동·호수"></label>
+   <label class="ck" style="margin-top:12px"><input type="checkbox" name="def" ${!u.addrs.length||(a&&a.def)?'checked':''}> 기본 배송지로 저장</label>
+   <p class="err" id="aerr" hidden></p>
+   <div class="ctas"><button type="button" class="btn" id="dNo">취소</button><button class="btn primary">저장</button></div></form>`);
+  const f=$('#af');f.phone.oninput=()=>f.phone.value=phoneFmt(f.phone.value);f.zip.oninput=()=>f.zip.value=f.zip.value.replace(/\D/g,'');
+  $('#dNo').onclick=closeDlg;
+  f.onsubmit=e=>{e.preventDefault();const v=Object.fromEntries(['label','to','phone','zip','a1','a2'].map(k=>[k,f[k].value.trim()]));const er=$('#aerr');
+    const m=v.to.length<2?'받는 분 이름을 입력해 주세요.':!PHONE_RE.test(v.phone)?'연락처를 010-0000-0000 형식으로 입력해 주세요.':!/^\d{5}$/.test(v.zip)?'우편번호 5자리를 입력해 주세요.':v.a1.length<5?'주소를 입력해 주세요.':!v.a2?'상세 주소를 입력해 주세요.':'';
+    if(m){er.textContent=m;er.hidden=false;return}
+    if(f.def.checked)u.addrs.forEach(x=>x.def=false);
+    if(a)Object.assign(a,v,{def:f.def.checked||a.def});else u.addrs.push({id:uid(),...v,def:f.def.checked||!u.addrs.length});
+    if(!u.addrs.some(x=>x.def))u.addrs[0].def=true;
+    saveUsers();closeDlg();toast('배송지를 저장했어요');done&&done(a||u.addrs[u.addrs.length-1])};
+}
+
+// ---------- review / question forms ----------
+function reviewForm(o,k){const u=U(),i=o.items[k];let star=5;
+  dlg(`<h3>리뷰 쓰기</h3><p>${esc(i.name)}<br>${optTxt(i)}</p>
+   <div class="stars" id="stars" style="margin-top:12px">${[1,2,3,4,5].map(n=>`<button type="button" data-s="${n}" class="on" aria-label="${n}점">★</button>`).join('')}</div>
+   <textarea class="inp" id="rvTxt" style="margin-top:12px" maxlength="500" placeholder="상품을 써 보니 어땠나요? (10자 이상)"></textarea><div class="hint" id="rvN">0 / 500</div>
+   <p class="err" id="rvErr" hidden></p><div class="ctas"><button class="btn" id="dNo">취소</button><button class="btn primary" id="dOk">등록 (+500원)</button></div>`);
+  const S2=$('#stars');S2.onclick=e=>{const b=e.target.closest('[data-s]');if(!b)return;star=+b.dataset.s;S2.querySelectorAll('button').forEach(x=>x.classList.toggle('on',+x.dataset.s<=star))};
+  $('#rvTxt').oninput=e=>$('#rvN').textContent=`${e.target.value.length} / 500`;$('#rvTxt').focus();
+  $('#dNo').onclick=closeDlg;
+  $('#dOk').onclick=()=>{const txt=$('#rvTxt').value.trim();if(txt.length<10){const x=$('#rvErr');x.textContent='10자 이상 써 주세요.';x.hidden=false;return}
+    u.reviews.unshift({id:uid(),oid:o.no,k,pid:i.pid,name:i.name,opt:optTxt(i),star,txt,t:Date.now(),who:mask(u.id)});givePoints(u,500,'리뷰 작성 적립');saveUsers();closeDlg();toast('리뷰를 등록하고 적립금 500원을 드렸어요');refresh()};
+}
+function askQ(pid,cat,title){if(!need(location.hash.slice(2)||''))return;const u=U();const p=pid?byId(pid):null;
+  dlg(`<h3>${p?'상품 문의':'1:1 문의'}</h3>${p?`<p>${esc(p.name)}</p>`:''}<form id="qf" novalidate>
+   ${p?'':`<label class="fld"><span>문의 유형</span><select class="inp" name="cat">${['주문/결제','배송','취소/반품/교환','회원','기타'].map(c=>`<option ${c===cat?'selected':''}>${c}</option>`).join('')}</select></label>`}
+   <label class="fld"><span>제목</span><input class="inp" name="qtitle" maxlength="40" value="${esc(title||'')}"></label>
+   <label class="fld"><span>내용</span><textarea class="inp" name="body" maxlength="1000" placeholder="궁금한 점을 자세히 적어 주세요 (10자 이상)"></textarea></label>
+   <p class="err" id="qerr" hidden></p><div class="ctas"><button type="button" class="btn" id="dNo">취소</button><button class="btn primary">등록</button></div></form>`);
+  $('#dNo').onclick=closeDlg;const f=$('#qf');
+  f.onsubmit=e=>{e.preventDefault();const t=f.qtitle.value.trim(),b=f.body.value.trim(),er=$('#qerr');
+    if(t.length<2||b.length<10){er.textContent='제목과 10자 이상의 내용을 입력해 주세요.';er.hidden=false;return}
+    u.qna.unshift({id:uid(),pid:pid||null,cat:p?'상품':f.cat.value,title:t,body:b,t:Date.now(),who:mask(u.id)});saveUsers();closeDlg();toast('문의를 등록했어요. 곧 답변해 드릴게요');
+    if(pid)openDetail(pid);else if(location.hash.startsWith('#/mypage'))pMy('qna')};
+}
+
+// ---------- product detail extras ----------
+function afterDetail(p){
+  // recently viewed
+  const rec=LS.get('bd_recent',[]).filter(x=>x!==p.id);rec.unshift(p.id);LS.set('bd_recent',rec.slice(0,40));
+  const u=U();if(u){u.recent=[p.id,...u.recent.filter(x=>x!==p.id)].slice(0,40);saveUsers()}
+  if(!mainEl.hidden&&!location.hash.startsWith('#/p/'))history.replaceState(null,'','#/p/'+p.id);
+  const all=Object.values(users).flatMap(x=>x.reviews.filter(r=>r.pid===p.id).map(r=>({...r,mine:x===u})));
+  const qs=Object.values(users).flatMap(x=>x.qna.filter(q=>q.pid===p.id).map(q=>({...q,mine:x===u})));
+  const m=$('#overlay .modal');if(!m)return;
+  const box=document.createElement('div');box.className='dx';
+  box.innerHTML=`${all.length?`<div class="subh">회원 리뷰 <span class="hint num">${all.length}개</span></div>${all.map(r=>`<div class="review"><div class="rate"><b>${'★'.repeat(r.star)}${'☆'.repeat(5-r.star)}</b> <span class="who">${esc(r.who)}${r.mine?'<span class="mine">내 리뷰</span>':''} · ${fmtD(r.t)} · ${esc(r.opt)}</span></div><div style="white-space:pre-line">${esc(r.txt)}</div></div>`).join('')}`:''}
+   <div class="rowb"><div class="subh" style="margin:0">상품 문의 <span class="hint num">${qs.length}개</span></div><div style="display:flex;gap:6px"><button class="btn sm ghost" id="shareP">링크 복사</button><button class="btn sm" id="askP">문의하기</button></div></div>
+   ${qs.map(q=>`<div class="qna"><div class="q"><b>Q</b> ${esc(q.title)} <span class="who rate">${esc(q.who)}${q.mine?'<span class="mine">내 문의</span>':''} · ${fmtD(q.t)}</span></div>${q.mine?`<div style="white-space:pre-line;margin-top:4px">${esc(q.body)}</div>`:'<div class="hint">비밀글이에요</div>'}${answered(q)?`<div class="a"><b>A</b> ${esc(autoAnswer(q))}</div>`:'<div class="hint">답변 대기 중</div>'}</div>`).join('')||'<p class="hint">아직 문의가 없어요. 궁금한 점을 물어보세요.</p>'}`;
+  m.appendChild(box);
+  $('#askP').onclick=()=>{if(!U()){closeOverlay();need('p/'+p.id);return}askQ(p.id)};
+  $('#shareP').onclick=()=>{const url=location.origin+location.pathname+'#/p/'+p.id;(navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>toast('상품 링크를 복사했어요'),()=>info('상품 링크',url))};
+}
+function buyNow(){
+  const {p,size,color,qty}=cur;
+  if(p.colors&&!color){toast('색상을 먼저 골라 주세요');return}
+  if(p.sizes&&!size){toast('사이즈를 먼저 골라 주세요');return}
+  SS.set('bd_co',{src:'direct',lines:[{key:p.id+'|'+(color||'')+'|'+(size||''),id:p.id,color,size,qty}]});
+  closeOverlay(true);if(!U()){toast('주문하려면 로그인해 주세요');go('#/login/checkout');return}go('#/checkout');
+}
+
+// ---------- cart (with selection) ----------
+function openCart(){
+  const FREE=19800;
+  const lines=cart.map(c=>({...c,p:byId(c.id)})).filter(c=>c.p);
+  cart.forEach(c=>{if(c.sel===undefined)c.sel=true});
+  const S2=lines.filter(c=>c.sel!==false);
+  const sub=S2.reduce((a,c)=>a+c.p.price*c.qty,0),disc=S2.reduce((a,c)=>a+(c.p.base-c.p.price)*c.qty,0);
+  const ship=!S2.length||sub>=FREE||S2.every(c=>c.p.free)?0:3000;
+  const allOn=lines.length&&lines.every(c=>c.sel!==false);
+  $('#overlay').innerHTML=`<div class="scrim" id="scrim" style="justify-content:flex-end;padding:0"></div>
+  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cTitle">
+    <header><h2 id="cTitle">장바구니 <span class="hint num" style="font-family:var(--f-body)">${lines.length}</span></h2><button class="close" style="position:static" id="cClose" aria-label="닫기">✕</button></header>
+    <div class="body" id="cBody">
+      ${lines.length?`<div class="rowb" style="margin:0"><label class="ck"><input type="checkbox" id="selAll" ${allOn?'checked':''}> 전체 선택 (${S2.length}/${lines.length})</label><button class="lnk" id="delSel">선택 삭제</button></div>
+      <div class="freebar">${sub>=FREE?'무료배송 조건을 채웠어요':`<b class="num">${won(FREE-sub)}</b> 더 담으면 무료배송`}<div class="track"><i style="width:${Math.min(100,sub/FREE*100)}%"></i></div></div>`+
+      lines.map(c=>`<div class="line" style="grid-template-columns:20px 64px minmax(0,1fr) auto"><input type="checkbox" class="ck" data-sel="${c.key}" ${c.sel!==false?'checked':''} aria-label="선택" style="width:17px;height:17px;accent-color:var(--accent);margin-top:22px"><div class="pic" data-open="${c.p.id}" style="cursor:pointer">${pimg(c.p)}</div><div><div class="ln">${esc(c.p.name)}</div><div class="op">${c.color?c.color+' · ':''}${c.size?'사이즈 '+c.size+' · ':''}${arrive(c.p)}</div>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:6px"><div class="qty"><button data-dq="${c.key}" data-d="-1" aria-label="줄이기">−</button><span class="num">${c.qty}</span><button data-dq="${c.key}" data-d="1" aria-label="늘리기">+</button></div><button class="rm" data-rm="${c.key}">삭제</button></div></div>
+        <div class="now num" style="font-size:14px">${won(c.p.price*c.qty)}</div></div>`).join('')
+      :`<div class="done"><div style="font-size:15px;font-weight:700">장바구니가 비어 있어요</div><div class="rate">마음에 드는 상품을 담아 보세요</div></div>`}
+    </div>
+    ${lines.length?`<footer>
+      <div class="sum"><span>상품 금액</span><span class="num">${won(sub+disc)}</span></div>
+      <div class="sum"><span>할인</span><span class="num" style="color:var(--accent)">−${won(disc)}</span></div>
+      <div class="sum"><span>배송비</span><span class="num">${ship?won(ship):'무료'}</span></div>
+      <div class="sum total"><span>결제 예정 금액</span><span class="num">${won(sub+ship)}</span></div>
+      <button class="btn primary" id="order" ${S2.length?'':'disabled'}>${S2.length?`${S2.length}개 상품 ${won(sub+ship)} 주문하기`:'주문할 상품을 골라 주세요'}</button>
+      ${U()?'':'<div class="hint" style="text-align:center">주문하려면 로그인이 필요해요</div>'}
+    </footer>`:''}
+  </aside>`;
+  document.body.style.overflow='hidden';
+  $('#cClose').focus();
+  $('#scrim').onclick=()=>closeOverlay();$('#cClose').onclick=()=>closeOverlay();
+  const sa=$('#selAll');if(sa)sa.onchange=()=>{cart.forEach(c=>c.sel=sa.checked);save();openCart()};
+  const ds=$('#delSel');if(ds)ds.onclick=async()=>{const n=cart.filter(c=>c.sel!==false).length;if(!n){toast('지울 상품을 골라 주세요');return}if(!await ask('선택 삭제',`선택한 ${n}개 상품을 장바구니에서 뺄까요?`,'삭제'))return;cart=cart.filter(c=>c.sel===false);save();counts();openCart()};
+  $('#cBody').addEventListener('click',e=>{
+    const q=e.target.closest('[data-dq]'),r=e.target.closest('[data-rm]'),s=e.target.closest('[data-sel]'),op=e.target.closest('[data-open]');
+    if(s){const c=cart.find(x=>x.key===s.dataset.sel);c.sel=s.checked;save();openCart();return}
+    if(op){e.stopPropagation();openDetail(+op.dataset.open);return}
+    if(q){const c=cart.find(x=>x.key===q.dataset.dq);const p=byId(c.id);const n=c.qty+ +q.dataset.d;if(n>p.stock){toast(`재고가 ${p.stock}개 남았어요`);return}c.qty=Math.max(1,n);save();counts();openCart()}
+    if(r){cart=cart.filter(x=>x.key!==r.dataset.rm);save();counts();openCart()}
+  });
+  const o=$('#order');if(o)o.onclick=()=>{SS.set('bd_co',{src:'cart',lines:cart.filter(c=>c.sel!==false).map(c=>({key:c.key,id:c.id,color:c.color,size:c.size,qty:c.qty}))});
+    closeOverlay(true);if(!U()){toast('주문하려면 로그인해 주세요');go('#/login/checkout');return}go('#/checkout')};
+}
+
+// ---------- checkout ----------
+function pCheckout(){
+  if(!need('checkout'))return;const u=U();const co=SS.get('bd_co',null);
+  const lines=(co&&co.lines||[]).map(l=>({...l,p:byId(l.id)})).filter(l=>l.p);
+  if(!lines.length){pageEl.innerHTML=`${crumb('주문서')}<div class="empty-box">주문할 상품이 없어요<br><a class="lnk" href="#/">쇼핑하러 가기</a></div>`;return}
+  const sub=lines.reduce((a,l)=>a+l.p.price*l.qty,0),disc=lines.reduce((a,l)=>a+(l.p.base-l.p.price)*l.qty,0);
+  const baseShip=sub>=19800||lines.every(l=>l.p.free)?0:3000;
+  let addr=u.addrs.find(a=>a.def)||u.addrs[0]||null;
+  const st={cp:'',pts:0,pay:'card'};
+  const cpAmtOf=c=>{if(!c)return 0;if(c.min&&sub<c.min)return -1;if(c.cat&&!lines.some(l=>l.p.cat===c.cat))return -1;
+    const base=c.cat?lines.filter(l=>l.p.cat===c.cat).reduce((a,l)=>a+l.p.price*l.qty,0):sub;
+    return c.type==='rate'?Math.min(c.max||1e9,Math.floor(base*c.val/100/10)*10):c.type==='ship'?baseShip:Math.min(c.val,base)};
+  const cps=validCoupons(u);
+  pageEl.innerHTML=`${crumb('<a href="#" id="backCart">장바구니</a>','주문서')}<h1 class="ptitle">주문서</h1><div class="co"><div>
+   <div class="box"><h3>주문자</h3><div class="kv"><dt>이름</dt><dd>${esc(u.name)}</dd><dt>연락처</dt><dd class="num">${esc(u.phone)}</dd><dt>이메일</dt><dd>${esc(u.email)}</dd></div></div>
+   <div class="box"><h3 class="rowb" style="margin:0 0 10px">배송지 <button class="btn sm ghost" id="chgAddr">${u.addrs.length?'변경':'추가'}</button></h3><div id="addrBox"></div>
+     <label class="fld"><span>배송 요청사항</span><select class="inp" id="memo"><option>문 앞에 놓아 주세요</option><option>경비실에 맡겨 주세요</option><option>택배함에 넣어 주세요</option><option>배송 전에 연락 주세요</option><option value="__">직접 입력</option></select></label>
+     <input class="inp" id="memo2" placeholder="요청사항을 적어 주세요 (50자)" maxlength="50" style="margin-top:6px" hidden></div>
+   <div class="box"><h3>주문 상품 <span class="hint num">${lines.length}개</span></h3>${lines.map(l=>`<div class="coline"><div class="pic">${pimg(l.p)}</div><div><div style="font-weight:600">${esc(l.p.name)}</div><div class="hint num">${[l.color,l.size&&'사이즈 '+l.size].filter(Boolean).join(' · ')||'기본'} · ${l.qty}개 · ${arrive(l.p)}</div></div><div class="num" style="font-weight:800">${won(l.p.price*l.qty)}</div></div>`).join('')}</div>
+   <div class="box"><h3>할인</h3>
+     <label class="fld" style="margin-top:0"><span>쿠폰 <span class="hint num">사용 가능 ${cps.filter(c=>cpAmtOf(c)>0).length}장</span></span><select class="inp" id="cpSel"><option value="">쿠폰 선택 안 함</option>${cps.map(c=>{const a=cpAmtOf(c);return `<option value="${c.id}" ${a<=0?'disabled':''}>${esc(c.name)} ${a>0?`(−${won(a)})`:'(조건 미달)'}</option>`}).join('')}</select></label>
+     <label class="fld"><span>적립금 <span class="hint num">보유 ${won(u.points)}</span></span><div class="with"><input class="inp num" id="ptIn" inputmode="numeric" value="0"><button type="button" class="btn ghost" id="ptAll">모두 사용</button></div><small class="hint">1,000원 이상부터 10원 단위로 쓸 수 있어요</small></label></div>
+   <div class="box"><h3>결제 수단</h3><div class="pays">${[['card','신용·체크카드'],['baro','바로페이'],['bank','무통장 입금'],['phone','휴대폰 결제']].map(([k,l],i)=>`<label><input type="radio" name="pay" value="${k}" ${i?'':'checked'}>${l}</label>`).join('')}</div>
+     <div id="payDetail" style="margin-top:10px"></div>
+     <div class="note">시제품이라 실제 결제는 일어나지 않아요. 카드 번호 같은 결제 정보는 입력받지 않아요.</div></div>
+  </div>
+  <div class="side"><div class="box paysum"><h3>결제 금액</h3><div id="sumBox"></div>
+    <label class="ck" style="margin-top:14px;align-items:flex-start"><input type="checkbox" id="agree"> <span>주문 상품, 가격, 배송 정보를 확인했으며 구매 진행에 동의해요 (필수)</span></label>
+    <p class="err" id="coErr" hidden></p><button class="btn primary wide" id="payBtn">결제하기</button></div></div></div>`;
+  $('#backCart').onclick=e=>{e.preventDefault();history.back();setTimeout(openCart,50)};
+  const drawAddr=()=>{$('#addrBox').innerHTML=addr?`<div class="addr" style="margin:0"><div class="t">${esc(addr.label||addr.to)}${addr.def?'<span class="def">기본 배송지</span>':''}</div><div>${esc(addr.to)} · <span class="num">${esc(addr.phone)}</span></div><div class="num">(${esc(addr.zip)}) ${esc(addr.a1)} ${esc(addr.a2)}</div></div>`:'<div class="empty-box" style="padding:20px">배송지를 추가해 주세요</div>'};
+  drawAddr();
+  $('#chgAddr').onclick=()=>{if(!u.addrs.length){addrForm(null,a=>{addr=a;drawAddr();$('#chgAddr').textContent='변경'});return}
+    dlg(`<h3>배송지 선택</h3><div class="radios" style="margin-top:10px">${u.addrs.map(a=>`<label class="rcard"><input type="radio" name="ad" value="${a.id}" ${addr&&addr.id===a.id?'checked':''}><div><b>${esc(a.label||a.to)}</b>${a.def?' <span class="def" style="font-size:11px;color:var(--ship)">기본</span>':''}<div class="x">${esc(a.to)} · ${esc(a.phone)}<br>(${esc(a.zip)}) ${esc(a.a1)} ${esc(a.a2)}</div></div></label>`).join('')}</div>
+      <button class="lnk" id="newAd" style="margin-top:10px">+ 새 배송지 추가</button><div class="ctas"><button class="btn" id="dNo">취소</button><button class="btn primary" id="dOk">이 주소로 배송</button></div>`);
+    $('#dNo').onclick=closeDlg;$('#newAd').onclick=()=>addrForm(null,a=>{addr=a;drawAddr()});
+    $('#dOk').onclick=()=>{const v=document.querySelector('input[name=ad]:checked');if(v)addr=u.addrs.find(a=>a.id===v.value);closeDlg();drawAddr()}};
+  $('#memo').onchange=e=>{$('#memo2').hidden=e.target.value!=='__'};
+  const BANKS=['바로은행','가상은행','예시은행'],CARDS=['바로카드','가상카드','샘플카드','예시카드'];
+  const drawPay=()=>{const d=$('#payDetail');
+    d.innerHTML=st.pay==='card'?`<div class="grid2"><label class="fld" style="margin:0"><span>카드사</span><select class="inp" id="cardCo">${CARDS.map(c=>`<option>${c}</option>`).join('')}</select></label><label class="fld" style="margin:0"><span>할부</span><select class="inp" id="inst"><option>일시불</option><option>2개월 (무이자)</option><option>3개월 (무이자)</option><option>6개월</option></select></label></div>`
+     :st.pay==='bank'?`<label class="fld" style="margin:0"><span>입금 은행</span><select class="inp" id="bankCo">${BANKS.map(c=>`<option>${c}</option>`).join('')}</select></label><p class="hint">주문 후 가상계좌가 발급돼요. 다음 날 자정까지 입금해 주세요.</p>`
+     :st.pay==='baro'?`<p class="hint">바로페이로 결제하면 0.5% 추가 적립 (시연용)</p>`:`<label class="fld" style="margin:0"><span>통신사</span><select class="inp" id="tel"><option>SKT</option><option>KT</option><option>LG U+</option><option>알뜰폰</option></select></label>`};
+  drawPay();
+  pageEl.querySelectorAll('input[name=pay]').forEach(r=>r.onchange=()=>{st.pay=r.value;drawPay();drawSum()});
+  const cp=()=>cps.find(c=>c.id===st.cp)||null;
+  function drawSum(){const ca=Math.max(0,cpAmtOf(cp()));const maxPts=Math.max(0,sub+baseShip-ca);if(st.pts>maxPts)st.pts=Math.floor(maxPts/10)*10;
+    const total=sub-ca-st.pts+baseShip;const earn=Math.floor(total*(st.pay==='baro'?0.015:0.01));
+    $('#sumBox').innerHTML=payRows({sub,disc,cpAmt:ca,cp:cp()&&cp().name,usePts:st.pts,ship:baseShip,total})+`<div class="sum"><span>구매확정 시 적립</span><span class="num plus">+${won(earn)}</span></div>`;
+    $('#payBtn').textContent=`${won(total)} 결제하기`;return {ca,total}}
+  $('#cpSel').onchange=e=>{st.cp=e.target.value;drawSum()};
+  const ptIn=$('#ptIn');
+  ptIn.oninput=()=>{ptIn.value=ptIn.value.replace(/\D/g,'')};
+  ptIn.onchange=()=>{let v=+ptIn.value||0;if(v&&v<1000){toast('적립금은 1,000원부터 쓸 수 있어요');v=0}v=Math.min(v,u.points);st.pts=Math.floor(v/10)*10;drawSum();ptIn.value=st.pts};
+  $('#ptAll').onclick=()=>{st.pts=u.points>=1000?Math.floor(u.points/10)*10:0;if(!st.pts)toast('적립금은 1,000원부터 쓸 수 있어요');drawSum();ptIn.value=st.pts};
+  drawSum();
+  $('#payBtn').onclick=()=>{const er=$('#coErr');er.hidden=true;
+    if(!addr){er.textContent='배송지를 추가해 주세요.';er.hidden=false;return}
+    if(!$('#agree').checked){er.textContent='구매 진행 동의에 체크해 주세요.';er.hidden=false;return}
+    const memo=$('#memo').value==='__'?$('#memo2').value.trim():$('#memo').value;
+    for(const l of lines)if(l.qty>l.p.stock){er.textContent=`'${l.p.name}' 재고가 부족해요.`;er.hidden=false;return}
+    const {ca,total}=drawSum();
+    const pay={m:st.pay,d:st.pay==='card'?$('#cardCo').value+' · '+$('#inst').value:st.pay==='bank'?$('#bankCo').value:st.pay==='phone'?$('#tel').value:''};
+    if(st.pay==='bank')pay.acct=$('#bankCo').value+' 000-'+String(Math.floor(Math.random()*9e5)+1e5)+'-00 (가상계좌)';
+    dlg(`<div class="done" style="padding:20px"><div class="spin"></div><b>결제하고 있어요</b><p>창을 닫지 말고 잠시만 기다려 주세요</p></div>`);
+    setTimeout(()=>{
+      const items=lines.map(l=>({pid:l.p.id,name:l.p.name,photo:l.p.photo,type:l.p.type,hue:l.p.hue,color:l.color||null,size:l.size||null,qty:l.qty,price:l.p.price,base:l.p.base}));
+      const c=cp();if(c&&ca>0)c.used=Date.now();
+      const o=mkOrder(u,{items,sub,disc,cpAmt:ca,cp:c&&ca>0?c.name:null,cpId:c&&ca>0?c.id:null,usePts:st.pts,ship:baseShip,pay,addr:{...addr},memo});
+      if(st.pay==='baro')o.earn=Math.floor(o.total*0.015);
+      if(st.pts)givePoints(u,-st.pts,'주문 결제에 사용 ('+o.no+')');
+      lines.forEach(l=>{l.p.stock=Math.max(1,l.p.stock-l.qty);l.p.sold+=l.qty});
+      if(co.src==='cart'){const keys=new Set(lines.map(l=>l.key));cart=cart.filter(x=>!keys.has(x.key));save();counts()}
+      SS.del('bd_co');saveUsers();closeDlg();go('#/complete/'+o.no);
+    },1300);
+  };
+}
+function pComplete(no){
+  if(!need('complete/'+no))return;const o=U().orders.find(x=>x.no===no);if(!o){go('#/mypage/orders');return}
+  pageEl.innerHTML=`<div class="auth" style="max-width:560px"><div class="done"><div class="ok">✓</div><h1 class="ptitle" style="margin:0">주문이 완료됐어요</h1>
+   <div class="num hint">주문번호 ${o.no}</div></div>
+   ${o.pay.m==='bank'?`<div class="note" style="font-size:14px;color:var(--ink)"><b>입금 계좌</b> ${esc(o.pay.acct)}<br><b>입금 금액</b> ${won(o.total)} · <b>기한</b> ${fmtD(o.at+864e5)} 23:59</div>`:''}
+   <div class="box paysum" style="margin-top:14px">${payRows(o)}</div>
+   <div class="box"><div class="kv"><dt>배송지</dt><dd>${esc(o.addr.to)} · ${esc(o.addr.a1)} ${esc(o.addr.a2)}</dd><dt>도착 예정</dt><dd>${arrive(byId(o.items[0].pid)||{rocket:true})}</dd><dt>결제 수단</dt><dd>${payName(o.pay)}</dd></div></div>
+   <div class="ctas"><a class="btn" style="text-align:center;text-decoration:none;color:inherit" href="#/order/${o.no}">주문 상세 보기</a><a class="btn primary" style="text-align:center;text-decoration:none" href="#/">쇼핑 계속하기</a></div>
+   <p class="hint" style="text-align:center;margin-top:14px">시제품이라 실제 결제·배송은 일어나지 않아요. 주문 상태는 몇 분 동안 자동으로 진행돼요.</p></div>`;
+}
+
+// ---------- customer center ----------
+const FAQ=[['주문/결제','주문을 취소하고 싶어요','마이페이지 > 주문·배송에서 결제완료·상품준비중 상태일 때 [주문 취소]를 누르면 바로 취소돼요. 사용한 쿠폰과 적립금은 돌려드려요.'],
+ ['주문/결제','무통장 입금 기한이 지나면 어떻게 되나요?','기한 안에 입금하지 않으면 주문이 자동으로 취소돼요. (시제품 안내)'],
+ ['배송','배송은 얼마나 걸리나요?','내일 도착 표시 상품은 밤 12시 전 주문 시 다음 날 도착해요. 시제품에서는 주문 후 10분 안에 배송완료로 바뀌어요.'],
+ ['배송','배송지를 바꾸고 싶어요','배송이 시작되기 전이라면 주문을 취소하고 새 배송지로 다시 주문해 주세요.'],
+ ['취소/반품/교환','반품은 어떻게 하나요?','배송완료 후 7일 안에 1:1 문의로 접수해 주세요. 구매확정을 한 뒤에는 반품이 어려워요.'],
+ ['회원','비밀번호를 잊어버렸어요','로그인 화면의 [아이디·비밀번호 찾기]에서 아이디와 가입 이메일로 새 비밀번호를 만들 수 있어요.'],
+ ['회원','다른 기기에서도 로그인되나요?','이 사이트는 시제품이라 회원 정보가 지금 쓰는 브라우저에만 저장돼요. 다른 기기에서는 새로 가입해야 해요.'],
+ ['적립금/쿠폰','적립금은 언제 들어오나요?','구매확정을 하면 결제 금액의 1%(골드 등급 3%)가 들어와요. 리뷰를 쓰면 500원을 더 드려요.'],
+ ['적립금/쿠폰','쿠폰 코드는 어디에 넣나요?','마이페이지 > 쿠폰에서 코드를 등록하세요. 시연용 코드: WELCOME2026, WINTER10, BARODAM']];
+const NOTICE=[['2026.11.18','겨울 아우터 기획전 오픈 안내'],['2026.11.10','설 연휴 배송 일정 안내 (시연용)'],['2026.11.01','개인정보처리방침 개정 안내 (시연용)'],['2026.10.20','바로담 마켓 시제품 오픈']];
+function pCs(tab){tab=tab||'faq';
+  pageEl.innerHTML=`${crumb('고객센터')}<h1 class="ptitle">고객센터</h1>
+   <div class="mp-head" style="margin-bottom:14px"><div><div class="hi">무엇을 도와드릴까요?</div><div class="sub">평일 09:00 - 18:00 · 점심 12:00 - 13:00 (예시 운영 시간)</div></div><div class="assets"><a href="#/mypage/qna"><b>1:1</b><span>문의하기</span></a><a href="#/mypage/orders"><b>📦</b><span>주문 조회</span></a></div></div>
+   <div class="ptabs"><button aria-selected="${tab==='faq'}" data-ct="faq">자주 묻는 질문</button><button aria-selected="${tab==='notice'}" data-ct="notice">공지사항</button></div>
+   <div class="box" style="margin-top:12px">${tab==='faq'?`<div class="filters" id="faqF">${['전체',...new Set(FAQ.map(f=>f[0]))].map((c,i)=>`<button data-fc="${c}" aria-pressed="${!i}">${c}</button>`).join('')}</div><div id="faqL"></div>`
+     :NOTICE.map(([d,t])=>`<details class="faq"><summary><span style="flex:1">${t}</span><span class="hint num">${d}</span></summary><div>바로담 마켓 시제품 공지예요. 실제 서비스가 아니라 화면 구성을 보여 주기 위한 예시 글이에요.</div></details>`).join('')}</div>`;
+  pageEl.querySelectorAll('[data-ct]').forEach(b=>b.onclick=()=>go('#/cs/'+b.dataset.ct));
+  if(tab==='faq'){const draw=c=>{$('#faqL').innerHTML=FAQ.filter(f=>c==='전체'||f[0]===c).map(f=>`<details class="faq"><summary>[${f[0]}] ${f[1]}</summary><div>${f[2]}</div></details>`).join('')};draw('전체');
+    $('#faqF').onclick=e=>{const b=e.target.closest('[data-fc]');if(!b)return;$('#faqF').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));draw(b.dataset.fc)}}
+}
+
+// ---------- search suggestions ----------
+const POP=['패딩','니트','러닝화','헤드폰','텀블러','머그','백팩','선크림','한우','감귤'];
+let recentQ=LS.get('bd_recentq',[]);
+const sg=$('#sugg'),qIn=$('#q');let sgAct=-1;
+function hl(t,q){const i=t.toLowerCase().indexOf(q.toLowerCase());return i<0?esc(t):esc(t.slice(0,i))+'<mark>'+esc(t.slice(i,i+q.length))+'</mark>'+esc(t.slice(i+q.length))}
+function drawSugg(){const q=qIn.value.trim();sgAct=-1;
+  if(!q){sg.innerHTML=`${recentQ.length?`<div><h4>최근 검색어 <button class="lnk" data-qclr>전체 삭제</button></h4><div class="chipsr">${recentQ.map(x=>`<span><button class="it" style="padding:0" data-q="${esc(x)}">${esc(x)}</button><button data-qdel="${esc(x)}" aria-label="${esc(x)} 지우기">✕</button></span>`).join('')}</div></div>`:''}
+    <div><h4>인기 검색어 <span class="num">${new Date().getHours()}:00 기준</span></h4><div class="pop">${POP.map((x,i)=>`<button class="it" data-q="${x}"><span class="n num">${i+1}</span><span class="tx">${x}</span></button>`).join('')}</div></div>`}
+  else{const ql=q.toLowerCase();const hits=P.filter(p=>(p.name+' '+p.brand).toLowerCase().includes(ql)).slice(0,8);
+    const brands=[...new Set(P.map(p=>p.brand))].filter(b=>b.toLowerCase().includes(ql)).slice(0,3);
+    sg.innerHTML=hits.length||brands.length?`<div>${brands.map(b=>`<button class="it" data-q="${esc(b)}"><span class="n">🏷</span><span class="tx">${hl(b,q)} <span class="hint">브랜드</span></span></button>`).join('')}${hits.map(p=>`<button class="it" data-pid="${p.id}">${p.photo?`<img src="img/${p.photo}" alt="">`:''}<span class="tx">${hl(p.name,q)}</span><span class="num hint" style="margin-left:auto">${won(p.price)}</span></button>`).join('')}</div>`
+      :`<div class="hint" style="padding:6px">'${esc(q)}'와 맞는 상품이 없어요. 엔터를 눌러 전체 검색해 보세요.</div>`}
+  sg.hidden=false}
+function doSearch(q){q=q.trim();if(q){recentQ=[q,...recentQ.filter(x=>x!==q)].slice(0,10);LS.set('bd_recentq',recentQ)}sg.hidden=true;qIn.value=q;qIn.blur();
+  if(location.hash&&location.hash!=='#/'){history.pushState(null,'','#/');showMain()}S.q=q;S.cat='all';renderCats();renderList();document.getElementById('listTitle').scrollIntoView({behavior:'smooth',block:'start'})}
+qIn.addEventListener('focus',drawSugg);qIn.addEventListener('input',drawSugg);
+qIn.addEventListener('keydown',e=>{const its=[...sg.querySelectorAll('button.it')];if(sg.hidden||!its.length)return;
+  if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();sgAct=(sgAct+(e.key==='ArrowDown'?1:-1)+its.length)%its.length;its.forEach((b,i)=>b.classList.toggle('act',i===sgAct))}
+  else if(e.key==='Enter'&&sgAct>=0){e.preventDefault();its[sgAct].click()}else if(e.key==='Escape'){sg.hidden=true}});
+sg.addEventListener('mousedown',e=>e.preventDefault());
+sg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.qclr!==undefined){recentQ=[];LS.set('bd_recentq',[]);drawSugg();return}
+  if(b.dataset.qdel){recentQ=recentQ.filter(x=>x!==b.dataset.qdel);LS.set('bd_recentq',recentQ);drawSugg();return}
+  if(b.dataset.pid){sg.hidden=true;const q=qIn.value.trim();if(q){recentQ=[q,...recentQ.filter(x=>x!==q)].slice(0,10);LS.set('bd_recentq',recentQ)}qIn.blur();openDetail(+b.dataset.pid);return}
+  if(b.dataset.q)doSearch(b.dataset.q)});
+qIn.addEventListener('blur',()=>setTimeout(()=>sg.hidden=true,120));
+
+// ---------- mobile tab bar ----------
+$('#tabbar').addEventListener('click',e=>{const b=e.target.closest('[data-nav]');if(!b)return;e.preventDefault();const n=b.dataset.nav;
+  if(n==='home')go('#/');else if(n==='cat'){go('#/');setTimeout(()=>document.getElementById('caticons').scrollIntoView({behavior:'smooth',block:'center'}),60)}
+  else if(n==='search'){if(location.hash&&location.hash!=='#/')go('#/');setTimeout(()=>{scrollTo({top:0});qIn.focus()},60)}
+  else if(n==='wish')go(U()?'#/mypage/wish':'#/login/mypage%2Fwish');else go(U()?'#/mypage':'#/login')});
+document.querySelectorAll('[data-go]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();go(a.dataset.go)}));
+
+$('#home').addEventListener('click',()=>{if(location.hash&&location.hash!=='#/')go('#/')});
+['#cats','#caticons','#wishBtn','#hero'].forEach(sel=>$(sel).addEventListener('click',()=>{if(mainEl.hidden){history.pushState(null,'','#/');showMain()}},true));
+document.querySelectorAll('[data-term]').forEach(b=>{if(b.closest('footer'))b.addEventListener('click',()=>showTerm(b.dataset.term))});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDlg()});
+
+renderHero();autoplay();renderCatIcons();renderUtil();
 renderCats();renderDeal();renderRank();renderChips();renderList();counts();
+route();
 })();
 </script>
