@@ -51,9 +51,9 @@ head = f"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 {title}
-<meta name="description" content="바로담 마켓 - 더미 데이터로 만든 쇼핑몰 시제품. 실제 판매는 하지 않아요.">
+<meta name="description" content="바로담 마켓 - 오늘만 특가, 실시간 랭킹, 내일 도착까지. 패션·디지털·리빙·식품을 한곳에서.">
 <meta property="og:title" content="바로담 마켓">
-<meta property="og:description" content="오늘만 특가, 실시간 랭킹, 가격 비교까지 담은 쇼핑몰 시제품">
+<meta property="og:description" content="오늘만 특가, 실시간 랭킹, 판매처별 가격 비교까지">
 <meta property="og:image" content="{og}">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#E8461E">
