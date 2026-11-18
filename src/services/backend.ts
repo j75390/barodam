@@ -85,6 +85,7 @@ export interface Backend {
   inquiriesFor(pid: number): Promise<PublicInquiry[]>;
 
   addRecent(pid: number): void;
+  clearRecent(): void;
 
   placeGuestOrder(input: GuestOrderInput): Promise<Result<GuestOrder>>;
   lookupGuestOrder(no: string, password: string): Promise<Result<GuestOrder>>;

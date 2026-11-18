@@ -311,6 +311,15 @@ export function createLocalBackend(): Backend {
       }
     },
 
+    clearRecent() {
+      local.set(K.recent, []);
+      const u = cur();
+      if (u) {
+        u.recent = [];
+        persist();
+      }
+    },
+
     async placeGuestOrder(i) {
       const salt = uid();
       const at = Date.now();
