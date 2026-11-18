@@ -1,0 +1,6 @@
+/* ranking page */
+.rkhead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.rkgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:26px 16px}
+.rkgrid .card .rk{min-width:30px;height:30px;font-size:15px;background:var(--ink)}
+.rkgrid .card:nth-child(-n+3) .rk{background:var(--accent)}
+.trend{font-size:11.5px;font-weight:800}

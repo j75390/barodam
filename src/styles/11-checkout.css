@@ -1,0 +1,17 @@
+/* checkout */
+.co{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;align-items:start}
+.co .side{position:sticky;top:130px}
+.radios{display:grid;gap:8px}
+.rcard{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;background:var(--surface)}
+.rcard:has(input:checked){border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.rcard input{margin-top:3px;accent-color:var(--accent)}
+.rcard .x{font-size:13px;color:var(--muted)}
+.pays{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.pays label{border:1px solid var(--line);border-radius:10px;padding:12px 6px;text-align:center;font-weight:700;font-size:13px;cursor:pointer;background:var(--surface)}
+.pays label:has(input:checked){border-color:var(--accent);color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.pays input{position:absolute;opacity:0;pointer-events:none}
+.coline{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line);font-size:13px}
+.coline:first-child{border-top:0}
+.coline .pic{border-radius:8px}
+.spin{width:44px;height:44px;border-radius:50%;border:4px solid var(--line);border-top-color:var(--accent);animation:sp 0.8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}

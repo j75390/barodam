@@ -1,0 +1,14 @@
+/* Deal band */
+.deal{background:var(--ink);color:var(--surface);border-radius:16px;padding:20px 20px 20px 24px;display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:20px;margin-top:20px;align-items:center}
+.deal h2{font-family:var(--f-display);font-weight:400;font-size:30px;margin:0;line-height:1.15}
+.deal .clock{font-size:30px;font-weight:800;margin-top:10px;letter-spacing:1px}
+.deal .clock span{background:var(--accent);color:var(--on-accent);border-radius:6px;padding:0 6px}
+.deal small{opacity:.7;display:block;margin-top:6px}
+.deal-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.deal-item{background:var(--surface);color:var(--ink);border-radius:12px;padding:12px;display:flex;gap:12px;align-items:center;height:100%;border:0;text-align:left;min-width:0}
+.deal-item .thumb{width:84px;height:84px;flex:none;border-radius:8px;overflow:hidden}.deal-item .thumb img{width:100%;height:100%;object-fit:cover}
+.deal-item .meta{min-width:0;flex:1;display:flex;flex-direction:column;gap:3px}
+.deal-item .nm{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:13px;line-height:1.4;min-height:2.8em}
+.stock{height:6px;border-radius:3px;background:var(--sunk);margin-top:4px;overflow:hidden}
+.stock i{display:block;height:100%;background:var(--accent)}
+.stock-t{font-size:11px;color:var(--accent);font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

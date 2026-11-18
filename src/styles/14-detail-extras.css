@@ -1,0 +1,6 @@
+/* detail extras */
+.dx{grid-column:1/-1;border-top:1px solid var(--line);padding-top:6px}
+.dx .rowb{margin-top:6px}
+.qna{border-top:1px solid var(--line);padding:10px 0;font-size:13px}
+.qna .q b{color:var(--accent)} .qna .a{background:var(--sunk);border-radius:8px;padding:8px 10px;margin-top:6px}
+.mine{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:11px;font-weight:800;border-radius:4px;padding:0 6px;margin-left:4px}

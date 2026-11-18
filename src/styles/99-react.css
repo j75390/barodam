@@ -1,0 +1,9 @@
+/* Adjustments for the React markup (links instead of clickable divs, wrappers instead of body classes). */
+.card-link{display:flex;flex-direction:column;gap:4px;color:inherit;text-decoration:none;min-width:0}
+.ci-link{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:var(--ink);text-decoration:none;min-width:0}
+.deal-item,.rank-item{text-decoration:none}
+.page-loading{min-height:50vh;display:grid;place-items:center}
+.tabbar button[aria-current="page"]{color:var(--ink)}
+.authm .top .wrap{justify-content:center;padding-block:22px}
+.bt{min-width:0}.bt .bn{min-width:0;overflow:hidden}.bt .bmark{max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.bt>*{min-width:0}.bt{grid-template-columns:minmax(0,1fr)}

@@ -1,0 +1,18 @@
+/* search suggest */
+.search{position:relative;overflow:visible}
+.search input{border-radius:8px 0 0 8px}
+.search button[type=submit]{border-radius:0 7px 7px 0}
+.sugg{position:absolute;left:-2px;right:-2px;top:calc(100% + 6px);background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);z-index:35;padding:12px;display:grid;gap:12px;max-height:70vh;overflow-y:auto}
+.sugg button{color:var(--ink);background:none;align-self:auto;padding:0;border-radius:6px}.sugg button.lnk,.sugg .chipsr span button{color:var(--muted)}
+.sugg h4{margin:0 0 6px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+.sugg .chipsr{display:flex;gap:6px;flex-wrap:wrap}
+.sugg .chipsr span{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 10px;font-size:12.5px}
+.sugg .chipsr span button{border:0;background:none;color:var(--muted);padding:0 4px;font-size:12px}
+.sugg .pop{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 16px;counter-reset:pp}
+.sugg button.it{border:0;background:none;text-align:left;padding:6px 4px;border-radius:6px;font-size:13px;display:flex;gap:8px;align-items:center;width:100%;min-width:0}
+.sugg button.it:hover,.sugg button.it.act{background:var(--sunk)}
+.sugg button.it .n{color:var(--accent);font-weight:800;width:16px;flex:none}
+.sugg button.it .tx{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sugg button.it mark{background:none;color:var(--accent);font-weight:800}
+.sugg button.it img{width:32px;height:32px;border-radius:6px;object-fit:cover;flex:none}
+.util .links b{color:var(--ink)}
