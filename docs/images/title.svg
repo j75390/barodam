@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16181d"/><stop offset="1" stop-color="#2a2d35"/></linearGradient></defs>
+  <rect width="1200" height="300" rx="28" fill="url(#g)"/>
+  <circle cx="1080" cy="40" r="170" fill="#e8461e" opacity=".14"/>
+  <circle cx="1130" cy="270" r="110" fill="#e8461e" opacity=".10"/>
+  <text x="80" y="150" font-family="'Pretendard','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="88" font-weight="900" fill="#ffffff" letter-spacing="-2">바로<tspan fill="#e8461e">담</tspan> 마켓</text>
+  <text x="84" y="208" font-family="'Pretendard','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="28" fill="#c9ccd3">필요한 모든 것을, 바로 담다 — 종합 쇼핑몰 · 고객센터 · 채용 사이트</text>
+  <text x="84" y="252" font-family="ui-monospace,Consolas,monospace" font-size="20" fill="#8b909b">React 18 · TypeScript · Supabase(PostgreSQL) · Vite · GitHub Actions</text>
+</svg>
