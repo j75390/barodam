@@ -540,6 +540,54 @@ body.csm #page{padding-top:0}
 @media (max-width:820px){.cs-cards{grid-auto-columns:calc((100% - 12px)/2)}.cs-arr{display:none}.cs-cats .ic{width:62px;height:62px}.cs-cats .ic svg{width:28px;height:28px}.cs-tiles{padding-top:0}}
 @media (max-width:560px){.cs-cards{grid-auto-columns:85%}}
 
+
+/* site footer (notice line, promo band, link rows, company info, legal links) */
+.fnotice{background:var(--surface);border-top:1px solid var(--line);margin-top:48px}
+.fnotice .wrap{display:flex;gap:10px;align-items:center;padding-block:18px;font-size:14px;min-width:0}
+.fnotice .arw{color:var(--muted)}
+.fnotice a{color:var(--ink);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.fdate{color:var(--muted);font-size:13px;border-left:1px solid var(--line);padding-left:10px;white-space:nowrap}
+footer.sitefoot{margin-top:0;border-top:0;background:var(--sunk)}
+footer.sitefoot .wrap{display:block;padding-block:0;font-size:inherit;color:inherit}
+.fpromo{background:var(--accent);color:#fff;overflow:hidden;position:relative}
+.fpromo .wrap{display:flex!important;align-items:center;justify-content:center;gap:16px;padding-block:16px!important;font-size:19px!important;position:relative;color:#fff!important;flex-wrap:wrap;text-align:center}
+.fpromo p{margin:0;position:relative;z-index:1}
+.fpromo .fbtn{position:relative;z-index:1;background:#fff;color:var(--accent);border-radius:999px;padding:8px 20px;font-weight:800;font-size:14px;text-decoration:none}
+.fpromo .deco{position:absolute;font-family:var(--f-display);font-size:130px;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.4);left:3%;top:-34px;line-height:1;pointer-events:none}
+.fpromo .deco.d2{left:auto;right:5%;top:-10px}
+.flinks2{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);gap:12px;flex-wrap:wrap}
+.flinks2 nav{display:flex;flex-wrap:wrap;row-gap:6px}
+.flinks2 nav a{color:var(--ink);text-decoration:none;font-size:13.5px}
+.flinks2 nav a+a::before{content:"";display:inline-block;width:1px;height:12px;background:var(--line);margin:0 22px;vertical-align:-1px}
+.fsel{position:relative}
+.fsel button{border:1px solid var(--line);background:var(--surface);padding:8px 14px;font-size:13px;border-radius:4px}
+.fsel button i{font-style:normal;color:var(--muted)}
+.fselp{position:absolute;right:0;bottom:calc(100% + 4px);background:var(--surface);border:1px solid var(--line);border-radius:6px;display:grid;min-width:150px;padding:6px;box-shadow:var(--shadow);z-index:5}
+.fselp[hidden]{display:none}
+.fselp a{padding:8px 10px;color:var(--ink);text-decoration:none;font-size:13px;border-radius:4px}.fselp a:hover{background:var(--sunk)}
+.fcorp{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);line-height:1.9}
+.fcorp .ft{display:block;color:var(--ink);font-weight:800;font-size:14px;text-decoration:none;margin-bottom:4px}
+.fchip{border:1px solid var(--line);background:var(--surface);font-size:11.5px;padding:1px 6px;color:var(--ink);text-decoration:none;margin-left:4px;white-space:nowrap}
+.fcorp a.tel{color:#2563EB;text-decoration:none}
+.flegal{padding:14px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);display:grid;gap:8px}
+.flegal div{display:flex;flex-wrap:wrap;gap:6px 24px}
+.flegal a{color:var(--muted);text-decoration:none}.flegal a:hover{color:var(--ink)}
+.fdisc{padding:16px 0 30px;font-size:12px;color:var(--muted);line-height:1.8}
+.fdisc p{margin:0 0 6px}.fdisc a{color:var(--ink)}
+.faward{display:flex;align-items:center;gap:10px;margin-top:8px}
+.kola{font-weight:900;color:var(--ink);letter-spacing:-.5px}
+.faward button{border:0;background:none;color:var(--muted);text-decoration:underline;font-size:12px;padding:0}
+.faward button i{font-style:normal}
+.fawardl{margin:8px 0 0;padding-left:18px}.fawardl[hidden]{display:none}
+.infopage h3{margin:24px 0 8px;font-size:16px}
+.infopage .lead{font-size:17px;font-weight:700;line-height:1.6}
+.infopage ul,.infopage ol{padding-left:20px;line-height:1.9}
+.istat{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
+.istat div{background:var(--sunk);border-radius:12px;padding:16px;text-align:center;font-size:12.5px;color:var(--muted)}
+.istat b{display:block;font-size:24px;color:var(--ink)}
+body.csm .fnotice{margin-top:0}
+@media (max-width:820px){.fcorp{grid-template-columns:1fr}.flinks2 nav a+a::before{margin:0 10px}.istat{grid-template-columns:1fr 1fr}.fpromo .wrap{font-size:15px!important}.fpromo .deco{font-size:90px}}
+
 /* focused auth layout (login/signup/find) */
 body.authm .util,body.authm nav.cats,body.authm .search,body.authm .catbtn,body.authm .iconbtn,body.authm .rail,body.authm .totop{display:none!important}
 body.authm .top .wrap{justify-content:center;padding-block:22px}
@@ -822,22 +870,37 @@ nav.cats .wrap a.navx{padding:8px 12px;border-radius:8px;white-space:nowrap;font
 </main>
 <div id="page" class="wrap" hidden></div>
 
-<footer><div class="wrap">
-  <div class="corp">
-    <div>
-      <div class="flinks"><a class="lnk" href="/help/#/cs/notice" target="_blank" rel="noopener">공지사항</a><button class="lnk" data-term="tos">이용약관</button><button class="lnk" data-term="privacy"><b>개인정보처리방침</b></button><a class="lnk" href="/help/" target="_blank" rel="noopener">고객센터</a></div>
-      <div>(주)바로담 · 대표 홍길동 · 사업자등록번호 000-00-00000 · 통신판매업신고 제2026-서울바로-0000호</div>
-      <div>주소 서울특별시 바로구 담길 12, 바로담타워 4층 · 이메일 help@barodam.kro.kr</div>
-      <div style="margin-top:8px">바로담 마켓은 통신판매중개자로서 오픈마켓 판매 상품의 거래 당사자가 아니며, 판매자가 등록한 상품 정보와 거래에 대한 책임은 각 판매자에게 있어요.</div>
+<div class="fnotice"><div class="wrap"><b>알립니다</b><span class="arw">›</span><a id="fNotice" href="/help/#/cs/notice/0" target="_blank" rel="noopener"></a><span class="fdate num" id="fNoticeD"></span></div></div>
+<footer class="sitefoot">
+  <div class="fpromo"><div class="wrap"><span class="deco" aria-hidden="true">B</span><span class="deco d2" aria-hidden="true">D</span><p>바로담의 첫 구매 혜택, <b>15% 할인 쿠폰</b>을 받아 가세요.</p><a class="fbtn" href="/#/signup" id="fPromoBtn">↓ 쿠폰 받기</a></div></div>
+  <div class="wrap">
+    <div class="flinks2">
+      <nav><a href="/#/info/about">(주)바로담 소개</a><a href="/#/info/careers">채용정보</a><a href="/#/info/terms">이용약관</a><a href="/#/info/privacy"><b>개인정보처리방침</b></a><a href="/#/info/youth">청소년보호정책</a><a href="/#/info/ads">광고안내</a><a href="/#/info/a11y">스크린리더 매뉴얼</a></nav>
+      <div class="fsel"><button id="fSeller" aria-expanded="false">판매자서비스 <i>⌄</i></button><div class="fselp" id="fSellerP" hidden><a href="/#/info/seller">입점 안내</a><a href="/#/info/sellercenter">판매자 센터</a><a href="/#/info/adcenter">광고 센터</a><a href="/#/info/sellerguide">판매 가이드</a></div></div>
     </div>
-    <div>
-      <div>고객센터</div>
-      <div class="cs num">0000-0000</div>
-      <div>평일 09:00 - 18:00 · 점심 12:00 - 13:00 · 주말·공휴일 휴무</div>
+    <div class="fcorp">
+      <div><b class="ft">상호명 및 호스팅 서비스 제공 : (주)바로담</b>
+        <div>서울특별시 바로구 담길 12, 바로담타워 4층</div>
+        <div>사업자등록번호 : 000-00-00000 | 통신판매업신고 : 제2026-서울바로-0000호 <a class="fchip" href="/#/info/bizinfo">사업자정보확인 ›</a></div>
+        <div>대표이사 : 홍길동</div></div>
+      <div><a class="ft" href="/help/" target="_blank" rel="noopener">고객센터 ›</a>
+        <div>서울특별시 바로구 담길 12, 바로담타워 2층</div>
+        <div>Tel : <a class="tel" href="/help/" target="_blank" rel="noopener">0000-0000(유료)</a> | 등급회원 전용 Tel : <a class="tel" href="/help/" target="_blank" rel="noopener">0000-0002(유료)</a></div>
+        <div>Fax : 00-000-0000 | Mail : help@barodam.kro.kr</div></div>
+    </div>
+    <div class="flegal">
+      <div><a href="/#/info/efin">전자금융분쟁처리 ›</a><span>Tel : 0000-0000 | Fax : 00-000-0001 | Mail : efin@barodam.kro.kr</span><a href="/#/info/dispute">전자상거래법상의 소비자분쟁해결기준 ›</a></div>
+      <div><a href="/#/info/openmarket">오픈마켓 자율준수규약 ›</a><a href="/#/info/ethics">윤리경영 ›</a><a href="/#/info/cyber">사이버범죄 신고시스템 ›</a><a href="/#/info/rights">권리보호 프로그램 ›</a><a href="/help/#/cs/faq/safe" target="_blank" rel="noopener">안전거래센터 ›</a><a href="/#/info/copyright">저작권침해신고 ›</a></div>
+    </div>
+    <div class="fdisc">
+      <p>(주)바로담은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 (주)바로담은 상품·거래 정보 및 가격에 대하여 책임을 지지 않습니다.<br>본 사이트의 모든 정보, 콘텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 엄격히 금지됩니다. <a href="/#/info/content">콘텐츠산업 진흥법에 따른 표시</a></p>
+      <p>Copyright BARODAM Corp. All rights reserved. · 개인 포트폴리오 프로젝트로 제작된 사이트이며 실제 상품 판매·결제는 이루어지지 않습니다.</p>
+      <div class="faward"><span class="kola">KOSA</span><span>한국온라인쇼핑협회(예시)</span><button id="fAward" aria-expanded="false">수상·인증 내역 <i>⌃</i></button></div>
+      <ul class="fawardl" id="fAwardL" hidden><li>2026 소비자 선정 쇼핑 서비스 대상 (예시)</li><li>정보보호 관리체계 인증 ISMS-P (예시)</li><li>웹 접근성 품질인증 (예시)</li><li>전자상거래 소비자보호 우수 기업 (예시)</li></ul>
     </div>
   </div>
-  <div style="margin-top:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span>© BARODAM Corp. All rights reserved.</span><span>개인 포트폴리오 프로젝트로 제작된 사이트이며 실제 상품 판매·결제는 이루어지지 않습니다.</span></div>
-</div></footer>
+</footer>
+
 
 <div id="overlay"></div>
 <div id="dlg"></div>
@@ -2390,6 +2453,55 @@ Object.assign(PAGES,{gcheckout:pGCheckout,gorder:pGOrder,p:pProduct,search:q=>pR
 addEventListener('hashchange',()=>{renderCats();renderRail()});
 function doSearch(q){q=(q||'').trim();sg.hidden=true;qIn.blur();if(!q){go('#/c/all');return}recentQ=[q,...recentQ.filter(x=>x!==q)].slice(0,10);LS.set('bd_recentq',recentQ);go('#/search/'+encodeURIComponent(q))}
 renderHomeExtra();renderRail();
+
+// ---------- footer pages: company / policy / legal (every footer link opens a real page) ----------
+const IP={
+ about:['(주)바로담 소개',`<p class="lead">"필요한 물건을, 바로 담다."<br>바로담은 좋은 상품을 합리적인 가격에, 가장 빠르게 전하는 종합 쇼핑 플랫폼이에요.</p>
+  <div class="istat"><div><b class="num">536+</b><span>판매 상품</span></div><div><b class="num">32</b><span>입점 브랜드</span></div><div><b class="num">1일</b><span>내일 도착 보장</span></div><div><b class="num">2026</b><span>서비스 시작</span></div></div>
+  <h3>우리가 하는 일</h3><ul><li><b>내일 도착</b> · 오후 2시 전 주문하면 다음 날 받아요.</li><li><b>판매처별 가격 비교</b> · 같은 상품을 파는 판매처의 가격을 한눈에 보여 줘요.</li><li><b>믿을 수 있는 상품평</b> · 구매한 고객만 상품평을 쓸 수 있어요.</li></ul>
+  <h3>연혁</h3><table class="infot"><tr><th>2026.11</th><td>겨울 아우터 기획전, 브랜드 위크 시작</td></tr><tr><th>2026.10</th><td>바로담 마켓 그랜드 오픈</td></tr><tr><th>2026.09</th><td>(주)바로담 설립</td></tr></table>`],
+ careers:['채용정보',`<p class="lead">바로담과 함께 쇼핑의 기준을 바꿀 동료를 찾아요.</p>
+  <table class="infot"><tr><th>프론트엔드 개발자</th><td>경력 3년 이상 · 정규직 · 서울 <span class="mine">채용중</span></td></tr><tr><th>상품 MD (패션)</th><td>경력 2년 이상 · 정규직 · 서울 <span class="mine">채용중</span></td></tr><tr><th>CS 매니저</th><td>신입/경력 · 정규직 · 서울</td></tr><tr><th>데이터 분석가</th><td>경력 3년 이상 · 정규직 · 서울</td></tr></table>
+  <h3>채용 절차</h3><p>서류 전형 → 직무 인터뷰 → 컬처 인터뷰 → 처우 협의 → 최종 합격</p><h3>복지</h3><ul><li>자율 출퇴근, 주 1회 재택</li><li>바로담 쇼핑 지원금 월 10만원</li><li>도서·교육비 무제한 지원</li></ul>`],
+ terms:['이용약관',null],
+ privacy:['개인정보처리방침',`<p>(주)바로담(이하 "회사")은 「개인정보 보호법」에 따라 이용자의 개인정보를 보호하고 관련 고충을 신속하게 처리하기 위해 다음과 같이 개인정보처리방침을 둡니다.</p>
+  <h3>1. 수집하는 개인정보 항목</h3><table class="infot"><tr><th>회원가입</th><td>아이디, 비밀번호, 이름, 이메일, 휴대폰 번호</td></tr><tr><th>주문·배송</th><td>받는 분 이름, 연락처, 주소</td></tr><tr><th>비회원 주문</th><td>주문자 이름, 휴대폰 번호, 이메일, 주문 비밀번호</td></tr><tr><th>선택</th><td>마케팅 정보 수신 동의 여부</td></tr></table>
+  <h3>2. 개인정보의 이용 목적</h3><p>회원 식별, 주문·결제·배송, 고객 상담, 공지 전달, (동의한 경우) 이벤트 안내에 이용해요.</p>
+  <h3>3. 보유 및 이용 기간</h3><p>회원탈퇴 시 바로 파기해요. 단, 관계 법령에 따라 계약·청약철회 기록 5년, 대금결제 기록 5년, 소비자 불만·분쟁 처리 기록 3년 동안 보관해요.</p>
+  <h3>4. 이용자의 권리</h3><p>이용자는 언제든지 개인정보 열람·정정·삭제·처리정지를 요구할 수 있어요. 마이페이지 > 회원정보 수정에서 직접 하거나 고객센터로 요청해 주세요.</p>
+  <h3>5. 개인정보 보호책임자</h3><p>책임자: 개인정보보호팀장 · privacy@barodam.kro.kr</p><p class="hint">시행일: 2026년 11월 8일</p>`],
+ youth:['청소년보호정책',`<p>회사는 청소년이 유해한 정보에 노출되지 않도록 청소년보호정책을 시행해요.</p><h3>1. 유해정보 차단</h3><p>청소년 유해 상품은 성인 인증을 거친 회원에게만 보여 줘요.</p><h3>2. 청소년보호 책임자</h3><p>청소년보호책임자: 운영팀장 · youth@barodam.kro.kr</p><h3>3. 신고</h3><p>유해 정보를 발견하면 고객센터 1:1 문의로 알려 주세요.</p>`],
+ ads:['광고안내',`<p class="lead">바로담 광고로 더 많은 고객을 만나 보세요.</p><table class="infot"><tr><th>검색 광고</th><td>검색 결과 상단에 상품을 노출해요. 클릭당 과금(CPC)</td></tr><tr><th>디스플레이 광고</th><td>홈 배너, 브랜드 위크 영역에 노출해요. 노출당 과금(CPM)</td></tr><tr><th>브랜드 위크</th><td>기간 한정 브랜드 기획전을 열어 드려요.</td></tr></table><p>광고 문의: ads@barodam.kro.kr</p>`],
+ a11y:['스크린리더 매뉴얼',`<p>바로담은 화면낭독기(스크린리더) 사용자도 편하게 쇼핑할 수 있도록 만들었어요.</p><h3>주요 단축 키</h3><table class="infot"><tr><th>Tab / Shift+Tab</th><td>다음 / 이전 링크·버튼으로 이동</td></tr><tr><th>Enter / Space</th><td>상품 열기, 버튼 누르기</td></tr><tr><th>Esc</th><td>열린 창(장바구니, 대화상자) 닫기</td></tr><tr><th>↑ / ↓</th><td>검색어 추천 목록에서 이동</td></tr></table><h3>화면 구성</h3><ul><li>모든 상품 사진에 상품 이름이 함께 읽혀요.</li><li>검색, 카테고리, 장바구니 버튼에 이름표(레이블)가 있어요.</li></ul>`],
+ seller:['입점 안내',`<p class="lead">바로담에서 판매를 시작해 보세요. 입점비와 월 이용료는 없어요.</p><h3>입점 절차</h3><ol><li>판매자 회원가입</li><li>사업자 정보·정산 계좌 등록</li><li>서류 심사 (영업일 기준 2~3일)</li><li>상품 등록 후 판매 시작</li></ol><h3>판매 수수료</h3><table class="infot"><tr><th>패션·잡화</th><td>12%</td></tr><tr><th>디지털</th><td>7%</td></tr><tr><th>리빙·뷰티</th><td>10%</td></tr><tr><th>식품</th><td>9%</td></tr></table>`],
+ sellercenter:['판매자 센터',`<p>상품 등록, 주문 확인, 발송 처리, 정산 조회를 한곳에서 할 수 있어요.</p><table class="infot"><tr><th>상품 관리</th><td>상품 등록·수정, 재고 관리, 옵션 관리</td></tr><tr><th>주문 관리</th><td>신규 주문 확인, 발송 처리, 취소·반품 처리</td></tr><tr><th>정산</th><td>구매확정 후 7일 뒤 정산</td></tr></table><p>판매자 문의: 0000-0001 (평일 09:00~18:00)</p>`],
+ adcenter:['광고 센터',null],sellerguide:['판매 가이드',`<h3>좋은 상품 페이지 만들기</h3><ul><li>정사각형 대표 사진과 4장 이상의 상세 사진을 올려 주세요.</li><li>필수 표기 정보(소재, 치수, 제조국)를 빠짐없이 적어 주세요.</li><li>오후 2시 전 주문은 당일 출고하면 "내일 도착" 배지가 붙어요.</li></ul><h3>금지 행위</h3><ul><li>외부 결제 유도, 현금 거래 요구</li><li>허위 상품평 작성</li><li>타인의 상표·저작권 침해</li></ul>`],
+ bizinfo:['사업자정보확인',`<table class="infot"><tr><th>상호</th><td>(주)바로담</td></tr><tr><th>대표자</th><td>홍길동</td></tr><tr><th>사업자등록번호</th><td>000-00-00000</td></tr><tr><th>통신판매업신고번호</th><td>제2026-서울바로-0000호</td></tr><tr><th>사업장 소재지</th><td>서울특별시 바로구 담길 12, 바로담타워 4층</td></tr><tr><th>업태 / 종목</th><td>도소매 / 전자상거래</td></tr><tr><th>개업일</th><td>2026년 9월 1일</td></tr></table><p class="hint">공정거래위원회 사업자정보 공개 양식에 맞춘 안내예요.</p>`],
+ efin:['전자금융분쟁처리',`<p>전자금융거래와 관련한 이용자의 의견·불만은 아래로 접수해 주세요. 접수일로부터 15일 이내에 처리 결과를 알려 드려요.</p><table class="infot"><tr><th>담당 부서</th><td>전자금융분쟁처리팀</td></tr><tr><th>전화</th><td>0000-0000</td></tr><tr><th>팩스</th><td>00-000-0001</td></tr><tr><th>이메일</th><td>efin@barodam.kro.kr</td></tr></table>`],
+ dispute:['전자상거래법상의 소비자분쟁해결기준',`<table class="infot"><tr><th>청약철회</th><td>상품을 받은 날부터 7일 이내 (표시·광고와 다른 경우 안 날부터 30일)</td></tr><tr><th>배송 지연</th><td>약정일보다 늦게 배송된 경우 계약 해제 및 손해배상 청구 가능</td></tr><tr><th>상품 하자</th><td>구입 후 10일 이내 하자 발생 시 교환 또는 환불</td></tr><tr><th>환불 기한</th><td>상품 회수 후 3영업일 이내</td></tr></table><p class="hint">공정거래위원회 고시 「소비자분쟁해결기준」을 따라요.</p>`],
+ openmarket:['오픈마켓 자율준수규약',`<p>바로담은 공정한 거래 환경을 위해 다음을 지켜요.</p><ol><li>판매자에게 부당한 할인 행사 참여를 강요하지 않아요.</li><li>검색 결과에 광고 상품은 "광고"로 표시해요.</li><li>판매자의 상품 정보를 무단으로 바꾸지 않아요.</li><li>분쟁이 생기면 중립적인 입장에서 조정해요.</li></ol>`],
+ ethics:['윤리경영',`<p class="lead">바로담은 고객, 판매자, 임직원 모두에게 정직한 회사를 지향해요.</p><ul><li>금품·향응 수수 금지</li><li>공정한 판매자 선정과 대우</li><li>개인정보 보호 최우선</li></ul><p>윤리경영 위반 제보: ethics@barodam.kro.kr (제보자 신원은 철저히 보호해요)</p>`],
+ cyber:['사이버범죄 신고시스템',`<p>바로담을 사칭한 피싱, 사기 판매가 의심되면 아래로 신고해 주세요.</p><table class="infot"><tr><th>바로담 신고</th><td>고객센터 1:1 문의 > 안전거래</td></tr><tr><th>경찰청 사이버범죄 신고</th><td>국번 없이 182</td></tr></table><p class="warn">바로담은 문자·메일로 비밀번호나 카드 번호를 절대 묻지 않아요.</p>`],
+ rights:['권리보호 프로그램',`<p>상표권·디자인권 등 권리를 가진 분은 침해 상품을 신고할 수 있어요. 확인 후 해당 상품의 판매를 중지해요.</p><h3>신고 방법</h3><ol><li>권리 보유 증빙 서류 준비</li><li>침해 상품 링크와 함께 rights@barodam.kro.kr 로 접수</li><li>영업일 기준 3일 이내 처리 결과 안내</li></ol>`],
+ copyright:['저작권침해신고',`<p>상품 사진·설명 등 저작물이 무단으로 쓰였다면 신고해 주세요.</p><table class="infot"><tr><th>접수</th><td>copyright@barodam.kro.kr</td></tr><tr><th>필요 정보</th><td>권리자 정보, 침해 게시물 주소, 저작권 증빙</td></tr><tr><th>처리</th><td>게시 중단 후 판매자에게 통보, 이의 제기 시 재게시 절차 안내</td></tr></table>`],
+ content:['콘텐츠산업 진흥법에 따른 표시',`<table class="infot"><tr><th>콘텐츠 명칭</th><td>바로담 마켓 상품 정보 및 콘텐츠</td></tr><tr><th>제작·표시일</th><td>2026년 10월 20일</td></tr><tr><th>제작자</th><td>(주)바로담</td></tr></table><p>본 콘텐츠는 「콘텐츠산업 진흥법」에 따라 최초 제작일부터 5년간 보호돼요.</p>`]};
+IP.adcenter[1]=IP.ads[1];
+function pInfo(k){
+  const it=IP[k];if(!it){go('#/');return}
+  const body=it[1]||(k==='terms'?`<div style="white-space:pre-line;line-height:1.8">${esc(TERMS.tos[1])}\n\n제5조(배송) 회사는 이용자가 구매한 상품을 약정한 기간 안에 배송해요.\n제6조(환급) 회사는 상품을 배송할 수 없을 때 지체 없이 이용자에게 알리고 대금을 환급해요.\n제7조(개인정보) 회사는 개인정보처리방침에 따라 이용자의 개인정보를 보호해요.\n\n부칙: 이 약관은 2026년 10월 20일부터 시행해요.</div>`:'');
+  const groups=[['회사',['about','careers','ads','a11y']],['정책',['terms','privacy','youth','openmarket','ethics','content']],['판매자',['seller','sellercenter','sellerguide']],['신고·분쟁',['efin','dispute','cyber','rights','copyright','bizinfo']]];
+  pageEl.innerHTML=`${crumb(it[0])}<div class="mp"><nav class="mp-nav" aria-label="안내 메뉴">${groups.map(([g,ks])=>`<div class="g">${g}</div>`+ks.map(x=>`<a href="#/info/${x}" ${x===k?'aria-current="page"':''}>${IP[x][0]}</a>`).join('')).join('')}</nav>
+   <article class="box infopage"><h1 class="ptitle">${it[0]}</h1>${body}</article></div>`;
+}
+PAGES.info=pInfo;
+// footer behaviors
+(function(){const n=NOTICE[0];$('#fNotice').textContent=`[${n[1]}] ${n[2]}`;$('#fNoticeD').textContent=n[0].replace(/\./g,'-');
+  const sb=$('#fSeller'),sp=$('#fSellerP');sb.onclick=()=>{sp.hidden=!sp.hidden;sb.setAttribute('aria-expanded',String(!sp.hidden))};
+  document.addEventListener('click',e=>{if(!e.target.closest('.fsel')){sp.hidden=true;sb.setAttribute('aria-expanded','false')}});
+  const ab=$('#fAward'),al=$('#fAwardL');ab.onclick=()=>{al.hidden=!al.hidden;ab.setAttribute('aria-expanded',String(!al.hidden));ab.querySelector('i').textContent=al.hidden?'⌃':'⌄'};
+  if(U())$('#fPromoBtn').setAttribute('href','/#/mypage/coupons'),$('#fPromoBtn').textContent='↓ 내 쿠폰 보기';
+  if(window.__HELP)document.querySelectorAll('.sitefoot a[href^="/help/"],.fnotice a[href^="/help/"]').forEach(a=>{a.removeAttribute('target');a.setAttribute('href',a.getAttribute('href').replace('/help/','').replace(/^$/,'#/cs')||'#/cs')});
+})();
 
 renderHero();autoplay();renderCatIcons();renderUtil();
 renderCats();renderDeal();renderRank();renderChips();renderList();counts();
