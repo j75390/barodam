@@ -12,14 +12,18 @@ import './styles/index.css';
 const legacy = legacyHashToPath(window.location.hash, window.location.pathname);
 if (legacy) window.history.replaceState(null, '', legacy);
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <BrowserRouter>
-      <BackendProvider backend={createBackend()}>
-        <UIProvider>
-          <App />
-        </UIProvider>
-      </BackendProvider>
-    </BrowserRouter>
-  </StrictMode>,
-);
+const backend = createBackend();
+const render = () =>
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <BrowserRouter>
+        <BackendProvider backend={backend}>
+          <UIProvider>
+            <App />
+          </UIProvider>
+        </BackendProvider>
+      </BrowserRouter>
+    </StrictMode>,
+  );
+// Restore the saved login first so member-only pages don't bounce to the login screen on reload.
+void Promise.race([backend.ready ?? Promise.resolve(), new Promise((r) => setTimeout(r, 4000))]).finally(render);

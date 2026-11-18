@@ -4,7 +4,8 @@
 
 **https://barodam.kro.kr** · 고객센터 **/help** · 채용 사이트 **/careers**
 
-> 개인 포트폴리오 프로젝트입니다. 상품·브랜드·가격·후기는 모두 직접 만든 데이터이고, 실제 판매·결제는 일어나지 않습니다.
+> 개인 포트폴리오 프로젝트입니다. 상품·브랜드·가격은 직접 만든 데이터이고, 실제 판매·결제는 일어나지 않습니다.
+> 회원·주문·리뷰·문의·채용 지원은 실제 서버(Supabase)에 저장되어 어느 기기에서나 같은 계정으로 이어집니다.
 
 ## 주요 기능
 
@@ -22,6 +23,7 @@
 ## 기술 스택
 
 - **React 18 + TypeScript (strict)**, Vite, React Router (깨끗한 URL `/products/105`, GitHub Pages용 SPA fallback)
+- **Supabase** (PostgreSQL + Auth): 회원 인증, 주문·쿠폰·적립금·리뷰·문의·채용 지원 저장
 - 상태 관리: `useSyncExternalStore` 기반의 작은 스토어 (외부 라이브러리 없음)
 - 테스트: Vitest + Testing Library — 도메인 로직, 백엔드 시나리오, 라우팅 보안
 - CI/CD: GitHub Actions에서 타입 검사 → 테스트 → 빌드 → GitHub Pages 배포
@@ -35,16 +37,20 @@ src/
   data/               상품 카탈로그(사진 1장 = 상품 1개, 사진 번호 = 상품 ID), 콘텐츠
   services/
     backend.ts        화면이 사용하는 백엔드 인터페이스
-    localBackend.ts   브라우저 저장소 구현 (Supabase 구현으로 교체 가능)
+    supabaseBackend.ts  Supabase 구현 (배포 버전)
+    localBackend.ts   브라우저 저장소 구현 (오프라인 개발·단위 테스트용)
   state/              장바구니·찜 스토어, 토스트·다이얼로그
   components/         헤더, 푸터, 상품 카드, 장바구니 서랍, 주문 공통 UI …
   pages/              홈, 상품, 검색, 주문, 마이페이지, help/, careers/
   styles/             영역별 CSS
+supabase/schema.sql   테이블, RLS 정책, 주문·쿠폰·적립금 SQL 함수
 tools/build_photos.py 사진 목록 생성 (중복 사진 검사 포함)
 ```
 
 **설계 포인트**
-- 화면은 `Backend` 인터페이스만 사용합니다. 저장소를 바꿔도(브라우저 → Supabase) 화면 코드는 그대로입니다.
+- 화면은 `Backend` 인터페이스만 사용합니다. 브라우저 저장소 구현과 Supabase 구현을 같은 화면 코드로 갈아 끼울 수 있습니다.
+- 모든 테이블에 **Row Level Security**를 걸어 회원은 자기 데이터만 읽습니다. 적립금·쿠폰·주문처럼 돈과 관련된 변경은 테이블에 직접 쓰지 못하고, 서버의 SQL 함수(`place_order`, `cancel_order` 등)가 금액·쿠폰 조건·적립금 잔액을 다시 검사한 뒤에만 반영됩니다. 조작된 클라이언트로 적립금을 늘리거나 남의 주문을 볼 수 없습니다.
+- 비회원 주문 비밀번호와 회원 비밀번호는 bcrypt 해시로만 저장됩니다.
 - 가격·쿠폰·주문 상태 같은 규칙은 React와 분리된 순수 함수라서 단위 테스트로 검증합니다.
 - 상품 데이터는 사진 ID를 시드로 결정론적으로 생성해, 기기와 방문 시점에 상관없이 같은 상품은 항상 같은 가격·옵션을 가집니다.
 - `?next=` 리다이렉트는 같은 사이트 경로만 허용해 오픈 리다이렉트를 막습니다.
@@ -53,7 +59,8 @@ tools/build_photos.py 사진 목록 생성 (중복 사진 검사 포함)
 
 ```bash
 npm install
-npm run dev        # http://localhost:5173
+npm run dev        # http://localhost:5173 (Supabase 연결)
+VITE_BACKEND=local npm run dev   # 서버 없이 브라우저 저장소로 실행
 npm test           # 단위 테스트
 npm run build      # dist/ 생성 (404.html 포함)
 ```

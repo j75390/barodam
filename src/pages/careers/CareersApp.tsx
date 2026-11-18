@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, NavLink, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { CAREER_FAQ, DECK, JOBS, PILLARS, QUOTES, STORIES, WAYS, type Job } from '@/data/careers';
 import { formatPhone } from '@/lib/format';
-import { local, session } from '@/lib/storage';
+import { local } from '@/lib/storage';
 import { EMAIL_RE, PHONE_RE } from '@/lib/validators';
 import { careersService, type Application } from '@/services/careers';
 import { useUI } from '@/state/ui';
@@ -283,14 +283,17 @@ function Apply() {
       ),
     });
   };
-  const submit = (e: React.FormEvent) => {
+  const [busy, setBusy] = useState(false);
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (busy) return;
     const m = validate();
     if (m) return setErr(m);
-    const r = careersService.submit(data());
+    setBusy(true);
+    const r = await careersService.submit(data());
+    setBusy(false);
     if (!r.ok) return setErr(r.error);
     local.remove(draftKey);
-    session.set('bd_appauth', r.app.no);
     nav(`/careers/done/${r.app.no}`);
   };
   const FileBox = ({ k, accept }: { k: 'resume' | 'portfolio'; accept: string }) => (
@@ -337,7 +340,7 @@ function Apply() {
         ))}
       </div>
       {err && <p className="c-err" role="alert">{err}</p>}
-      <div className="c-fbtns"><button type="button" className="c-btn c-ghost" onClick={preview}>지원서 미리보기</button><button className="c-btn c-acc">제출하기</button></div>
+      <div className="c-fbtns"><button type="button" className="c-btn c-ghost" onClick={preview}>지원서 미리보기</button><button className="c-btn c-acc" disabled={busy}>{busy ? '제출하는 중…' : '제출하기'}</button></div>
       <p style={{ textAlign: 'center', marginTop: 12, color: 'var(--muted)', fontSize: 13 }}>작성 중인 내용은 이 브라우저에 자동 저장돼요.</p>
     </form>
   );
@@ -367,8 +370,8 @@ function AppCard({ a }: { a: Application }) {
 function Done() {
   const { no = '' } = useParams();
   usePageTitle('지원 완료', SUFFIX);
-  const a = useMemo(() => local.get<Application[]>('bd_apps', []).find((x) => x.no === no), [no]);
-  if (!a || session.get<string>('bd_appauth', '') !== no) return <Status />;
+  const a = useMemo(() => careersService.recent(no), [no]);
+  if (!a) return <Status />;
   return (
     <div className="c-done">
       <div className="c-ok">✓</div>
@@ -387,8 +390,8 @@ function Status() {
   const [no, setNo] = useState('');
   const [found, setFound] = useState<Application | null>(null);
   const [err, setErr] = useState<string | null>(null);
-  const look = () => {
-    const a = careersService.lookup(email.trim(), no.trim());
+  const look = async () => {
+    const a = await careersService.lookup(email.trim(), no.trim());
     setFound(a);
     setErr(a ? null : '일치하는 지원 내역이 없어요. 이메일과 지원번호를 확인해 주세요.');
   };
@@ -396,7 +399,7 @@ function Status() {
     <div className="c-done" style={{ textAlign: 'left' }}>
       <h1 className="c-h1" style={{ fontSize: 'clamp(32px,5vw,52px)', margin: '0 0 14px' }}>지원 현황 조회</h1>
       <p className="c-lead">지원할 때 입력한 이메일과 지원번호를 넣어 주세요.</p>
-      <form className="c-card" noValidate onSubmit={(e) => { e.preventDefault(); look(); }}>
+      <form className="c-card" noValidate onSubmit={(e) => { e.preventDefault(); void look(); }}>
         <div className="c-fg" style={{ marginTop: 0 }}><label htmlFor="st-em">이메일</label><input className="c-in" id="st-em" type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} /></div>
         <div className="c-fg"><label htmlFor="st-no">지원번호</label><input className="c-in c-num" id="st-no" placeholder="BD로 시작하는 번호" style={{ textTransform: 'uppercase' }} value={no} onChange={(e) => setNo(e.target.value)} /></div>
         {err && <p className="c-err" role="alert">{err}</p>}
@@ -409,9 +412,9 @@ function Status() {
             <>
               <button className="c-btn c-ghost" style={{ marginTop: 14 }} onClick={async () => {
                 if (!(await ui.confirm('지원을 취소할까요?', `${found.title} 지원이 취소되고 되돌릴 수 없어요.`, '지원 취소', '닫기'))) return;
-                careersService.cancel(found.no);
-                ui.toast('지원을 취소했어요');
-                look();
+                const r = await careersService.cancel(found.email, found.no);
+                ui.toast(r.ok ? '지원을 취소했어요' : r.error ?? '취소하지 못했어요');
+                await look();
               }}>지원 취소하기</button>
               <p style={{ color: 'var(--muted)', fontSize: 13 }}>서류 검토가 시작되기 전까지 취소할 수 있어요.</p>
             </>
@@ -496,10 +499,14 @@ function RecruitInquiry({ onDone, onCancel }: { onDone: () => void; onCancel: ()
   const [v, setV] = useState({ name: '', email: '', type: '채용 절차', body: '' });
   const [err, setErr] = useState<string | null>(null);
   return (
-    <form noValidate onSubmit={(e) => {
+    <form noValidate onSubmit={async (e) => {
       e.preventDefault();
       if (v.name.trim().length < 2 || !EMAIL_RE.test(v.email.trim()) || v.body.trim().length < 10) return setErr('이름, 이메일, 10자 이상의 내용을 입력해 주세요.');
-      careersService.inquire({ name: v.name.trim(), email: v.email.trim(), type: v.type, body: v.body.trim() });
+      try {
+        await careersService.inquire({ name: v.name.trim(), email: v.email.trim(), type: v.type, body: v.body.trim() });
+      } catch (x) {
+        return setErr((x as Error).message);
+      }
       onDone();
     }}>
       <h3>1:1 문의하기</h3>

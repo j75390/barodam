@@ -1,10 +1,12 @@
 import type { Backend } from './backend';
 import { createLocalBackend } from './localBackend';
+import { createSupabaseBackend } from './supabaseBackend';
+import { useSupabase } from './supabaseClient';
 
 /**
- * Picks the backend. When Supabase credentials are configured (VITE_SUPABASE_URL / VITE_SUPABASE_ANON_KEY)
- * the Supabase implementation is used; otherwise everything is stored in this browser.
+ * Picks the backend: Supabase (Postgres + Auth) in the deployed app,
+ * browser storage when VITE_BACKEND=local (offline development, unit tests).
  */
 export function createBackend(): Backend {
-  return createLocalBackend();
+  return useSupabase ? createSupabaseBackend() : createLocalBackend();
 }

@@ -1,4 +1,5 @@
-import { local } from '@/lib/storage';
+import { local, session } from '@/lib/storage';
+import { koreanError, supabase, useSupabase } from './supabaseClient';
 
 export interface Application {
   no: string;
@@ -18,33 +19,82 @@ export interface Application {
   at: number;
   cancelledAt?: number;
 }
+export type NewApplication = Omit<Application, 'no' | 'at'>;
+type Submit = { ok: true; app: Application } | { ok: false; error: string };
 
+export interface CareersService {
+  submit(a: NewApplication): Promise<Submit>;
+  lookup(email: string, no: string): Promise<Application | null>;
+  cancel(email: string, no: string): Promise<{ ok: boolean; error?: string }>;
+  inquire(q: { name: string; email: string; type: string; body: string }): Promise<void>;
+  /** the application just submitted in this tab (completion page) */
+  recent(no: string): Application | null;
+  /** 0 = 접수 완료, 1 = 서류 검토 중 (after an hour), -1 = cancelled */
+  step(a: Application, now?: number): number;
+}
+
+const LAST = 'bd_app_last';
+const step = (a: Application, now = Date.now()) => (a.cancelledAt ? -1 : (now - a.at) / 36e5 < 1 ? 0 : 1);
+const recent = (no: string) => {
+  const a = session.get<Application | null>(LAST, null);
+  return a && a.no === no ? a : null;
+};
+const tidy = (a: Application & { cancelledAt?: number | null }): Application => {
+  const { cancelledAt, ...rest } = a;
+  return cancelledAt ? { ...rest, cancelledAt } : rest;
+};
+
+/** Applications stored in this browser (offline development). */
 const KEY = 'bd_apps';
 const all = () => local.get<Application[]>(KEY, []);
-
-/** Applications stay in this browser until the Supabase backend is connected. */
-export const careersService = {
-  submit(a: Omit<Application, 'no' | 'at'>): { ok: true; app: Application } | { ok: false; error: string } {
+const localService: CareersService = {
+  async submit(a) {
     const list = all();
     if (list.some((x) => x.jobId === a.jobId && x.email === a.email && !x.cancelledAt)) {
       return { ok: false, error: '이 이메일로 이미 지원한 포지션이에요. [지원 현황 조회]에서 확인해 주세요.' };
     }
     const app: Application = { ...a, no: `BD${String(Date.now()).slice(-8)}`, at: Date.now() };
     local.set(KEY, [app, ...list]);
+    session.set(LAST, app);
     return { ok: true, app };
   },
-  lookup(email: string, no: string): Application | null {
+  async lookup(email, no) {
     return all().find((x) => x.email === email && x.no === no.toUpperCase()) ?? null;
   },
-  cancel(no: string): void {
+  async cancel(_email, no) {
     local.set(KEY, all().map((x) => (x.no === no ? { ...x, cancelledAt: Date.now() } : x)));
+    return { ok: true };
   },
-  /** 0 = 접수 완료, 1 = 서류 검토 중 (after an hour), -1 = cancelled */
-  step(a: Application, now = Date.now()): number {
-    if (a.cancelledAt) return -1;
-    return (now - a.at) / 36e5 < 1 ? 0 : 1;
-  },
-  inquire(q: { name: string; email: string; type: string; body: string }): void {
+  async inquire(q) {
     local.set('bd_recruit_q', [{ ...q, at: Date.now() }, ...local.get<unknown[]>('bd_recruit_q', [])]);
   },
+  recent,
+  step,
 };
+
+/** Applications stored on the server; only reachable through e-mail + application number. */
+const serverService: CareersService = {
+  async submit(a) {
+    const { data, error } = await supabase().rpc('submit_application', { p: a });
+    if (error) return { ok: false, error: koreanError(error.message) };
+    const app = tidy(data as Application);
+    session.set(LAST, app);
+    return { ok: true, app };
+  },
+  async lookup(email, no) {
+    const { data } = await supabase().rpc('lookup_application', { p_email: email, p_no: no });
+    return data ? tidy(data as Application) : null;
+  },
+  async cancel(email, no) {
+    const { error } = await supabase().rpc('cancel_application', { p_email: email, p_no: no });
+    return error ? { ok: false, error: koreanError(error.message) } : { ok: true };
+  },
+  async inquire(q) {
+    const { error } = await supabase().rpc('recruit_inquire', { p_name: q.name, p_email: q.email, p_type: q.type, p_body: q.body });
+    if (error) throw new Error(koreanError(error.message));
+  },
+  recent,
+  step,
+};
+
+export const careersService: CareersService = useSupabase ? serverService : localService;

@@ -50,6 +50,8 @@ export interface PublicInquiry extends Inquiry {
  */
 export interface Backend {
   readonly kind: 'local' | 'supabase';
+  /** resolves once a saved login session has been restored */
+  readonly ready?: Promise<void>;
   /** current signed-in user (aggregate), or null */
   currentUser(): User | null;
   /** subscribe to user changes; returns unsubscribe */
