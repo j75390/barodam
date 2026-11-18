@@ -64,7 +64,7 @@ export function Footer() {
               <b className="ft">상호명 및 호스팅 서비스 제공 : (주)바로담</b>
               <div>서울특별시 바로구 담길 12, 바로담타워 4층</div>
               <div>사업자등록번호 : 000-00-00000 | 통신판매업신고 : 제2026-서울바로-0000호 <Link className="fchip" to="/info/bizinfo">사업자정보확인 ›</Link></div>
-              <div>대표이사 : 홍길동</div>
+              <div>대표이사 : 장동근</div>
             </div>
             <div>
               <a className="ft" href="/help" {...ext}>고객센터 ›</a>
