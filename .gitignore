@@ -5,3 +5,6 @@ dist/
 .env.*
 !.env.example
 .vite/
+*.tsbuildinfo
+__pycache__/
+*.pyc
